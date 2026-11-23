@@ -7,6 +7,7 @@ export const business = {
   url: 'https://okconsitedetailing.com',
   phone: '(405) 434-1517',
   phoneHref: 'tel:+14054341517',
+  smsHref: 'sms:+14054341517',
   email: 'okconsitedetailing@gmail.com',
   // Listed on the legacy service-area pages only. confirm: studio address and whether clients may visit.
   studio: {
@@ -24,6 +25,7 @@ export const business = {
     instagram: 'https://www.instagram.com/okconsitedetailing/',
     facebook: 'https://www.facebook.com/429319124588346',
   },
+  googleReviewsUrl: 'https://www.google.com/maps/search/?api=1&query=OKC+Onsite+Detailing+Oklahoma+City',
   // Existing Elfsight reviews widget from the legacy site, so live verified reviews carry over unchanged.
   reviewsWidgetId: 'd5b0948a-4158-47ea-8278-6b907b1828ed',
   // Figures stated by the business on the legacy site.
@@ -33,6 +35,17 @@ export const business = {
     { value: '5★', label: 'Client rating' },
     { value: 'Licensed', label: '& insured' },
   ],
+  // The client journey. Every commitment here is already stated publicly by the business
+  // (legacy site: prompt responses, clear communication, satisfaction guaranteed, free quotes).
+  // Tighter promises (e.g. a same-hour reply) are recommended in docs/research-synthesis.md and need owner sign-off first.
+  journey: [
+    { step: 'Request', detail: 'Call, text or send the two-step form. Tell us what you’re caring for and where it lives.' },
+    { step: 'A direct reply', detail: 'A real person from the team responds within one business day, by your preferred channel.' },
+    { step: 'Inspection & written quote', detail: 'We assess condition, recommend only what the surface needs and confirm the price before work begins.' },
+    { step: 'The work', detail: 'Performed at your home, office, hangar or marina, on the date and window we agreed.' },
+    { step: 'Handover & aftercare', detail: 'A walk-round of the finished work and clear care guidance, so the result keeps its finish between visits.' },
+  ],
+  guarantees: ['Free, no-obligation quotes', 'Satisfaction guaranteed', 'Licensed & insured', 'Fully mobile'],
   certifications: [{ name: 'Undrdog Coatings', role: 'Certified installer', logo: '/brand/undrdog.webp' }],
 } as const;
 

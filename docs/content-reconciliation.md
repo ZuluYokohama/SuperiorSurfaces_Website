@@ -19,3 +19,14 @@ Captured from the live site on 2026-11-23. Each item either conflicted between l
 | 13 | Template diagrams | PPF coverage graphics named “…Ceramic-Pro-Rosenberg…” | Excluded; packages listed in text | Supply own coverage diagrams if wanted |
 | 14 | Blog | Seven generic posts (2024) | 301-redirected to the closest service page or the Care Atlas | Whether to write new, specific articles |
 | 15 | Privacy policy | Generic template mentioning accounts and Flash cookies | Rewritten to describe this site plainly | Legal review |
+
+## Follow-through decisions (from docs/research-synthesis.md)
+
+| # | Decision | Recommendation | Where it goes |
+| - | --- | --- | --- |
+| 16 | Reply standard | Commit to a text reply within 30 minutes during business hours (site currently says “within one business day”) | `business.journey[1]` |
+| 17 | Team on the site | First names and portraits of the people clients meet (a public review names Josh and Jake; publish only with their consent) | New team section |
+| 18 | Aftercare check-in | Text check-in 7 days after coating/PPF work, plus a printed care card | `business.journey[4]` |
+| 19 | Photo permission | Photograph client assets only with permission; no plates, tail numbers or addresses | Journey + privacy policy |
+| 20 | Directory listings | MapQuest shows the business as **Closed**; claim and correct MapQuest, Yelp, Apple Maps and Bing | Off-site |
+| 21 | Maintenance plans | Optional “Preserve” plans for coated and PPF clients | New package |

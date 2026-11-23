@@ -4,6 +4,8 @@ import { CtaBand, Eyebrow, ProofBar, ServiceCard } from '@/components/Blocks';
 import { ConceptGraph } from '@/components/ConceptGraph';
 import { CorrectionCompare } from '@/components/CorrectionCompare';
 import { Reviews } from '@/components/Reviews';
+import { Journey } from '@/components/Journey';
+import { ASSETS } from '@/content/assets';
 import { business } from '@/content/business';
 import { serviceById } from '@/content/services';
 import { nodes } from '@/content/lexicon';
@@ -33,9 +35,18 @@ export default function Home() {
             <p className="lede mt-6">
               Detailing, paint correction and long-term protection for automobiles, aircraft, boats and coaches, performed at your home, hangar or marina by a licensed, insured team with twelve years in the craft.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/contact-us/" className="btn btn-signal">Request a quote</Link>
-              <a href={business.phoneHref} className="btn btn-ghost">Call {business.phone}</a>
+            <div className="mt-8">
+              <p className="text-[0.72rem] font-bold uppercase tracking-[0.18em] text-bone/70">What are you caring for?</p>
+              <ul className="mt-3 flex flex-wrap gap-2">
+                {ASSETS.map((a) => (
+                  <li key={a.id}>
+                    <Link href={`/contact-us/?asset=${a.id}`} className="inline-block rounded-full border border-bone/30 bg-ink/40 px-4 py-2 text-sm backdrop-blur-sm transition hover:border-signal hover:bg-signal hover:text-white">{a.label}</Link>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-5 text-sm text-bone/70">
+                Or speak to the team directly: <a className="link-u font-semibold text-bone" href={business.phoneHref}>call</a> or <a className="link-u font-semibold text-bone" href={business.smsHref}>text {business.phone}</a>
+              </p>
             </div>
           </div>
           <ProofBar className="mt-14 max-w-4xl" />
@@ -157,6 +168,20 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Journey */}
+      <section className="py-24 md:py-28">
+        <div className="wrap">
+          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div>
+              <Eyebrow>What happens next</Eyebrow>
+              <h2 className="display mt-5 max-w-2xl text-4xl md:text-6xl">Certainty, from first message to <em>handover</em>.</h2>
+            </div>
+            <p className="max-w-md text-bone/70">No guesswork about who you’re dealing with, what it costs or when it’s done. The price is confirmed before any work begins.</p>
+          </div>
+          <div className="mt-12"><Journey /></div>
+        </div>
+      </section>
+
       {/* Trust */}
       <section className="paper py-24 md:py-28">
         <div className="wrap grid gap-12 lg:grid-cols-12">
@@ -172,7 +197,10 @@ export default function Home() {
             </div>
           </div>
           <div className="lg:col-span-8">
-            <p className="eyebrow mb-4">Verified reviews</p>
+            <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
+              <p className="eyebrow">Verified reviews</p>
+              <a href={business.googleReviewsUrl} target="_blank" rel="noopener" className="btn btn-ghost !min-h-10 !text-ink">Read reviews on Google</a>
+            </div>
             <Reviews />
           </div>
         </div>

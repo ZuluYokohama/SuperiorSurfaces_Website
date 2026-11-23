@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Eyebrow } from '@/components/Blocks';
 import { Photo } from '@/components/Photo';
 import { QuoteForm } from '@/components/QuoteForm';
+import { Journey } from '@/components/Journey';
 import { business } from '@/content/business';
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default function Contact() {
             <Photo slug="wheel-hand-detail" fill sizes="40vw" />
           </div>
           <dl className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
-            <div><dt className="eyebrow">Call</dt><dd className="mt-2 text-2xl font-semibold tabular-nums"><a href={business.phoneHref}>{business.phone}</a></dd></div>
+            <div><dt className="eyebrow">Call or text</dt><dd className="mt-2 text-2xl font-semibold tabular-nums"><a href={business.phoneHref}>{business.phone}</a></dd><dd className="mt-1 text-sm"><a className="link-u" href={business.smsHref}>Send a text →</a></dd></div>
             <div><dt className="eyebrow">Email</dt><dd className="mt-2 break-all"><a className="link-u" href={`mailto:${business.email}`}>{business.email}</a></dd></div>
             <div>
               <dt className="eyebrow">Hours</dt>
@@ -34,6 +35,10 @@ export default function Contact() {
         <div className="rounded-2xl border border-[var(--line)] bg-ink-2 p-6 md:p-10 lg:col-span-7">
           <QuoteForm />
         </div>
+      </div>
+      <div className="wrap mt-20">
+        <Eyebrow>What happens next</Eyebrow>
+        <div className="mt-8"><Journey /></div>
       </div>
     </section>
   );

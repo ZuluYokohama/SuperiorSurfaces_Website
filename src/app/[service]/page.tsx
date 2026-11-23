@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { Photo } from '@/components/Photo';
 import { Breadcrumbs, CtaBand, Eyebrow, JsonLd, ServiceCard } from '@/components/Blocks';
 import { CorrectionCompare } from '@/components/CorrectionCompare';
+import { Journey } from '@/components/Journey';
 import { services, serviceBySlug } from '@/content/services';
 import { serviceStory } from '@/content/lexicon';
 import { business } from '@/content/business';
@@ -224,6 +225,13 @@ export default async function ServicePage({ params }: Props) {
           </div>
         </section>
       )}
+
+      <section className="border-b border-[var(--line)] py-20 md:py-24">
+        <div className="wrap">
+          <Eyebrow>What happens next</Eyebrow>
+          <div className="mt-8"><Journey /></div>
+        </div>
+      </section>
 
       <section className="py-20 md:py-28">
         <div className="wrap">

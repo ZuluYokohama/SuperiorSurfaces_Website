@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { ActionBar } from '@/components/ActionBar';
 import { JsonLd } from '@/components/Blocks';
 import { business } from '@/content/business';
 import { organizationLd } from '@/content/schema';
@@ -29,6 +30,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main id="main">{children}</main>
         <Footer />
+        <div aria-hidden className="h-16 md:hidden" />
+        <ActionBar />
         <JsonLd data={organizationLd()} />
       </body>
     </html>

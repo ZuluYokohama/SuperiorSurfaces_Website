@@ -28,14 +28,6 @@ export function Reviews() {
   return (
     <div ref={ref} className="min-h-48">
       {load && <div className={`elfsight-app-${business.reviewsWidgetId}`} data-elfsight-app-lazy />}
-      <a
-        className="link-u mt-4 inline-block text-sm font-semibold"
-        href="https://www.google.com/maps/search/?api=1&query=OKC+Onsite+Detailing+Oklahoma+City"
-        target="_blank"
-        rel="noopener"
-      >
-        Read every review on Google →
-      </a>
     </div>
   );
 }

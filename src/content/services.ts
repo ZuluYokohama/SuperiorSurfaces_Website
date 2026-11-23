@@ -3,6 +3,9 @@
 // (condition → mechanism → discipline → expression). Legacy URLs are kept for search continuity.
 
 export type Package = {
+  /** House name in the register. */
+  house: string;
+  /** Plain descriptor, always rendered beside the house name. */
   name: string;
   price?: string;
   summary: string;
@@ -14,6 +17,9 @@ export type Package = {
 export type Service = {
   id: string; // Care Atlas node id
   slug: string; // legacy path segment, unchanged
+  /** House name in the register (see src/content/register.ts). */
+  house: string;
+  /** Plain descriptor: always shown, and used for SEO. */
   name: string;
   family: 'Paint & protection' | 'Detailing' | 'Aviation, marine & fleet';
   kicker: string;
@@ -34,9 +40,10 @@ export const services: Service[] = [
   {
     id: 's-correction',
     slug: 'paint-correction-oklahoma-city-ok',
+    house: 'Refinement',
     name: 'Paint Correction',
     family: 'Paint & protection',
-    kicker: 'Correct',
+    kicker: 'Refine',
     title: 'Paint correction in Oklahoma City',
     lede: 'Swirls and haze aren’t in the colour. They sit in the top few microns of clear coat, where wash marring and etching scatter light. Correction levels that layer by machine, one measured step at a time, until reflections read sharp to the edge again.',
     seo: {
@@ -54,11 +61,13 @@ export const services: Service[] = [
     ],
     packages: [
       {
+        house: 'Refinement I',
         name: 'One-step polish',
         summary: 'A dramatic return of gloss lost to swirls, oxidation and light scratching. It brings paint back to life; it doesn’t aim for perfection.',
         includes: ['Gentle hand wash', 'Clay bar treatment', 'One-step machine polish', 'Removes swirls, light scratches and moderate defects', 'Improved gloss and shine'],
       },
       {
+        house: 'Refinement III',
         name: 'Multi-step correction',
         featured: true,
         summary: 'Cut, polish and finish stages, from most to least aggressive, for the closest result to a perfect finish.',
@@ -70,9 +79,10 @@ export const services: Service[] = [
   {
     id: 's-ceramic',
     slug: 'ceramic-coating-oklahoma-city-ok',
+    house: 'Still Water',
     name: 'Ceramic Coating',
     family: 'Paint & protection',
-    kicker: 'Protect',
+    kicker: 'Seal',
     title: 'Ceramic coating in Oklahoma City',
     lede: 'A true ceramic coating bonds chemically to the clear coat and hardens into a slick, sacrificial layer. Water beads and sheets away, bird droppings and sap lose their grip, and a quick wash brings back a deep gloss that outlasts wax by years.',
     seo: {
@@ -90,6 +100,7 @@ export const services: Service[] = [
     ],
     packages: [
       {
+        house: 'Still Water',
         name: 'Ceramic coating',
         price: '$900 – $1,400',
         featured: true,
@@ -112,9 +123,10 @@ export const services: Service[] = [
   {
     id: 's-ppf',
     slug: 'paint-protection-film-oklahoma-city-ok',
+    house: 'Second Skin',
     name: 'Paint Protection Film',
     family: 'Paint & protection',
-    kicker: 'Protect',
+    kicker: 'Seal',
     title: 'Paint protection film in Oklahoma City',
     lede: 'Oklahoma roads throw grit, chip-seal and storm debris at the leading edges of every car. Clear, self-healing film absorbs the impact so the factory paint underneath never breaks. We install LLumar Platinum Bond, backed by a ten-year warranty.',
     seo: {
@@ -132,11 +144,11 @@ export const services: Service[] = [
     ],
     packagesIntro: 'Five coverage levels, quoted to the vehicle.',
     packages: [
-      { name: 'Front bumper', summary: 'The highest-impact zone.', includes: ['Full front bumper', 'Headlights', 'Fog lights', 'Rock-chip defence', 'Road salt and dirt barrier'] },
-      { name: 'Partial front', summary: 'Bumper plus the leading edge of hood and fenders.', includes: ['Full front bumper', 'Partial hood', 'Partial front fenders', 'Headlights', 'Mirrors', 'Door cups'] },
-      { name: 'Full front', featured: true, summary: 'The most requested coverage: the entire front without visible film lines.', includes: ['Entire hood, edges wrapped', 'Full fenders, edges wrapped', 'Bumper', 'Headlights', 'Front of side mirrors', 'Door cups'] },
-      { name: 'Track pack', summary: 'Full front plus the areas a performance car loses to debris.', includes: ['Entire hood, edges wrapped', 'Full fenders, edges wrapped', 'Bumper and headlights', 'Front of side mirrors and door cups', 'Both A-pillars', 'Rocker panels'] },
-      { name: 'Full vehicle', summary: 'Every painted panel, customised to the car.', includes: ['Entire car', 'Protection from rock chips, road salt and dirt', 'Headlights, mirrors and door cups'] },
+      { house: 'Leading Edge', name: 'Front bumper', summary: 'The highest-impact zone.', includes: ['Full front bumper', 'Headlights', 'Fog lights', 'Rock-chip defence', 'Road salt and dirt barrier'] },
+      { house: 'Partial Front', name: 'Partial front', summary: 'Bumper plus the leading edge of hood and fenders.', includes: ['Full front bumper', 'Partial hood', 'Partial front fenders', 'Headlights', 'Mirrors', 'Door cups'] },
+      { house: 'Full Front', name: 'Full front', featured: true, summary: 'The most requested coverage: the entire front without visible film lines.', includes: ['Entire hood, edges wrapped', 'Full fenders, edges wrapped', 'Bumper', 'Headlights', 'Front of side mirrors', 'Door cups'] },
+      { house: 'Circuit', name: 'Track pack', summary: 'Full front plus the areas a performance car loses to debris.', includes: ['Entire hood, edges wrapped', 'Full fenders, edges wrapped', 'Bumper and headlights', 'Front of side mirrors and door cups', 'Both A-pillars', 'Rocker panels'] },
+      { house: 'Whole Body', name: 'Full vehicle', summary: 'Every painted panel, customised to the car.', includes: ['Entire car', 'Protection from rock chips, road salt and dirt', 'Headlights, mirrors and door cups'] },
     ],
     materials: {
       title: 'Why LLumar Platinum Bond',
@@ -147,9 +159,10 @@ export const services: Service[] = [
   {
     id: 's-tint',
     slug: 'window-tinting-oklahoma-city-ok',
+    house: 'Cool Glass',
     name: 'Window Tinting',
     family: 'Paint & protection',
-    kicker: 'Protect',
+    kicker: 'Seal',
     title: 'Window tinting in Oklahoma City',
     lede: 'Oklahoma summers send infrared heat straight through glass. Nano-ceramic film rejects up to 96% of it while blocking 99% of UV, with no signal interference, so the cabin stays cool, private and calm, and the leather lasts.',
     seo: {
@@ -167,9 +180,9 @@ export const services: Service[] = [
     ],
     packagesIntro: 'Choose the coverage, then the film.',
     packages: [
-      { name: 'Front two windows', summary: 'Matches the front glass to factory-tinted rear glass for a uniform look and more privacy.', includes: ['Driver and passenger windows'] },
-      { name: 'Whole vehicle', featured: true, summary: 'A complete re-style with privacy all round.', includes: ['All side and rear glass', 'Windshield recommended for complete glare reduction'] },
-      { name: 'Windshield', summary: 'Heat and glare reduction from the largest pane, plus UV protection for the dash.', includes: ['Clear or light ceramic film'] },
+      { house: 'Front Pair', name: 'Front two windows', summary: 'Matches the front glass to factory-tinted rear glass for a uniform look and more privacy.', includes: ['Driver and passenger windows'] },
+      { house: 'Full Cabin', name: 'Whole vehicle', featured: true, summary: 'A complete re-style with privacy all round.', includes: ['All side and rear glass', 'Windshield recommended for complete glare reduction'] },
+      { house: 'Windscreen', name: 'Windshield', summary: 'Heat and glare reduction from the largest pane, plus UV protection for the dash.', includes: ['Clear or light ceramic film'] },
     ],
     materials: {
       title: 'Three film grades',
@@ -180,9 +193,10 @@ export const services: Service[] = [
   {
     id: 's-mobile',
     slug: 'mobile-detailing-oklahoma-city-ok',
+    house: 'House Call',
     name: 'Mobile Detailing',
     family: 'Detailing',
-    kicker: 'Decontaminate · Preserve',
+    kicker: 'Purify · Keep',
     title: 'Mobile detailing in Oklahoma City',
     lede: 'A fully equipped team arrives at your home, office or estate and leaves the vehicle clean in the full sense, inside and out, using safe-wash methods that preserve the finish rather than wear it down.',
     seo: {
@@ -199,16 +213,17 @@ export const services: Service[] = [
       { step: 'Preserve', detail: 'Synthetic sealant, tyre and trim dressing leave the finish protected between visits.' },
     ],
     packages: [
-      { name: 'Exterior', price: '$199 – $249', summary: 'A safe, thorough wash that returns the showroom look.', includes: ['Foam cannon hand wash', 'Clay bar paint decontamination', 'Synthetic wax / sealant', 'Tyre shine and glass cleaned'], note: 'Price varies with vehicle size and condition.' },
-      { name: 'Interior', price: '$199 – $249', summary: 'Stains, dirt and debris removed from every surface.', includes: ['Vacuum and dusting', 'Air purge of cracks and crevices', 'All plastics wiped down', 'Glass cleaning', 'Shampoo and stain removal (quoted)'], note: 'Price varies with vehicle size and condition.' },
+      { house: 'Exterior Call', name: 'Exterior', price: '$199 – $249', summary: 'A safe, thorough wash that returns the showroom look.', includes: ['Foam cannon hand wash', 'Clay bar paint decontamination', 'Synthetic wax / sealant', 'Tyre shine and glass cleaned'], note: 'Price varies with vehicle size and condition.' },
+      { house: 'Cabin Call', name: 'Interior', price: '$199 – $249', summary: 'Stains, dirt and debris removed from every surface.', includes: ['Vacuum and dusting', 'Air purge of cracks and crevices', 'All plastics wiped down', 'Glass cleaning', 'Shampoo and stain removal (quoted)'], note: 'Price varies with vehicle size and condition.' },
     ],
   },
   {
     id: 's-aircraft',
     slug: 'aircraft-detailing-oklahoma-city-ok',
+    house: 'Flight Line',
     name: 'Aircraft Detailing',
     family: 'Aviation, marine & fleet',
-    kicker: 'Aviation',
+    kicker: 'At the Hangar',
     title: 'Aircraft detailing in Oklahoma City',
     lede: 'An aircraft finish is not a car finish, and a generalist can do lasting harm. We work at your hangar with aviation-specific products and methods to fight exhaust soot, leading-edge strike and oxidation from long hours on the ramp, inside the cabin as carefully as out.',
     seo: {
@@ -225,16 +240,17 @@ export const services: Service[] = [
       { step: 'Cabin', detail: 'Leather, woodwork, lavatory and cockpit surfaces are cleaned with the care their materials need.' },
     ],
     packages: [
-      { name: 'Exterior', price: '$399 – $549', summary: 'Wash, decontamination and protection.', includes: ['Foam cannon hand wash', 'Clay bar decontamination', 'Synthetic wax / sealant', 'Mirrors and glass cleaned'], note: 'Price varies with aircraft size and condition.' },
-      { name: 'Cabin', price: '$499 – $699', summary: 'Cabin, lavatory and cockpit.', includes: ['Wipe-down of cabin, lavatory and cockpit', 'Spot removal on headliner and sidewalls', 'Woodwork wiped down', 'Streak-free mirrors and glass', 'Leather seats cleaned', 'Trash removal'], note: 'Price varies with aircraft size and condition.' },
+      { house: 'Airframe', name: 'Exterior', price: '$399 – $549', summary: 'Wash, decontamination and protection.', includes: ['Foam cannon hand wash', 'Clay bar decontamination', 'Synthetic wax / sealant', 'Mirrors and glass cleaned'], note: 'Price varies with aircraft size and condition.' },
+      { house: 'Cabin', name: 'Cabin', price: '$499 – $699', summary: 'Cabin, lavatory and cockpit.', includes: ['Wipe-down of cabin, lavatory and cockpit', 'Spot removal on headliner and sidewalls', 'Woodwork wiped down', 'Streak-free mirrors and glass', 'Leather seats cleaned', 'Trash removal'], note: 'Price varies with aircraft size and condition.' },
     ],
   },
   {
     id: 's-marine',
     slug: 'boat-detailing-oklahoma-city-ok',
+    house: 'Waterline',
     name: 'Boat Detailing',
     family: 'Aviation, marine & fleet',
-    kicker: 'Marine',
+    kicker: 'At the Lake',
     title: 'Boat detailing in Oklahoma City',
     lede: 'Lake water, mineral spotting and summer sun cloud gelcoat and dull metal-flake. We restore the colour, protect metal from corrosion and bring upholstery back, so a wake boat or pontoon looks the way it did on delivery day.',
     seo: {
@@ -251,16 +267,17 @@ export const services: Service[] = [
       { step: 'Interior', detail: 'Carpets shampooed, stains lifted, upholstery deep-conditioned.' },
     ],
     packages: [
-      { name: 'Exterior', price: '$399 – $549', summary: 'Hull, glass and trailer.', includes: ['Complete exterior wash and dry', 'High-quality hand wax', 'Windows cleaned inside and out', 'Trailer wheels and tyres cleaned and degreased', 'Tyre and wheel dressing'], note: 'Price varies with boat size and condition.' },
-      { name: 'Interior', price: '$499 – $699', summary: 'Deck, upholstery and storage.', includes: ['Interior vacuum', 'Carpet shampoo', 'Deep stain cleaning', 'Leather / vinyl deep conditioning', 'Interior plastics cleaned and dressed', 'Cup holders, tables and storage cleaned'], note: 'Price varies with boat size and condition.' },
+      { house: 'Hull & Trailer', name: 'Exterior', price: '$399 – $549', summary: 'Hull, glass and trailer.', includes: ['Complete exterior wash and dry', 'High-quality hand wax', 'Windows cleaned inside and out', 'Trailer wheels and tyres cleaned and degreased', 'Tyre and wheel dressing'], note: 'Price varies with boat size and condition.' },
+      { house: 'Deck & Upholstery', name: 'Interior', price: '$499 – $699', summary: 'Deck, upholstery and storage.', includes: ['Interior vacuum', 'Carpet shampoo', 'Deep stain cleaning', 'Leather / vinyl deep conditioning', 'Interior plastics cleaned and dressed', 'Cup holders, tables and storage cleaned'], note: 'Price varies with boat size and condition.' },
     ],
   },
   {
     id: 's-rv',
     slug: 'rv-detailing-oklahoma-city-ok',
+    house: 'Large Format',
     name: 'RV, Coach & Fleet',
     family: 'Aviation, marine & fleet',
-    kicker: 'Large format',
+    kicker: 'In the Fleet',
     title: 'RV, coach & fleet detailing in Oklahoma City',
     lede: 'We go big. Motorcoaches, fifth-wheels, transit buses and even combine harvesters get the same discipline as a sports car: compounding faded fibreglass, restoring graphics and deep-cleaning living quarters.',
     seo: {
@@ -277,8 +294,8 @@ export const services: Service[] = [
       { step: 'Living quarters', detail: 'Kitchen, bath and lounge deep-cleaned; carpets and seats shampooed.' },
     ],
     packages: [
-      { name: 'Exterior', price: '$399 – $549', summary: 'Body, fibreglass and running gear.', includes: ['Complete exterior wash', 'Microfibre hand dry', 'Compound to restore faded fibreglass', 'Exterior plastics dressed', 'Wheels and tyres cleaned and degreased', 'Door jambs and seals cleaned'], note: 'Price varies with size and condition.' },
-      { name: 'Interior', price: '$499 – $699', summary: 'Every room of the coach.', includes: ['Complete vacuum and dusting', 'Tables and countertops cleaned', 'High-intensity stain pre-treatment', 'Carpets and seats shampooed', 'Living quarters, bathroom and kitchen deep-cleaned', 'All interior windows'], note: 'Price varies with size and condition.' },
+      { house: 'Body & Fibreglass', name: 'Exterior', price: '$399 – $549', summary: 'Body, fibreglass and running gear.', includes: ['Complete exterior wash', 'Microfibre hand dry', 'Compound to restore faded fibreglass', 'Exterior plastics dressed', 'Wheels and tyres cleaned and degreased', 'Door jambs and seals cleaned'], note: 'Price varies with size and condition.' },
+      { house: 'Living Quarters', name: 'Interior', price: '$499 – $699', summary: 'Every room of the coach.', includes: ['Complete vacuum and dusting', 'Tables and countertops cleaned', 'High-intensity stain pre-treatment', 'Carpets and seats shampooed', 'Living quarters, bathroom and kitchen deep-cleaned', 'All interior windows'], note: 'Price varies with size and condition.' },
     ],
   },
 ];

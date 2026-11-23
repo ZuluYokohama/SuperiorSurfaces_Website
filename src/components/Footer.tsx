@@ -11,7 +11,7 @@ export function Footer() {
         <div className="md:col-span-4">
           <img src="/brand/logo.png" alt={business.name} width={386} height={137} className="h-11 w-auto" loading="lazy" />
           <p className="mt-6 max-w-xs text-sm leading-relaxed text-mute">
-            Detailing, correction and protection for automobiles, aircraft, boats and coaches across Oklahoma City, performed where they live.
+            Finish Stewardship: detailing, correction and protection for automobiles, aircraft, boats and coaches across Oklahoma City, performed where they live.
           </p>
           <div className="mt-6 flex gap-5 text-sm font-semibold">
             <a className="link-u" href={business.social.instagram} rel="noopener" target="_blank">Instagram</a>
@@ -22,7 +22,7 @@ export function Footer() {
           <p className="eyebrow mb-4">Services</p>
           <ul className="space-y-2 text-sm">
             {services.map((s) => (
-              <li key={s.slug}><Link className="link-u" href={`/${s.slug}/`}>{s.name}</Link></li>
+              <li key={s.slug}><Link className="link-u" href={`/${s.slug}/`}>{s.house}</Link> <span className="text-mute">· {s.name}</span></li>
             ))}
           </ul>
         </div>
@@ -34,6 +34,8 @@ export function Footer() {
               <li key={a.slug}><Link className="link-u" href={`/service-areas/${a.slug}/`}>{a.name}</Link></li>
             ))}
           </ul>
+          <p className="eyebrow mt-8 mb-4">Offices</p>
+          <Link className="link-u text-sm" href="/for-managers/">For Household &amp; Flight Offices</Link>
         </div>
         <div className="md:col-span-3">
           <p className="eyebrow mb-4">Contact</p>

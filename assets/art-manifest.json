@@ -46,6 +46,57 @@
    "sha256": "2135431b276e7b7f04ad41ea067c3a278fc1f2da4af25962d0bfee04fec478db"
   },
   {
+   "file": "public/art/cool-glass.svg",
+   "generator": "scripts/generate-art.mjs",
+   "params": {
+    "seed": 96
+   },
+   "purpose": "Cool Glass (window tint): infrared lines stopped at a pane",
+   "bytes": 56850,
+   "sha256": "e8fa6d801f998bd3992ac63f4efe9d1726d187c2fa374595cddd5d524be91c13"
+  },
+  {
+   "file": "public/art/second-skin.svg",
+   "generator": "scripts/generate-art.mjs",
+   "params": {
+    "seed": 10
+   },
+   "purpose": "Second Skin (PPF): impact ripples dissipating across a membrane",
+   "bytes": 13441,
+   "sha256": "607c79a26004880f21e7c244b0a1d4d7454e65614a366bcddca9b818f471608b"
+  },
+  {
+   "file": "public/art/waterline.svg",
+   "generator": "scripts/generate-art.mjs",
+   "params": {
+    "seed": 2024,
+    "lines": 46
+   },
+   "purpose": "Waterline (marine): interference of light through moving water",
+   "bytes": 177738,
+   "sha256": "c3c5c35b1205808a0dc2b236482d9f0b8cafb7c28dbd7f495c4700d44391a778"
+  },
+  {
+   "file": "public/art/flight-line.svg",
+   "generator": "scripts/generate-art.mjs",
+   "params": {
+    "profile": "NACA 4-digit thickness, 12%"
+   },
+   "purpose": "Flight Line (aircraft): laminar streamlines around an airfoil section",
+   "bytes": 48384,
+   "sha256": "bed5338d5babb45509b9677ba608923424ecb4c8aaaea03f12fe29c891381e36"
+  },
+  {
+   "file": "public/art/large-format.svg",
+   "generator": "scripts/generate-art.mjs",
+   "params": {
+    "seed": 3801
+   },
+   "purpose": "Large Format (fleet): modular scale study",
+   "bytes": 23405,
+   "sha256": "5347fe5f6ce743ff79288ef90fcb273ef2910ae9e0d0bebb01eb4c452d0175a2"
+  },
+  {
    "file": "public/art/contours.svg",
    "generator": "scripts/generate-art.mjs",
    "params": {

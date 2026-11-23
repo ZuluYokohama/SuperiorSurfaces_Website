@@ -5,12 +5,24 @@ import { Photo } from '@/components/Photo';
 import { Breadcrumbs, CtaBand, Eyebrow, JsonLd, ServiceCard } from '@/components/Blocks';
 import { CorrectionCompare } from '@/components/CorrectionCompare';
 import { Journey } from '@/components/Journey';
+import { HouseName } from '@/components/HouseName';
 import { services, serviceBySlug } from '@/content/services';
 import { serviceStory } from '@/content/lexicon';
 import { business } from '@/content/business';
 import { faqLd, serviceLd } from '@/content/schema';
 
 export const dynamicParams = false;
+
+const signatureArt: Record<string, string> = {
+  's-tint': 'cool-glass.svg',
+  's-ppf': 'second-skin.svg',
+  's-marine': 'waterline.svg',
+  's-aircraft': 'flight-line.svg',
+  's-rv': 'large-format.svg',
+  's-mobile': 'gloss-field.svg',
+  's-ceramic': 'beading.svg',
+  's-correction': 'gloss-field.svg',
+};
 export function generateStaticParams() {
   return services.map((s) => ({ service: s.slug }));
 }
@@ -38,12 +50,13 @@ export default async function ServicePage({ params }: Props) {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-28 md:pt-32">
+      <section className="relative isolate overflow-hidden pt-28 md:pt-32">
+        <div aria-hidden className="absolute inset-0 -z-10 bg-cover bg-center opacity-40" style={{ backgroundImage: `url(/art/${signatureArt[s.id]})` }} />
         <div className="wrap grid items-end gap-10 pb-16 lg:grid-cols-12 lg:pb-24">
           <div className="reveal lg:col-span-6">
             <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: s.name, href: `/${s.slug}/` }]} />
             <Eyebrow className="mt-8">{s.kicker}</Eyebrow>
-            <h1 className="display mt-5 text-[clamp(2.6rem,5.6vw,5rem)]">{s.title}</h1>
+            <HouseName as="h1" house={s.house} plain={s.title} className="mt-5" houseClassName="text-[clamp(3rem,7vw,6rem)]" />
             <p className="lede mt-6">{s.lede}</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href={`/contact-us/?service=${s.slug}`} className="btn btn-signal">Request a quote</Link>
@@ -103,7 +116,7 @@ export default async function ServicePage({ params }: Props) {
           <div className="lg:col-span-4">
             <Eyebrow>The method</Eyebrow>
             <h2 className="display mt-5 text-4xl md:text-5xl">How the work is <em>done</em>.</h2>
-            <p className="mt-5 text-ink/70">Disciplines in play: {story.disciplines.map((d) => d.label).join(' · ')}.</p>
+            <p className="mt-5 text-ink/70">Disciplines in play: {story.disciplines.map((d) => `${d.label} (${d.plain?.toLowerCase()})`).join(' · ')}.</p>
           </div>
           <ol className="grid gap-px overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--line)] sm:grid-cols-2 lg:col-span-8">
             {s.method.map((m, i) => (
@@ -154,7 +167,10 @@ export default async function ServicePage({ params }: Props) {
             {s.packages.map((p) => (
               <article key={p.name} className={`flex flex-col rounded-2xl border p-8 ${p.featured ? 'border-champagne/60 bg-ink-2' : 'border-[var(--line)]'}`}>
                 <div className="flex items-start justify-between gap-4">
-                  <h3 className="display text-3xl">{p.name}</h3>
+                  <h3>
+                    <span className="display block text-3xl">{p.house}</span>
+                    <span className="mt-1 block text-[0.7rem] font-bold uppercase tracking-[0.16em] text-mute">{p.name}</span>
+                  </h3>
                   {p.featured && <span className="shrink-0 rounded-full bg-signal px-3 py-1 text-[0.62rem] font-bold uppercase tracking-[0.16em] text-white">Most chosen</span>}
                 </div>
                 {p.price && <p className="mt-4 text-2xl font-semibold tabular-nums text-champagne">{p.price}</p>}
@@ -176,15 +192,21 @@ export default async function ServicePage({ params }: Props) {
         <section className="border-y border-[var(--line)] bg-ink-2 py-20 md:py-24">
           <div className="wrap grid gap-10 lg:grid-cols-12">
             <div className="lg:col-span-5">
-              <Eyebrow>Materials</Eyebrow>
+              <Eyebrow>Specification</Eyebrow>
               <h2 className="display mt-5 text-4xl">{s.materials.title}</h2>
+              <p className="mt-4 text-sm text-mute">Named precisely, so you know exactly what is on your finish.</p>
             </div>
             <div className="lg:col-span-7">
               <p className="text-bone/80">{s.materials.body}</p>
               {s.materials.points && (
-                <ul className="mt-8 grid gap-3 sm:grid-cols-2">
-                  {s.materials.points.map((p) => <li key={p} className="rounded-xl border border-[var(--line)] px-5 py-4 text-sm">{p}</li>)}
-                </ul>
+                <dl className="mt-8 divide-y divide-[var(--line)] border-y border-[var(--line)] font-mono text-[0.82rem]">
+                  {s.materials.points.map((pt, i) => (
+                    <div key={pt} className="flex gap-6 py-3">
+                      <dt className="w-10 shrink-0 text-signal">{String(i + 1).padStart(2, '0')}</dt>
+                      <dd className="text-bone/85">{pt}</dd>
+                    </div>
+                  ))}
+                </dl>
               )}
             </div>
           </div>
@@ -242,7 +264,7 @@ export default async function ServicePage({ params }: Props) {
         </div>
       </section>
 
-      <CtaBand title={`Plan your ${s.name.toLowerCase()}.`} preset={s.slug} />
+      <CtaBand title={`Arrange ${s.house}.`} preset={s.slug} />
       <JsonLd data={serviceLd(s)} />
       {faq && <JsonLd data={faq} />}
     </>

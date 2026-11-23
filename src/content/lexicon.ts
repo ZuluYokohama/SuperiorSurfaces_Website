@@ -7,7 +7,7 @@
 //
 // Rules for copy everywhere on the site:
 //   1. Name the local condition plainly, then the mechanism precisely.
-//   2. Describe work as one of four disciplines: Decontaminate, Correct, Protect, Preserve.
+//   2. Describe work as one of four disciplines: Purify, Refine, Seal, Keep (decontaminate, correct, protect, preserve).
 //   3. Close on an expression from the outcome layer, never on a superlative.
 
 export type Layer = 'condition' | 'mechanism' | 'discipline' | 'service' | 'expression';
@@ -16,6 +16,8 @@ export type ConceptNode = {
   id: string;
   layer: Layer;
   label: string;
+  /** Plain-language term, shown beside register labels. */
+  plain?: string;
   gloss: string;
   href?: string;
 };
@@ -50,20 +52,20 @@ export const nodes: ConceptNode[] = [
   { id: 'm-soil', layer: 'mechanism', label: 'Embedded soil & odour', gloss: 'Fibres and pores holding dirt, bacteria and the smell that comes with them.' },
 
   // Global disciplines
-  { id: 'd-decon', layer: 'discipline', label: 'Decontaminate', gloss: 'Remove everything on and in the surface: foam pre-wash, contact wash, iron and clay treatment, extraction.' },
-  { id: 'd-correct', layer: 'discipline', label: 'Correct', gloss: 'Machine-polish to level the clear coat and remove defects, measured step by step.' },
-  { id: 'd-protect', layer: 'discipline', label: 'Protect', gloss: 'Add an engineered, sacrificial layer: ceramic coating, protection film or window film.' },
-  { id: 'd-preserve', layer: 'discipline', label: 'Preserve', gloss: 'Keep the result on a schedule, with safe methods that do not undo the work.' },
+  { id: 'd-decon', layer: 'discipline', label: 'Purify', plain: 'Decontaminate', gloss: 'Remove everything on and in the surface: foam pre-wash, contact wash, iron and clay treatment, extraction.' },
+  { id: 'd-correct', layer: 'discipline', label: 'Refine', plain: 'Correct', gloss: 'Machine-polish to level the clear coat and remove defects, measured step by step.' },
+  { id: 'd-protect', layer: 'discipline', label: 'Seal', plain: 'Protect', gloss: 'Add an engineered, sacrificial layer: ceramic coating, protection film or window film.' },
+  { id: 'd-preserve', layer: 'discipline', label: 'Keep', plain: 'Preserve', gloss: 'Keep the result on a schedule, with safe methods that do not undo the work.' },
 
   // Services
-  { id: 's-mobile', layer: 'service', label: 'Mobile detailing', gloss: 'Interior and exterior detailing performed where the vehicle lives.', href: '/mobile-detailing-oklahoma-city-ok/' },
-  { id: 's-correction', layer: 'service', label: 'Paint correction', gloss: 'One-step and multi-step machine polishing.', href: '/paint-correction-oklahoma-city-ok/' },
-  { id: 's-ceramic', layer: 'service', label: 'Ceramic coating', gloss: 'Multi-year coating on paint, wheels, glass and trim.', href: '/ceramic-coating-oklahoma-city-ok/' },
-  { id: 's-ppf', layer: 'service', label: 'Paint protection film', gloss: 'Self-healing film with a ten-year warranty.', href: '/paint-protection-film-oklahoma-city-ok/' },
-  { id: 's-tint', layer: 'service', label: 'Window tinting', gloss: 'Dyed, carbon and nano-ceramic films.', href: '/window-tinting-oklahoma-city-ok/' },
-  { id: 's-aircraft', layer: 'service', label: 'Aircraft detailing', gloss: 'Aviation-specific products, at the hangar.', href: '/aircraft-detailing-oklahoma-city-ok/' },
-  { id: 's-marine', layer: 'service', label: 'Marine detailing', gloss: 'Gelcoat, metal-flake and upholstery care.', href: '/boat-detailing-oklahoma-city-ok/' },
-  { id: 's-rv', layer: 'service', label: 'RV, coach & fleet', gloss: 'Coaches, fifth-wheels, transit and equipment.', href: '/rv-detailing-oklahoma-city-ok/' },
+  { id: 's-mobile', layer: 'service', label: 'House Call', plain: 'Mobile detailing', gloss: 'Interior and exterior detailing performed where the vehicle lives.', href: '/mobile-detailing-oklahoma-city-ok/' },
+  { id: 's-correction', layer: 'service', label: 'Refinement', plain: 'Paint correction', gloss: 'One-step and multi-step machine polishing.', href: '/paint-correction-oklahoma-city-ok/' },
+  { id: 's-ceramic', layer: 'service', label: 'Still Water', plain: 'Ceramic coating', gloss: 'Multi-year coating on paint, wheels, glass and trim.', href: '/ceramic-coating-oklahoma-city-ok/' },
+  { id: 's-ppf', layer: 'service', label: 'Second Skin', plain: 'Paint protection film', gloss: 'Self-healing film with a ten-year warranty.', href: '/paint-protection-film-oklahoma-city-ok/' },
+  { id: 's-tint', layer: 'service', label: 'Cool Glass', plain: 'Window tinting', gloss: 'Dyed, carbon and nano-ceramic films.', href: '/window-tinting-oklahoma-city-ok/' },
+  { id: 's-aircraft', layer: 'service', label: 'Flight Line', plain: 'Aircraft detailing', gloss: 'Aviation-specific products, at the hangar.', href: '/aircraft-detailing-oklahoma-city-ok/' },
+  { id: 's-marine', layer: 'service', label: 'Waterline', plain: 'Marine detailing', gloss: 'Gelcoat, metal-flake and upholstery care.', href: '/boat-detailing-oklahoma-city-ok/' },
+  { id: 's-rv', layer: 'service', label: 'Large Format', plain: 'RV, coach & fleet', gloss: 'Coaches, fifth-wheels, transit and equipment.', href: '/rv-detailing-oklahoma-city-ok/' },
 
   // Expressions
   { id: 'e-clarity', layer: 'expression', label: 'Optical clarity', gloss: 'Reflections that stay sharp to the edge of every panel.' },

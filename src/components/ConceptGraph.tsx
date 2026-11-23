@@ -125,6 +125,7 @@ export function ConceptGraph({ initial = 'c-sun' }: { initial?: string }) {
       <aside aria-live="polite" className="self-start rounded-2xl border border-[var(--line)] bg-ink-2 p-6 lg:sticky lg:top-28">
         <p className="eyebrow">{layers.find((l) => l.id === current.layer)?.title}</p>
         <h3 className="display mt-4 text-3xl">{current.label}</h3>
+        {current.plain && <p className="mt-1 text-[0.72rem] font-bold uppercase tracking-[0.16em] text-mute">{current.plain}</p>}
         <p className="mt-3 text-sm leading-relaxed text-bone/75">{current.gloss}</p>
         <p className="mt-5 text-xs text-mute">
           Connected to {lit.nodes.size - 1} concepts across {new Set([...lit.nodes].map((id) => id[0])).size} layers.

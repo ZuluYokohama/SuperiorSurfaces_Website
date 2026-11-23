@@ -30,3 +30,11 @@ Captured from the live site on 2026-11-23. Each item either conflicted between l
 | 19 | Photo permission | Photograph client assets only with permission; no plates, tail numbers or addresses | Journey + privacy policy |
 | 20 | Directory listings | MapQuest shows the business as **Closed**; claim and correct MapQuest, Yelp, Apple Maps and Bing | Off-site |
 | 21 | Maintenance plans | Optional “Preserve” plans for coated and PPF clients | New package |
+
+## Delegate brief items awaiting the owner (src/content/delegates.ts)
+| # | Item | Status |
+| - | --- | --- |
+| 22 | Certificate of insurance on request | `ownerPending` (hidden until confirmed) |
+| 23 | Consolidated monthly invoicing | `ownerPending` |
+| 24 | Photo-discretion policy (no plates, tail numbers or addresses) | `ownerPending` |
+| 25 | The register (house names) | Owner to approve the names before launch; see /care-atlas/ “The register” |

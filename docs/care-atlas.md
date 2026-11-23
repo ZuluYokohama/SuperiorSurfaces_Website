@@ -30,3 +30,14 @@ Triple-digit summers  →  Oxidation & UV fade  →  Protect  →  Ceramic coati
 ## Extending
 
 Add a node to `nodes`, connect it in `edges`, update `addresses` if a service gains a capability, and run `pnpm test`. The interactive graph, service pages and lexicon page update automatically.
+
+## The register (v2.2)
+
+Services, packages, disciplines, journey steps and settings carry house names: Refinement, Still Water, Second Skin, Cool Glass, House Call, Flight Line, Waterline, Large Format; Purify · Refine · Seal · Keep; At the Hangar / Estate / Lake, In the Collection / Fleet.
+
+1. The plain term is always rendered beside the house name, inside headings, and in every search title.
+2. Forms, quotes and invoices use plain terms.
+3. House names are 1–3 common English words (tested), with no hype or jargon (tested).
+4. Never show internal persona labels (tested).
+
+Rationale and sources: [research-imagery-language-personas.md](research-imagery-language-personas.md).

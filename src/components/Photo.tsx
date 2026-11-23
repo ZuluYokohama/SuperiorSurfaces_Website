@@ -18,9 +18,14 @@ type Props = {
   alt?: string;
   /** Fill the parent box (parent must be positioned) instead of using intrinsic ratio. */
   fill?: boolean;
+  /**
+   * documentary (default): full colour, as photographed, for any proof of work.
+   * editorial: monochrome display treatment for atmosphere only (CSS filter; the file is untouched).
+   */
+  treatment?: 'documentary' | 'editorial';
 };
 
-export function Photo({ slug, sizes = '100vw', className = '', imgClassName = '', priority, alt, fill }: Props) {
+export function Photo({ slug, sizes = '100vw', className = '', imgClassName = '', priority, alt, fill, treatment = 'documentary' }: Props) {
   const r = imageRecord(slug);
   const set = (ext: string) => r.widths.map((w) => `/img/${slug}-${w}.${ext} ${w}w`).join(', ');
   const fallback = `/img/${slug}-${r.widths.includes(960) ? 960 : r.widths[0]}.webp`;
@@ -37,7 +42,7 @@ export function Photo({ slug, sizes = '100vw', className = '', imgClassName = ''
         loading={priority ? 'eager' : 'lazy'}
         fetchPriority={priority ? 'high' : 'auto'}
         decoding="async"
-        style={{ objectPosition: position, backgroundImage: `url(${r.lqip})`, backgroundSize: 'cover', backgroundPosition: position }}
+        style={{ objectPosition: position, filter: treatment === 'editorial' ? 'grayscale(1) contrast(1.08) brightness(0.9)' : undefined, backgroundImage: `url(${r.lqip})`, backgroundSize: 'cover', backgroundPosition: position }}
         className={`${fill ? 'h-full w-full object-cover' : 'h-auto w-full'} ${imgClassName}`}
       />
     </picture>

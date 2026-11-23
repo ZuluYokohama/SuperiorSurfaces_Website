@@ -3,6 +3,10 @@ import Link from 'next/link';
 import { CtaBand, Eyebrow } from '@/components/Blocks';
 import { ConceptGraph } from '@/components/ConceptGraph';
 import { layers, nodes } from '@/content/lexicon';
+import { services } from '@/content/services';
+import { settings } from '@/content/settings';
+import { business } from '@/content/business';
+import { practice } from '@/content/register';
 
 export const metadata: Metadata = {
   title: 'The Care Atlas: Oklahoma Conditions to Detailing Disciplines',
@@ -43,6 +47,35 @@ export default function Atlas() {
                 </dl>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+      <section className="py-20 md:py-28">
+        <div className="wrap">
+          <Eyebrow>The register</Eyebrow>
+          <h2 className="display mt-5 max-w-3xl text-4xl md:text-5xl">Our words, and what they <em>mean</em>.</h2>
+          <p className="lede mt-5">Each house name stands for a precise piece of work. The plain term is always alongside it.</p>
+          <div className="mt-10 overflow-x-auto">
+            <table className="w-full min-w-[34rem] text-left text-sm">
+              <thead className="text-[0.7rem] uppercase tracking-[0.16em] text-mute">
+                <tr className="border-b border-[var(--line-strong)]"><th className="py-3 pr-6 font-bold">House name</th><th className="py-3 pr-6 font-bold">Plain term</th><th className="py-3 font-bold">Kind</th></tr>
+              </thead>
+              <tbody className="divide-y divide-[var(--line)]">
+                <tr><td className="display py-3 pr-6 text-xl">{practice.house}</td><td className="py-3 pr-6">{practice.plain}</td><td className="py-3 text-mute">Practice</td></tr>
+                {nodes.filter((n) => n.layer === 'discipline').map((d) => (
+                  <tr key={d.id}><td className="display py-3 pr-6 text-xl">{d.label}</td><td className="py-3 pr-6">{d.plain}</td><td className="py-3 text-mute">Discipline</td></tr>
+                ))}
+                {services.map((s) => (
+                  <tr key={s.slug}><td className="display py-3 pr-6 text-xl"><Link className="link-u" href={`/${s.slug}/`}>{s.house}</Link></td><td className="py-3 pr-6">{s.name}</td><td className="py-3 text-mute">Service</td></tr>
+                ))}
+                {settings.map((s) => (
+                  <tr key={s.slug}><td className="display py-3 pr-6 text-xl"><Link className="link-u" href={`/settings/${s.slug}/`}>{s.house}</Link></td><td className="py-3 pr-6">{s.plain}</td><td className="py-3 text-mute">Setting</td></tr>
+                ))}
+                {business.journey.map((j) => (
+                  <tr key={j.step}><td className="display py-3 pr-6 text-xl">{j.step}</td><td className="py-3 pr-6">{j.plain}</td><td className="py-3 text-mute">Journey</td></tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>

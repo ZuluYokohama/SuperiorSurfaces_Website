@@ -6,6 +6,7 @@ A ground-up rebuild of [okconsitedetailing.com](https://okconsitedetailing.com) 
 - **Imaging:** the business’s own work photographs, art-directed and encoded as responsive AVIF/WebP. See [docs/imaging.md](docs/imaging.md).
 - **Generated art:** deterministic, seeded vector artwork (gloss field, hydrophobic beading, swirl-vs-corrected panel, contour study) from `scripts/generate-art.mjs`.
 - **Language system:** the **Care Atlas**, a concept graph mapping local Oklahoma conditions → surface mechanisms → global detailing disciplines → services → owner-facing outcomes. It drives the interactive graph, every service page’s “Why it matters here” section and the copy rules. See [docs/care-atlas.md](docs/care-atlas.md).
+- **Register & settings (v2.2):** house names for every service (e.g. *Still Water · Ceramic coating*), five client settings (`/settings/hangar/` …) and a printable brief for delegates (`/for-managers/`). See [docs/research-imagery-language-personas.md](docs/research-imagery-language-personas.md).
 - **SEO continuity:** every legacy service and service-area URL is kept exactly; blog posts and retired pages 301 to their closest successor (`vercel.json`). Structured data: `AutoWash`/`LocalBusiness`, `Service` with price ranges, `FAQPage`.
 
 ## Run

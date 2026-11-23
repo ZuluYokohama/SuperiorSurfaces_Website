@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { business } from '@/content/business';
 import { services, families } from '@/content/services';
+import { settings } from '@/content/settings';
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -47,7 +48,10 @@ export function Header() {
                     <ul className="space-y-2 text-sm font-medium normal-case tracking-normal">
                       {services.filter((s) => s.family === fam).map((s) => (
                         <li key={s.slug}>
-                          <Link className="link-u" href={`/${s.slug}/`}>{s.name}</Link>
+                          <Link className="group/l block" href={`/${s.slug}/`}>
+                            <span className="link-u">{s.house}</span>
+                            <span className="block text-xs text-mute">{s.name}</span>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -56,14 +60,35 @@ export function Header() {
               </div>
             </div>
           </div>
-          <Link className="link-u uppercase" href="/aircraft-detailing-oklahoma-city-ok/">Aviation</Link>
+          <div className="group relative">
+            <button className="flex items-center gap-1.5 py-3 uppercase" aria-haspopup="true">
+              Settings <span aria-hidden className="text-mute transition group-hover:rotate-180">▾</span>
+            </button>
+            <div className="invisible absolute left-1/2 top-full w-[22rem] -translate-x-1/2 translate-y-2 rounded-xl border border-[var(--line)] bg-ink-2/95 p-6 opacity-0 shadow-2xl backdrop-blur-md transition duration-300 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+              <ul className="space-y-3 text-sm font-medium normal-case tracking-normal">
+                {settings.map((st) => (
+                  <li key={st.slug}>
+                    <Link className="block" href={`/settings/${st.slug}/`}>
+                      <span className="link-u">{st.house}</span>
+                      <span className="block text-xs text-mute">{st.plain}</span>
+                    </Link>
+                  </li>
+                ))}
+                <li className="border-t border-[var(--line)] pt-3">
+                  <Link className="block" href="/for-managers/">
+                    <span className="link-u">For Household &amp; Flight Offices</span>
+                    <span className="block text-xs text-mute">House managers, chief pilots, family offices</span>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
           <Link className="link-u uppercase" href="/care-atlas/">Care Atlas</Link>
-          <Link className="link-u uppercase" href="/service-areas/">Areas</Link>
         </nav>
 
         <div className="flex items-center gap-3">
           <a href={business.phoneHref} className="hidden text-sm font-semibold tabular-nums md:block">{business.phone}</a>
-          <Link href="/contact-us/" className="btn btn-signal hidden !min-h-10 !px-5 sm:inline-flex">Request a quote</Link>
+          <Link href="/contact-us/" className="btn btn-signal hidden !min-h-10 !px-5 sm:inline-flex">Request</Link>
           <button
             className="grid h-11 w-11 place-items-center rounded-full border border-[var(--line-strong)] lg:hidden"
             aria-expanded={open}
@@ -88,12 +113,24 @@ export function Header() {
                 <ul className="space-y-1">
                   {services.filter((s) => s.family === fam).map((s) => (
                     <li key={s.slug}>
-                      <Link onClick={() => setOpen(false)} className="display block py-1.5 text-3xl" href={`/${s.slug}/`}>{s.name}</Link>
+                      <Link onClick={() => setOpen(false)} className="block py-1.5" href={`/${s.slug}/`}>
+                        <span className="display block text-3xl">{s.house}</span>
+                        <span className="block text-xs uppercase tracking-[0.14em] text-mute">{s.name}</span>
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </div>
             ))}
+            <div>
+              <p className="eyebrow mb-3">Settings</p>
+              <ul className="space-y-2 text-lg">
+                {settings.map((st) => (
+                  <li key={st.slug}><Link onClick={() => setOpen(false)} href={`/settings/${st.slug}/`}>{st.house}</Link></li>
+                ))}
+                <li><Link onClick={() => setOpen(false)} href="/for-managers/">For Household &amp; Flight Offices</Link></li>
+              </ul>
+            </div>
             <div className="grid gap-3 border-t border-[var(--line)] pt-6 text-lg">
               <Link onClick={() => setOpen(false)} href="/care-atlas/">Care Atlas</Link>
               <Link onClick={() => setOpen(false)} href="/service-areas/">Service areas</Link>

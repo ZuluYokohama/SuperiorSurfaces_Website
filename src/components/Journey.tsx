@@ -9,7 +9,10 @@ export function Journey({ tone = 'dark' }: { tone?: 'dark' | 'paper' }) {
         {business.journey.map((j, i) => (
           <li key={j.step} className={`${tone === 'paper' ? 'bg-paper' : 'bg-ink-2'} p-6`}>
             <span className="text-xs font-bold tracking-[0.2em] text-signal">0{i + 1}</span>
-            <h3 className="display mt-3 text-2xl">{j.step}</h3>
+            <h3 className="mt-3">
+              <span className="display block text-2xl">{j.step}</span>
+              <span className="mt-1 block text-[0.68rem] font-bold uppercase tracking-[0.14em] text-mute">{j.plain}</span>
+            </h3>
             <p className={`mt-2 text-sm leading-relaxed ${muted}`}>{j.detail}</p>
           </li>
         ))}

@@ -37,7 +37,10 @@ export function ServiceCard({ service, tall }: { service: Service; tall?: boolea
       </div>
       <div className="absolute inset-x-0 bottom-0 p-6">
         <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-champagne">{service.kicker}</p>
-        <h3 className="display mt-2 text-3xl">{service.name}</h3>
+        <h3 className="mt-2">
+          <span className="display block text-3xl">{service.house}</span>
+          <span className="mt-1 block text-xs font-semibold uppercase tracking-[0.14em] text-bone/60">{service.name}</span>
+        </h3>
         <p className="mt-2 flex items-center justify-between text-sm text-bone/70">
           <span>{fromPrice(service)}</span>
           <span aria-hidden className="transition group-hover:translate-x-1">→</span>

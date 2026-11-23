@@ -1,0 +1,699 @@
+{
+ "jet-sunset": {
+  "alt": "Business jet on the ramp at sunset, the low sun reflected along its polished fuselage",
+  "width": 1440,
+  "height": 1080,
+  "focal": [
+   0.42,
+   0.55
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACwBACdASoYABIAPu1sqlGppaOiqAqpMB2JYgCdAAph6zZGZpodOey/5EBmnL2AANaBz/JNrzFSSuxnGPcDvM4MkObvfadmTTFVubnWaswYhlyF6X1CTbrf1a9dD7R+OBbngw7jInTeLaFRaGfEd4s8jfXFoAAA",
+  "source": "Aircraft-Detailing-Oklahoma-City-by-OKC-Onsite-Detailing-2.jpg",
+  "sha256": "09dbdb680d6434789e949ef4adf5704361a82a5cce427c4855fa970fa6d85da5"
+ },
+ "jet-night-ramp": {
+  "alt": "Large-cabin business jet and a black SUV on a lit ramp at night",
+  "width": 1440,
+  "height": 1085,
+  "focal": [
+   0.5,
+   0.55
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQBACdASoYABIAPu1mq02ppaQiMAgBMB2JZQDLLCHW2k6iIELsgoYLKjQAAP7wyGfmVsi8ECwabTO6dZxq17C/3lUXxxj/s98L3mm9ahD5d9pymfkQAAAA",
+  "source": "Recent-images-by-okconsite-detailing-service.jpg",
+  "sha256": "62b2f1bea8c043cea6f57dbfbb9649db8eb428acb3b515a262f13edb369da9ed"
+ },
+ "jet-hangar": {
+  "alt": "Business jet parked in a bright hangar after detailing",
+  "width": 1440,
+  "height": 1080,
+  "focal": [
+   0.55,
+   0.6
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACQBACdASoYABIAPu1cq04ppKQiMBgMATAdiWcAwcwLFQA7nu5Kz09Cg6DKtQAAY4XBQKjaTekIj/wvHp+c84xPYty7Tr9M6TK9Osz1w1XB+Bi4KXrgAA==",
+  "source": "Recent-images-by-okconsite-detailing-service02.jpg",
+  "sha256": "3097fcc5eb10ebf8588603d684efb616d9fc2f2ae30287e8330d837a09f0491e"
+ },
+ "jet-hangar-wide": {
+  "alt": "Wide view of a business jet inside a clean hangar",
+  "width": 1440,
+  "height": 1080,
+  "focal": [
+   0.45,
+   0.6
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQBACdASoYABIAPu1ip02ppaOiMAgBMB2JZwDM0CEMm4dwccMPpYhm4ADdOGB6HWMnkud8gMcaE4+iKI8NgmroYcKehW143RSgAAAA",
+  "source": "Recent-images-by-okconsite-detailing-service03.jpg",
+  "sha256": "31a5f493689c85951c829377de31dcfd6779e6c68a911b380d54dd1607baaab8"
+ },
+ "jet-wing-technician": {
+  "alt": "Technician working across the upper wing surface of an aircraft in a hangar",
+  "width": 1920,
+  "height": 2560,
+  "focal": [
+   0.5,
+   0.55
+  ],
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "lqip": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAwBQCdASoYACAAPu1uqlCppqOiqAqpMB2JZQCsAA/BB01U6PBFBcZ6+HzekV6vIj83gAD+z2Fd3Po4Vb3mo2X0twggFpx39a1eZ1FufU2fp2b/sQkBVTpSvVNmknvVHPgZ7MGarRW04uu8S/uLazTvQfynrBfAAAA=",
+  "source": "Recent-images-by-okconsite-detailing-service06-scaled.webp",
+  "sha256": "43d776161ae12757016116e83d102f26df67c79d7b8f08d47cc3dc59ec62acb7"
+ },
+ "jet-citation-hangar": {
+  "alt": "Citation business jet in a timber-roofed hangar",
+  "width": 2560,
+  "height": 1920,
+  "focal": [
+   0.5,
+   0.6
+  ],
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABwBACdASoYABIAPuVipU2pJiOiMAwBIByJZQC/OCB/3oZ+Mh1dGSJZLQpocAD+6eqTgvEkvPngQSRkFyJbk/KvB5s4hW+93zHN3oG/OHm+omFI8CLpzlwmlRNKr7BZeHrlZOYAAAA=",
+  "source": "Recent-images-by-okconsite-detailing-service08-scaled.webp",
+  "sha256": "94c3550614e5c6d9a4687e0627483ae0cce87b4b6d0c6a7785cd76b3f7e7ee55"
+ },
+ "jet-engine-tech": {
+  "alt": "Detailer finishing the engine nacelle of a business jet",
+  "width": 1000,
+  "height": 750,
+  "focal": [
+   0.6,
+   0.5
+  ],
+  "widths": [
+   480,
+   960,
+   1000
+  ],
+  "lqip": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQBQCdASoYABIAPu1qqU8ppiO2sBgIAtAdiWcAyJgR61ZMSXiKh2ZSWzb9QWfGb/QAAP3ikdLmySIXBNdlkRW6JKIOZyo+sfF9Jqblra6AH6B5aFrmAA==",
+  "source": "Aircraft-Detailing-Oklahoma-City-by-OKC-Onsite-Detailing-5.webp",
+  "sha256": "6c45313a292bf2aad4713ba0534de25b6614da107d34a3437fb9c7c778fc94ad"
+ },
+ "reflection-black-suv": {
+  "alt": "Corrected black paint holding a mirror-sharp reflection of trees and sky",
+  "width": 1440,
+  "height": 1159,
+  "focal": [
+   0.5,
+   0.45
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwBACdASoYABMAPu1oq08ppiOiMBgIATAdiWcAAB3+ugOKytz/1iE6a2q5c28B2cAA4hHb0u7gplp+k7pveObkadWSdBuGTHu7jUOBu5hYcrAi5WJF/gfyzanLUbXo0pAXIy/bs1VsJTyRBAA=",
+  "source": "Paint-Correction-Oklahoma-City-by-OKC-Onsite-Detailing-13.jpg",
+  "sha256": "37a69e44e539c862b76327adfb073bf3de5b58caadc31007df08951a91f05ee8"
+ },
+ "lexus-estate": {
+  "alt": "Black Lexus SUV on a stamped concrete drive after paint correction",
+  "width": 1440,
+  "height": 1159,
+  "focal": [
+   0.5,
+   0.6
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACwBACdASoYABMAPu1qrVCppaQqqAqpUB2JQBbZAby5FsSBswwPQ+jPQ7gTnTEAAM4rMocMbyKP6tl/Vc087kY/4sRbp5RMKQCLLtWsC2tihfkr/ghO+iaCLO/2h60VuvNHtNtMmgIJ2mqFCCaX+0feAcQ2fAAA",
+  "source": "Paint-Correction-Oklahoma-City-by-OKC-Onsite-Detailing-11-1.jpg",
+  "sha256": "430f99b97aeff599f7bb8ebe0454fee2fd55aa5d8c49145d11c6f039be13efbf"
+ },
+ "bentayga-estate": {
+  "alt": "Black Bentley SUV in front of a columned residence",
+  "width": 1440,
+  "height": 1159,
+  "focal": [
+   0.55,
+   0.6
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwBACdASoYABMAPuFipE2opiOiMAwBEBwJYwDBzCHHUf3fumJmY+WpJBSqbUjqDAAA/vN4Cf8vIeZeyuVYtGA6bF67R0bkroqiM5AGEYuHU/0nxyXM78gjYJ0xjJP11Ur5ed7SoYkyP1I/gdRj4q4NdGmcKfJHPCKjpVTAAAA=",
+  "source": "Paint-Correction-Oklahoma-City-by-OKC-Onsite-Detailing-19.jpg",
+  "sha256": "946805bb66c6511d2c88da2f5f6c750eb7d7be3a8a2eaf332f18454fca31ef8f"
+ },
+ "corvette-studio": {
+  "alt": "Red mid-engine Corvette inside the detailing studio",
+  "width": 2048,
+  "height": 1536,
+  "focal": [
+   0.4,
+   0.6
+  ],
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwBACdASoYABIAPu1qq08ppiOiMBgIATAdiWIAACXX3Wa+c6NPRXXqXkCloAD+1CKzD42KsjcDlCxeBKqFqXlbZ8BWWe0HdVx3ai8iS1PQRgvv+NTMr42jYiygdUfjCEUDOt/L5/DxAAAA",
+  "source": "Paint-Correction-Oklahoma-City-by-OKC-Onsite-Detailing-2.jpg",
+  "sha256": "9765f28f198bf9aa53fa85fab7e3defa625bb2a401144c18c93c68951a18754d"
+ },
+ "bentley-burl": {
+  "alt": "Bentley burl-wood console and quilted leather after interior detailing",
+  "width": 1440,
+  "height": 1440,
+  "focal": [
+   0.45,
+   0.55
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAACwBQCdASoYABgAPtFapE2oJaOiN/qoAQAaCWIAtRrru9xIAplwjbTb5sscc+0uQyw9d9eifgAA/uxPNYQpYOq7W2O4z7hOXzRl57D9g88GBeAe6dT+enQoSpzkhUKODmwu7PwVCJEufQ5pqzKQWtuQmJoDuRATSf5IaKjkwrt5+YSsbtcKEzsBq70KAAAA",
+  "source": "Ceramic-Coating-Oklahoma-City-by-OKC-Onsite-Detailing-30.jpg",
+  "sha256": "b71f2d9d70ded146c7ebd751ab3995913c0c3a2c704a38441558e0e2b62246db"
+ },
+ "bentley-wheel": {
+  "alt": "Coated Bentley wheel and red caliper on a wet stamped-concrete drive",
+  "width": 1440,
+  "height": 1439,
+  "focal": [
+   0.5,
+   0.5
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADwBACdASoYABgAPu1qrVCppaQiqAqpMB2JZQAAMURDa9QBEUOU4uGJYwLvK2bTkAAA93y/zYJWNSrune0WlPzi9HClSo9p6cUI/oBH1RhzV6t2mgJxbMLv6hv7Yt5zKF65VitlMcZvFk+GdraJ3cgMiFJm+fR4f5gAAA==",
+  "source": "Ceramic-Coating-Oklahoma-City-by-OKC-Onsite-Detailing-31.jpg",
+  "sha256": "81283a82e1e2c597db5b10d7612a2701ed3457d06a688c38bf23054310ab4e3a"
+ },
+ "bentley-front": {
+  "alt": "White Bentley Continental convertible, front view, after ceramic coating",
+  "width": 1440,
+  "height": 1440,
+  "focal": [
+   0.5,
+   0.55
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAwBQCdASoYABgAPu1qr1CppaQiqAqpMB2JZQCw7BDhSOhUAZSc2HyB27GhuaGrLAeRgAD+Irl9amt3XUpLpwfxHk5+u4su+uPMOHW3UoaPLMenFQ/meIblPOL8NkJH9vsXKv34kIgRQmg4kxnWUvWfQ/Qr/Ddl2fAAAA==",
+  "source": "Ceramic-Coating-Oklahoma-City-by-OKC-Onsite-Detailing-29.jpg",
+  "sha256": "431805d33a936adcf1c5708aeee5be658451f0b8b5becf578243a016b1ee17ad"
+ },
+ "bentley-wheel-wood": {
+  "alt": "Bentley steering wheel in bird's-eye maple and cream leather",
+  "width": 1440,
+  "height": 1440,
+  "focal": [
+   0.5,
+   0.5
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAQBQCdASoYABgAPu1qrVAppiQiqAqpMB2JQBbZAaF7tfxSodLIcWrM6zfRuW4hLuQAAN4THsAMuseANaIhhG+dF5f5GvfBlA2R52W4O29y8rpEzIupM0MDmZvGjMBb3O1PqdTvgscCElMb/OXeESfaZ9pF29SrGKPo0CcxbQPhDNHPw8AAAA==",
+  "source": "Ceramic-Coating-Oklahoma-City-by-OKC-Onsite-Detailing-28.jpg",
+  "sha256": "a90b4b54167df830bf5a370616cec63cbd9e440f12d0c73574284e578b2460bc"
+ },
+ "bentley-quarter": {
+  "alt": "White Bentley Continental, three-quarter view under winter trees",
+  "width": 1440,
+  "height": 1440,
+  "focal": [
+   0.5,
+   0.55
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAACwBACdASoYABgAPu1orE8ppiQiMBgIATAdiWMAsOwGHAHRWQE+Yee/vqhPLcAAAPcYfNKdmXsMboTjHwrPYICH7GEe+lxb54YDz/kzrj9QzVtlHvcqDvllFN0Ha6jfYRE4oWuaH8ouAJj5VNSEL89HvqAAAA==",
+  "source": "Ceramic-Coating-Oklahoma-City-by-OKC-Onsite-Detailing-32-1.jpg",
+  "sha256": "109f1042d1ba5ce77132d96893932842325688d1b8172725ee259bf613faf61f"
+ },
+ "foam-pre-wash": {
+  "alt": "Muscle car covered in pre-wash foam outside the studio bays",
+  "width": 1440,
+  "height": 1440,
+  "focal": [
+   0.5,
+   0.6
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADQBACdASoYABgAPu1mqk2ppaQiMAgBMB2JZQDI1CP5D9Lb5gW4sEXoGaOXYC9RAAD+2scF/jWDBZEuKzkk+XMEsu4y19FnpDWYVIFW2qeNSJLx399JNwB5syo8sRkb88hj1/95pgLAPQorCx4H23MAAAA=",
+  "source": "Ceramic-Coating-Oklahoma-City-by-OKC-Onsite-Detailing-3.jpg",
+  "sha256": "94024fc2e1ec9cc464a711136c4a43a0c70797ebc08e3b59687ac3743d661f82"
+ },
+ "hummer-ev-wash": {
+  "alt": "Technician pressure-rinsing the tailgate of a white electric pickup",
+  "width": 1440,
+  "height": 1800,
+  "focal": [
+   0.5,
+   0.5
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAABwBQCdASoYAB4APu1mqk2ppaQiMAgBMB2JQBYdg2xzAnRwtmqep/SQSXDe29VG1i9yaZbAAP1GV3wyVUEkoQb7NpSlzxSdea0c3ZUBLF5FZLbYI4Ekv4e8PJcUqGRHuwLPMrQKDVkwJ/O1X6I/+DHYTmgNrR6T0rdj/VLrMaescm8BJrYR8U2UbJLBtWI4KB8TQAAA",
+  "source": "Ceramic-Coating-Oklahoma-City-by-OKC-Onsite-Detailing-10.jpg",
+  "sha256": "c05ad6d05d0d837001a4fc1c049393f3af264089b0d11635a77ce8acde33e270"
+ },
+ "jeep-studio": {
+  "alt": "Red Jeep Rubicon inside the studio after ceramic coating",
+  "width": 1440,
+  "height": 1081,
+  "focal": [
+   0.5,
+   0.55
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABQBQCdASoYABIAPuVgpk2pJaOiMAwBIByJZACdMyGDS299YmNqOBkqEXOj8OPuVQOXI8YA/tuZKq1euH1+lMfBdYRbrxDIWHQwjwczYs4SQTnqDGdJ5C4BfNWUeljnFCsi4WBqb4hUVEsAAAA=",
+  "source": "Ceramic-Coating-Oklahoma-City-by-OKC-Onsite-Detailing-23.jpg",
+  "sha256": "b604a5764da0555b9608da8b13cfe9737ce5cf6b3483803d75d10be5a6649dae"
+ },
+ "wheel-hand-detail": {
+  "alt": "Detailer hand-cleaning the wheel of a white Bentley on site",
+  "width": 1440,
+  "height": 1440,
+  "focal": [
+   0.45,
+   0.55
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwBQCdASoYABgAPu1irVCppSQisBgIATAdiWMAsOwPqMwTRXWyZbHk+IO9cAJkB9QooOEAAP0hjj7mJrNHBt1V48DkV8lrfzEB9iEpP2DVXw7Gb7+7egLkkdh5Mwjav//cP/0kkEn1S12mQuGP5M9NVduFnnDKNn/dllJIAAA=",
+  "source": "Mobile-Detailing-Oklahoma-City-by-OKC-Onsite-Detailing-12.jpg",
+  "sha256": "c181fa938b93fcab76978268477013263e753c92c10eab863ddec70eb7a3bb47"
+ },
+ "bronco-estate": {
+  "alt": "Green Ford Bronco detailed on site at a stone residence",
+  "width": 1440,
+  "height": 1085,
+  "focal": [
+   0.45,
+   0.6
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADQBACdASoYABIAPt1Yo02opSMiN/qoARAbiUAToAM7yVCoW0+0PBGKM/OKwxewoAD+6GrWuREpgFfMRsLo7WoKi3Br2jKpJYoJ6L4ki+QL10c4ZLgKoGn5xAyWHiAjCR7bF7MGy/KlnrpHF6Xp6nCCygA=",
+  "source": "Mobile-Detailing-Oklahoma-City-by-OKC-Onsite-Detailing-9.jpg",
+  "sha256": "8fe5269b5b1f4a4fffd54a8d07ed550a0f6dd4b8fa51ff41d5ea77036a8e9575"
+ },
+ "m5-ppf": {
+  "alt": "Grey BMW M5 sedan after paint protection film installation",
+  "width": 2048,
+  "height": 1536,
+  "focal": [
+   0.55,
+   0.6
+  ],
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "lqip": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAQBQCdASoYABIAPu1gq02ppaQiMBgMATAdiUATplmAHjxi41d1nBDg9+PUgh9NA5CAAP5ZlMyBsaUOGkuwIeTQI+eaacSM4MJhpFhAGWu4LMedxkxLGCFbO5ylfx96uuc8Sej6ak745to4dqTxT0Cdg5ENAGtVOAA=",
+  "source": "Paint-Protection-Film-Oklahoma-City-OK-By-Okc-Onsite-Detailing-1.jpg",
+  "sha256": "ffadddb20d4c614a51607bc883fb396e8db465e4752cd002b3891ee9363e362b"
+ },
+ "continental-classic": {
+  "alt": "Black classic Lincoln Continental with deep, reflective paint",
+  "width": 2048,
+  "height": 1536,
+  "focal": [
+   0.5,
+   0.55
+  ],
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQBQCdASoYABIAPt1WpE2opKOiN/qoARAbiWMAgaAI3xbXw5MLxF+74mRxzoEY6JPAAPffXtD+WKF6FpkxVltrs2Fgod+eQVJ8BPSCvhSOuugALSBqvJt7tBMTiCzwh0BmDSR70cX3bLsoQq4fgAAA",
+  "source": "Paint-Protection-Film-Oklahoma-City-OK-By-Okc-Onsite-Detailing-3.jpg",
+  "sha256": "703f2e8ed676e17febef106de8e8a367ffe96aeb24414e303362354902f9a813"
+ },
+ "g-wagon-studio": {
+  "alt": "White Mercedes G-Class in front of the studio bay",
+  "width": 1536,
+  "height": 2048,
+  "focal": [
+   0.5,
+   0.6
+  ],
+  "widths": [
+   480,
+   960,
+   1536
+  ],
+  "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADQBACdASoYACAAPu1irVCppSQisBgIATAdiWMAv+xV+UteWwht7HDzjaZFiCH4QADQuIaUmB0wIp/yYhno/LdAPvVuiTSEi4gzE4Qhy1TUwEOMjdDXdYTTMJBDrmO12jKKkBeqdRnaungLTuOXZlM25nH2AAAA",
+  "source": "Paint-Protection-Film-Oklahoma-City-OK-By-Okc-Onsite-Detailing-4.jpg",
+  "sha256": "5fa529857dee4a6cd3b28a90ab5f083dbc57b74df99fdd30509c701199ce2dd9"
+ },
+ "lamborghini-satin": {
+  "alt": "Satin-grey Lamborghini Huracán, front three-quarter view",
+  "width": 2048,
+  "height": 1536,
+  "focal": [
+   0.55,
+   0.55
+  ],
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "lqip": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQBQCdASoYABIAPu1iqE4ppaOiMAgBMB2JYwDImB03HQofN0hHEQ8Z+3qebpGOj6ugAP2eNEV2l7xNGetBtbTbvQDyftVjY2nX7rTiFDAp/CkocgEllzDE7YRZFOQn8uBYWmm6rUAAAA==",
+  "source": "Window-Tinting-Oklahoma-City-by-OKC-Onsite-Detailing-15.jpg",
+  "sha256": "f651c9f03c4e2a16a82043f9f0ebfb57061efe4b378449c1d681e2c468171146"
+ },
+ "mclaren-white": {
+  "alt": "White McLaren with tinted glass, close three-quarter view",
+  "width": 2048,
+  "height": 1536,
+  "focal": [
+   0.5,
+   0.5
+  ],
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "lqip": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQBQCdASoYABIAPuVepk2pJSOiN/VYASAciWcAxNgQPstG2lw1F/WdevfTkdkQweYAAP68kCxGpYTm7/2J9UB0DKpidL+5pZahkelnboG/zu7gRUabQaYiWfg2DnAh9lsbJ4a2f5AoRUAfO+/TQEd2AAA=",
+  "source": "Window-Tinting-Oklahoma-City-by-OKC-Onsite-Detailing-5.jpg",
+  "sha256": "a7136ec70de584a333ca4aff7b5acb4ca2da97b4c001436f075748d895473ab4"
+ },
+ "mclaren-studio": {
+  "alt": "White McLaren in front of the studio after protection film",
+  "width": 1686,
+  "height": 1536,
+  "focal": [
+   0.5,
+   0.6
+  ],
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQBACdASoYABYAPu1kqk6ppaOiKA1RMB2JZwDA3BEBRIJH6069XtQCyC4XaGyogADiAvXcvfpbDKzLJDQDaTA0/ruhlDFXCNw1p36exYtF8f5BnVR51n/CP3PuXXzvu4K/kvkgrRF6bvtE56lR8YAA",
+  "source": "Paint-Protection-Film-Oklahoma-City-OK-By-Okc-Onsite-Detailing-8-e1723093182266.jpg",
+  "sha256": "2233e2ea4f50728a1864d169c36291e566168978fdfecec1195d66dbaf014efa"
+ },
+ "escalade-tint": {
+  "alt": "Black Cadillac Escalade at dusk with freshly tinted windows",
+  "width": 2048,
+  "height": 1536,
+  "focal": [
+   0.5,
+   0.55
+  ],
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "lqip": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQBACdASoYABIAPuVgpE2pJaMiMAwBIByJZwC3uCHfB5s4izUd4OW8B2J47jcMAAD+ZnhgvRR7qw343DSVcJTt698PD5kCiJUjqywX6sqYYtx9+llYkSuaJBVW4L7TsAA=",
+  "source": "Window-Tinting-Oklahoma-City-by-OKC-Onsite-Detailing-13.jpg",
+  "sha256": "54742e05dd59f99e084a5923161e2265e59ae864c45fecba17cf208565cf762a"
+ },
+ "g-wagon-tint": {
+  "alt": "White Mercedes G-Class with tinted windows outside the studio",
+  "width": 1440,
+  "height": 1166,
+  "focal": [
+   0.5,
+   0.6
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACQBACdASoYABMAPu1sqlCppiOiqA1RMB2JZQC7AA64IKsclcXjn6j0kPhEA0AA/hk2Zt+7Vp9ZfH7iJmCxwpos7BdnvNdZE6qjlRkarNMvAuxm+tVK0VpuCO2Nce1FewTINjSEPOkt1RuesAAAAA==",
+  "source": "Window-Tinting-Oklahoma-City-by-OKC-Onsite-Detailing-10.jpg",
+  "sha256": "db2980404f3031732cbeeb02242351b0f7508964f0e67bf0fc7c4ed837c013cf"
+ },
+ "malibu-flake": {
+  "alt": "Close view of teal metal-flake gelcoat on a Malibu wake boat",
+  "width": 1440,
+  "height": 1080,
+  "focal": [
+   0.5,
+   0.5
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAACQBACdASoYABIAPuFipE2opiOiN/VYARAcCWYAs4AO995UW4WeOrB+4Atf4oAA9b/9rLERYHE+VRHWeTqUOPFnq87NYVuk3o6KWCkJEi9Mh8vQLVLUrzIWoPiBHUd9cpHZRsadNEMG7Q8s6tH+feBosLc4AA==",
+  "source": "Boat-Detailing-Oklahoma-City-by-OKC-Onsite-Detailing-13.jpg",
+  "sha256": "12182b577d042ce3c8db52d014fc5aa06771313ecd5504b48fed54a12bd35690"
+ },
+ "malibu-trailer": {
+  "alt": "Teal Malibu wake boat on its trailer after a full detail",
+  "width": 1440,
+  "height": 1080,
+  "focal": [
+   0.5,
+   0.6
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAwBQCdASoYABIAPu1sq08ppqOiMBgIATAdiUAVJPHYFMrs8C98d95vUXJeETqZaCcgAAD+xYHo0dDZ6HSOgFfpu8HrNNM3Q4h0MkN3fQumYUrHd+sXQiNXhPt+dc18tcATwXpRmUaBd3B1L5exdPj82zYhq5K5wNCb1gAA",
+  "source": "Boat-Detailing-Oklahoma-City-by-OKC-Onsite-Detailing-12.jpg",
+  "sha256": "aeb3e03834d0b2390067d7982a8439d7d88e8fd4388f12b5a31977d1177345b5"
+ },
+ "lsv-purple": {
+  "alt": "Violet metal-flake hull of a Malibu LSV catching studio light",
+  "width": 1440,
+  "height": 1440,
+  "focal": [
+   0.55,
+   0.5
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAwBQCdASoYABgAPu1mqk8ppaOiKA1RMB2JagC/avIBb0Ehu2LpqHFU3Lb4OaVvFQWEAAD+X870XhSOGcWlVpDi94+fjyFbkGVUKoqWTBw/kgKbnFeYHhxFLryWyrHxRaUYhhFfmEaOkQ6kLm4uDyVR7vz5z6lDAJxqVkHp+ofbnykW2iIXXPyjKMxGXUCm6vC60AAA",
+  "source": "Boat-Detailing-Oklahoma-City-by-OKC-Onsite-Detailing-33.webp",
+  "sha256": "77a5fdb1649ebae3225b0678ea09ce5fbc887f68605f7489bb553d99cddb88a8"
+ },
+ "boat-interior": {
+  "alt": "Clean wake boat cockpit upholstery and flooring",
+  "width": 1440,
+  "height": 1085,
+  "focal": [
+   0.5,
+   0.55
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAACwBACdASoYABIAPu1qrlCppaQiqAqpMB2JYwCsAAaq6sMLoPwl5KvKaKn7m9EAAM0wlmyR0pgKe8v/DkLV91va7VeotsxcndKMHS9d/xGPmM2cWozOHFZxAGgvalSqbqKKKCDW4M62bjuS6m/Yl3NF3zAAAA==",
+  "source": "Boat-Detailing-Oklahoma-City-by-OKC-Onsite-Detailing-17.jpg",
+  "sha256": "df8985b68d3195ced901daad75f20286fa045df29b0a553c6d90f446c72d8e56"
+ },
+ "boat-bow-reflection": {
+  "alt": "Wake boat bow lounge reflected in a polished dark deck",
+  "width": 1440,
+  "height": 1440,
+  "focal": [
+   0.5,
+   0.45
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAwBQCdASoYABgAPtFYok2oJaMiN+gBABoJZgCdMoLTEA3qpCvLC7uyiiNtnNoF+QEwAAD+7WEWyJLfAA/s04basr5TWfknLmhQCpPRBX7PjqjAGEtHCtgF4IpaIs7kOuURcHesw4dxxe8HniYFbufAgQnIJy6sGJXd5vEXmzTtGvVup6/93bXamFA57mFnOsxdOMQA",
+  "source": "Boat-Detailing-Oklahoma-City-by-OKC-Onsite-Detailing-26.jpg",
+  "sha256": "de35ff30109b6f0a703dd6591c67d347dd310324c098fe6fa94ff3e2d6bc22e8"
+ },
+ "fifth-wheel": {
+  "alt": "Jayco fifth-wheel trailer after exterior detailing and fibreglass restoration",
+  "width": 1440,
+  "height": 1086,
+  "focal": [
+   0.5,
+   0.6
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQBQCdASoYABIAPulkpU2pJiOiMAwBIB0JYwDDVSABp3DVsGt87Tq/TUCv1H4wcwoAAP7x0rjbdlIlFSyi4bsm0GYEvf5nhJ+8ndItEOGoPAYOKgyVTtWF6irIJwFaVWKfDY3ed+RX46PP5/H1Kmf93dJNX5AA",
+  "source": "RV-Detailing-Oklahoma-City-by-OKC-Onsite-Detailing-4.jpg",
+  "sha256": "a9cc7b17f9b35493804693e5e93f4045d2c4258540aa47734131f45c2a25c2f5"
+ },
+ "coach-polish": {
+  "alt": "Luxury motorcoach with polished cap and graphics",
+  "width": 1536,
+  "height": 2048,
+  "focal": [
+   0.5,
+   0.55
+  ],
+  "widths": [
+   480,
+   960,
+   1536
+  ],
+  "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADQBQCdASoYACAAPu1qrU+ppiQiMBgIATAdiWcAxvQQ6NzxBCPmU1NPSKp9R3K7ObcRxKW6tAAAAN1ppqddwHzKpY7YpEirbXKrbNFuz0/cVyASxynVxF2D8Yoq1iOED1hP9NnWNL9PvCOGtXxnuxL1eNuXNqYWxqqlFPHAAAA=",
+  "source": "RV-Detailing-Oklahoma-City-by-OKC-Onsite-Detailing-18.jpg",
+  "sha256": "4ce1ee73a77075c9c99b0a6f01dc90e383b66625fc5a1a83c7e8f5b77505344d"
+ },
+ "toter-coach": {
+  "alt": "Toter-hauled motorcoach after a full exterior detail",
+  "width": 1200,
+  "height": 982,
+  "focal": [
+   0.5,
+   0.6
+  ],
+  "widths": [
+   480,
+   960,
+   1200
+  ],
+  "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAADwBACdASoYABQAPuVepk2pJSOiMAwBIByJQBdmcmcYBB5FlYUwGb8X1onsioUyrgAA/tOVLvmVes6dew1LRwGdlys+n8PGCcq1IXtoHcJU2nlceaIrAoZ0oTmWDHKw+dXFCkxSRzpAmuQ/FjtnwHZy+VAAAA==",
+  "source": "RV-Detailing-Oklahoma-City-by-OKC-Onsite-Detailing-32.webp",
+  "sha256": "c67463fe531c8495e7c7ecc547b17f680d1b2238c024365b7e9d0739a7d9b0ea"
+ },
+ "combine-detail": {
+  "alt": "Technician detailing a red Case IH combine harvester in a shop",
+  "width": 1440,
+  "height": 1080,
+  "focal": [
+   0.5,
+   0.55
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQBQCdASoYABIAPu1krE+ppSQiMBgIATAdiWMAyJgOy54SR0HaN74qlhpzd8RspcgAAP2UHJd3qYyjRvidplXlbthpYciNaAYg2y9EHXCPLDx0VIMzlFt/edSqhAGkqs6ZAm1VzAhliNn7hS1MHAAA",
+  "source": "RV-Detailing-Oklahoma-City-by-OKC-Onsite-Detailing-15-1.jpg",
+  "sha256": "abdfa39cc1b7f3ac3881f61129ca3f4f64118fd1615284cb4f636bdd4fb02f68"
+ },
+ "combine-cab": {
+  "alt": "Red Case IH combine with restored gloss on its bodywork",
+  "width": 1440,
+  "height": 1080,
+  "focal": [
+   0.5,
+   0.55
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAQBQCdASoYABIAPu1qqU8ppiOjMBgIATAdiWMAxNgR8F+GsvAfvY2PFfvsyf/T6XWAAPEjhbWFzs3NuVEBtY8mjPWsso0LyXsG8AkIROiJ3xO80Y6gHraAEKjbocGw8b0ZO7xWFKe5e6QmQAA=",
+  "source": "RV-Detailing-Oklahoma-City-by-OKC-Onsite-Detailing-12.jpg",
+  "sha256": "fc9627e5b22d0812595c88ce4e77de7100d5a87febce40c149290fef1e4a10ae"
+ },
+ "electric-bus": {
+  "alt": "Battery-electric transit bus livery cleaned and finished",
+  "width": 1440,
+  "height": 1081,
+  "focal": [
+   0.5,
+   0.5
+  ],
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABQBQCdASoYABIAPu1arE2ppKSiMBgMATAdiUAVIqRNgABw8huM0YFqYL2foADJ1uzJb0AA+PBC6T7yr64hjCMqC64yqfdAuj0Wjf/myu7jeLA/DcMUcp0U9KL8mDEjQhmxZhMwjacpTCteDnXMaEacl/D0Q5SXPaEAzQh8TLIWQ2ymAAA=",
+  "source": "RV-Detailing-Oklahoma-City-by-OKC-Onsite-Detailing-20.jpg",
+  "sha256": "708442a139922f51103a62f0a0a3038e4f887890e4245334cf17ee36ea6e4661"
+ },
+ "lincoln-studio": {
+  "alt": "Black classic Lincoln Continental on the studio apron",
+  "width": 2048,
+  "height": 1536,
+  "focal": [
+   0.5,
+   0.55
+  ],
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQBQCdASoYABIAPt1WpE2opKOiN/qoARAbiWMAgaAI3xbXw5MLxF+74mRxzoEY6JPAAPffXtD+WKF6FpkxVltrs2Fgod+eQVJ8BPSCvhSOuugALSBqvJt7tBMTiCzwh0BmDSR70cX3bLsoQq4fgAAA",
+  "source": "Window-Tinting-Oklahoma-City-by-OKC-Onsite-Detailing-14.jpg",
+  "sha256": "703f2e8ed676e17febef106de8e8a367ffe96aeb24414e303362354902f9a813"
+ }
+}

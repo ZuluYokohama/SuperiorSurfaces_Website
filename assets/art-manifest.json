@@ -1,0 +1,60 @@
+{
+ "note": "Deterministic generative vector art. Illustrative only; it does not depict client work.",
+ "pieces": [
+  {
+   "file": "public/art/gloss-field.svg",
+   "generator": "scripts/generate-art.mjs",
+   "params": {
+    "seed": 1517,
+    "lines": 64
+   },
+   "purpose": "Hero and section atmosphere: reflected highlight lines across a curved panel",
+   "bytes": 75610,
+   "sha256": "c4173485cb349daed09affe3743c9aa5e747d9f660e3b6cf52568f09cbac2d9c"
+  },
+  {
+   "file": "public/art/beading.svg",
+   "generator": "scripts/generate-art.mjs",
+   "params": {
+    "seed": 405,
+    "attempts": 2600
+   },
+   "purpose": "Ceramic coating: hydrophobic water behaviour",
+   "bytes": 296726,
+   "sha256": "8db8285fdbdd2fdec8773caf26a60bf1cdd8e55544f5862a37ef5dbafe07846c"
+  },
+  {
+   "file": "public/art/panel-marred.svg",
+   "generator": "scripts/generate-art.mjs",
+   "params": {
+    "seed": 73131,
+    "arcs": 520,
+    "scratches": 18
+   },
+   "purpose": "Paint correction comparison: swirl marring under a point light",
+   "bytes": 60704,
+   "sha256": "96ed7d7cbe2ce8e847f43903c40d081b32a4a6f6ccb56f505301ceaefdf5700c"
+  },
+  {
+   "file": "public/art/panel-corrected.svg",
+   "generator": "scripts/generate-art.mjs",
+   "params": {
+    "seed": 73131
+   },
+   "purpose": "Paint correction comparison: the same light on corrected paint",
+   "bytes": 607,
+   "sha256": "2135431b276e7b7f04ad41ea067c3a278fc1f2da4af25962d0bfee04fec478db"
+  },
+  {
+   "file": "public/art/contours.svg",
+   "generator": "scripts/generate-art.mjs",
+   "params": {
+    "seed": 405434,
+    "rings": 34
+   },
+   "purpose": "Service areas and footer: topographic contour study",
+   "bytes": 153333,
+   "sha256": "21923ef3ee851fe612f8745e670bf1956e50396a8e08352323e96d7e250c7035"
+  }
+ ]
+}

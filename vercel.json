@@ -1,0 +1,15 @@
+{
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/blog/", "destination": "/care-atlas/", "permanent": true },
+    { "source": "/category/:path*", "destination": "/care-atlas/", "permanent": true },
+    { "source": "/thank-you/", "destination": "/contact-us/", "permanent": true },
+    { "source": "/expert-tips-for-maintaining-your-vehicles-sparkle-after-an-okc-onsite-detailing-service/", "destination": "/care-atlas/", "permanent": true },
+    { "source": "/how-auto-detailing-can-get-your-car-ready-for-the-road-again/", "destination": "/mobile-detailing-oklahoma-city-ok/", "permanent": true },
+    { "source": "/protect-your-investment-why-regular-auto-detailing-by-okc-onsite-detailing-llc-is-essential/", "destination": "/ceramic-coating-oklahoma-city-ok/", "permanent": true },
+    { "source": "/shine-like-new-the-magic-of-professional-auto-detailing-with-okc-onsite-detailing-llc/", "destination": "/paint-correction-oklahoma-city-ok/", "permanent": true },
+    { "source": "/the-advantages-of-professional-auto-detailing-why-its-worth-the-investment/", "destination": "/mobile-detailing-oklahoma-city-ok/", "permanent": true },
+    { "source": "/transform-your-vehicle-today-discover-the-okc-onsite-detailing-llc-difference/", "destination": "/", "permanent": true },
+    { "source": "/why-mobile-detailing-by-okc-onsite-detailing-llc-is-the-ultimate-time-saver-for-busy-car-owners/", "destination": "/mobile-detailing-oklahoma-city-ok/", "permanent": true }
+  ]
+}

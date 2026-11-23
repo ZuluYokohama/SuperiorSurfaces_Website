@@ -25,7 +25,7 @@ export default function Home() {
         <div aria-hidden className="absolute inset-0 -z-20 bg-gradient-to-t from-ink via-ink/55 to-ink/20 lg:bg-gradient-to-r lg:from-ink/95 lg:via-ink/50 lg:to-transparent" />
         <Sheen />
         <div className="wrap">
-          <div className="reveal max-w-[44rem]">
+          <div className="max-w-[44rem]">
             <h1>
               <span className="display block text-[length:var(--step-5)]">The standard of care for Oklahoma’s finest machines.</span>
               <span className="mt-5 block text-[length:var(--step-1)] text-bone/80">Aircraft, marine and automotive detailing in Oklahoma City.</span>
@@ -77,10 +77,10 @@ export default function Home() {
           <ol className="grid gap-px overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--line)] sm:grid-cols-2 lg:col-span-7">
             {disciplines.map((d, i) => (
               <li key={d.id} className="bg-paper p-6 md:p-8">
-                <span className="display text-5xl text-signal">0{i + 1}</span>
+                <span className="display text-5xl text-ink/45">0{i + 1}</span>
                 <h3 className="mt-6">
                   <span className="display block text-3xl">{d.label}</span>
-                  <span className="mt-1 block text-[0.8125rem] font-bold text-ink/55">{d.plain}</span>
+                  <span className="mt-1 block text-[0.9375rem] font-medium text-ink/70">{d.plain}</span>
                 </h3>
                 <p className="mt-3 text-[0.95rem] leading-relaxed text-ink/70">{d.gloss}</p>
               </li>
@@ -104,7 +104,7 @@ export default function Home() {
                 <Photo slug="reflection-black-suv" fill sizes="(min-width:1024px) 22vw, 45vw" />
               </figure>
               <figure className="relative aspect-[4/5] overflow-hidden rounded-xl bg-ink">
-                <img src={asset('/art/beading.svg')} alt="" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+                <img src={asset('/art/beading.webp')} alt="" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
                 <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink p-4 text-xs text-bone/80">Still Water: water beads and sheets away. <span className="text-mute">(Illustration)</span></figcaption>
               </figure>
             </div>

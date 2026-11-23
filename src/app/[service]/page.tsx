@@ -15,14 +15,14 @@ import { asset } from '@/lib/asset';
 export const dynamicParams = false;
 
 const signatureArt: Record<string, string> = {
-  's-tint': 'cool-glass.svg',
-  's-ppf': 'second-skin.svg',
-  's-marine': 'waterline.svg',
-  's-aircraft': 'flight-line.svg',
-  's-rv': 'large-format.svg',
-  's-mobile': 'gloss-field.svg',
-  's-ceramic': 'beading.svg',
-  's-correction': 'gloss-field.svg',
+  's-tint': 'cool-glass.webp',
+  's-ppf': 'second-skin.webp',
+  's-marine': 'waterline.webp',
+  's-aircraft': 'flight-line.webp',
+  's-rv': 'large-format.webp',
+  's-mobile': 'gloss-field.webp',
+  's-ceramic': 'beading.webp',
+  's-correction': 'gloss-field.webp',
 };
 export function generateStaticParams() {
   return services.map((s) => ({ service: s.slug }));
@@ -54,7 +54,7 @@ export default async function ServicePage({ params }: Props) {
       <section className="relative isolate overflow-hidden pt-[4.5rem] sm:pt-28 md:pt-32">
         <div aria-hidden className="absolute inset-0 -z-10 bg-cover bg-center opacity-40" style={{ backgroundImage: `url(${asset(`/art/${signatureArt[s.id]}`)})` }} />
         <div className="wrap grid items-end gap-10 pb-16 lg:grid-cols-12 lg:pb-24">
-          <div className="reveal lg:col-span-6">
+          <div className="lg:col-span-6">
             <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: s.name, href: `/${s.slug}/` }]} />
             <Eyebrow className="mt-8">{s.kicker}</Eyebrow>
             <HouseName as="h1" house={s.house} plain={s.title} className="mt-5" houseClassName="text-[length:var(--step-5)]" />
@@ -80,7 +80,7 @@ export default async function ServicePage({ params }: Props) {
           <h2 className="display mt-5 max-w-3xl text-[length:var(--step-4)]">From Oklahoma conditions to the result you keep.</h2>
           <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--line)] md:grid-cols-3">
             <div className="bg-ink-2 p-7">
-              <p className="text-[0.8125rem] font-bold text-signal">Local conditions</p>
+              <p className="font-medium text-mute">Local conditions</p>
               <ul className="mt-5 space-y-4">
                 {story.conditions.map((c) => (
                   <li key={c.id}><p className="font-semibold">{c.label}</p><p className="mt-1 text-sm text-bone/60">{c.gloss}</p></li>
@@ -88,7 +88,7 @@ export default async function ServicePage({ params }: Props) {
               </ul>
             </div>
             <div className="bg-ink-2 p-7">
-              <p className="text-[0.8125rem] font-bold text-signal">What we treat</p>
+              <p className="font-medium text-mute">What we treat</p>
               <ul className="mt-5 space-y-4">
                 {story.mechanisms.map((m) => (
                   <li key={m.id}><p className="font-semibold">{m.label}</p><p className="mt-1 text-sm text-bone/60">{m.gloss}</p></li>
@@ -96,7 +96,7 @@ export default async function ServicePage({ params }: Props) {
               </ul>
             </div>
             <div className="bg-ink-2 p-7">
-              <p className="text-[0.8125rem] font-bold text-signal">The result</p>
+              <p className="font-medium text-mute">The result</p>
               <ul className="mt-5 space-y-4">
                 {story.expressions.map((e) => (
                   <li key={e.id}><p className="display text-2xl text-champagne">{e.label}</p><p className="mt-1 text-sm text-bone/60">{e.gloss}</p></li>
@@ -122,7 +122,7 @@ export default async function ServicePage({ params }: Props) {
           <ol className="grid gap-px overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--line)] sm:grid-cols-2 lg:col-span-8">
             {s.method.map((m, i) => (
               <li key={m.step} className="bg-paper p-7">
-                <span className="text-xs font-bold text-signal">0{i + 1}</span>
+                <span className="text-sm font-medium text-ink/70 tabular-nums">0{i + 1}</span>
                 <h3 className="display mt-3 text-2xl">{m.step}</h3>
                 <p className="mt-2 text-[0.95rem] leading-relaxed text-ink/70">{m.detail}</p>
               </li>
@@ -146,7 +146,7 @@ export default async function ServicePage({ params }: Props) {
 
       {s.id === 's-ceramic' && (
         <section className="relative overflow-hidden py-24 md:py-32">
-          <img src={asset('/art/beading.svg')} alt="" aria-hidden className="absolute inset-0 -z-10 h-full w-full object-cover opacity-70" loading="lazy" />
+          <img src={asset('/art/beading.webp')} alt="" aria-hidden className="absolute inset-0 -z-10 h-full w-full object-cover opacity-70" loading="lazy" />
           <div className="wrap">
             <div className="max-w-xl rounded-2xl border border-[var(--line)] bg-ink/80 p-8 backdrop-blur-md md:p-10">
               <Eyebrow>Self-cleaning behaviour</Eyebrow>
@@ -172,13 +172,13 @@ export default async function ServicePage({ params }: Props) {
                     <span className="display block text-3xl">{p.house}</span>
                     <span className="mt-1 block text-[0.8125rem] font-bold text-mute">{p.name}</span>
                   </h3>
-                  {p.featured && <span className="shrink-0 rounded-full bg-signal px-3 py-1 text-[0.8125rem] font-bold text-white">Most chosen</span>}
+                  {p.featured && <span className="shrink-0 rounded-full border border-champagne/60 px-3 py-1 text-[0.8125rem] font-medium text-champagne">Most chosen</span>}
                 </div>
                 {p.price && <p className="mt-4 text-2xl font-semibold tabular-nums text-champagne">{p.price}</p>}
                 <p className="mt-4 text-sm leading-relaxed text-bone/70">{p.summary}</p>
                 <ul className="mt-6 flex-1 space-y-2.5 border-t border-[var(--line)] pt-6 text-sm">
                   {p.includes.map((i) => (
-                    <li key={i} className="flex gap-3"><span aria-hidden className="mt-2 h-1 w-3 shrink-0 bg-signal" />{i}</li>
+                    <li key={i} className="flex gap-3"><span aria-hidden className="mt-[0.7em] h-px w-3 shrink-0 bg-bone/40" />{i}</li>
                   ))}
                 </ul>
                 {p.note && <p className="mt-6 text-xs text-mute">{p.note}</p>}
@@ -203,7 +203,7 @@ export default async function ServicePage({ params }: Props) {
                 <dl className="mt-8 divide-y divide-[var(--line)] border-y border-[var(--line)] text-[0.82rem]">
                   {s.materials.points.map((pt, i) => (
                     <div key={pt} className="flex gap-6 py-3">
-                      <dt className="w-10 shrink-0 text-signal">{String(i + 1).padStart(2, '0')}</dt>
+                      <dt className="w-10 shrink-0 text-mute tabular-nums">{String(i + 1).padStart(2, '0')}</dt>
                       <dd className="text-bone/85">{pt}</dd>
                     </div>
                   ))}
@@ -239,7 +239,7 @@ export default async function ServicePage({ params }: Props) {
               {s.faq.map((f) => (
                 <details key={f.q} className="group py-6">
                   <summary className="flex cursor-pointer list-none items-start justify-between gap-6 text-lg font-semibold">
-                    {f.q}<span aria-hidden className="mt-1 text-signal transition group-open:rotate-45">+</span>
+                    {f.q}<span aria-hidden className="mt-1 text-ink/50 transition group-open:rotate-45">+</span>
                   </summary>
                   <p className="mt-4 max-w-2xl leading-relaxed text-ink/70">{f.a}</p>
                 </details>

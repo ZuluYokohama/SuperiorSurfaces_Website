@@ -10,7 +10,7 @@
    },
    "purpose": "Hero and section atmosphere: reflected highlight lines across a curved panel",
    "bytes": 75610,
-   "sha256": "c4173485cb349daed09affe3743c9aa5e747d9f660e3b6cf52568f09cbac2d9c"
+   "sha256": "28d817b26a167fc86969dfa148b83d2a4c1271d7fc6a1093387dab5067bf899a"
   },
   {
    "file": "public/art/beading.svg",
@@ -21,7 +21,7 @@
    },
    "purpose": "Ceramic coating: hydrophobic water behaviour",
    "bytes": 296726,
-   "sha256": "8db8285fdbdd2fdec8773caf26a60bf1cdd8e55544f5862a37ef5dbafe07846c"
+   "sha256": "044e2e4d1da5062e7abd62a10ed20d55fc420f7c51a9be50bd2bd874cf298789"
   },
   {
    "file": "public/art/panel-marred.svg",
@@ -33,7 +33,7 @@
    },
    "purpose": "Paint correction comparison: swirl marring under a point light",
    "bytes": 60704,
-   "sha256": "96ed7d7cbe2ce8e847f43903c40d081b32a4a6f6ccb56f505301ceaefdf5700c"
+   "sha256": "b1e6a2d9f02ba579934341b386e7a5df2078b376023dca31847cbd24ca564678"
   },
   {
    "file": "public/art/panel-corrected.svg",
@@ -43,7 +43,7 @@
    },
    "purpose": "Paint correction comparison: the same light on corrected paint",
    "bytes": 607,
-   "sha256": "2135431b276e7b7f04ad41ea067c3a278fc1f2da4af25962d0bfee04fec478db"
+   "sha256": "32a67d796dd2da2a5d666e87c2581d808ea62b86c4154af05d7342e7cb0960ba"
   },
   {
    "file": "public/art/cool-glass.svg",
@@ -53,7 +53,7 @@
    },
    "purpose": "Cool Glass (window tint): infrared lines stopped at a pane",
    "bytes": 56850,
-   "sha256": "e8fa6d801f998bd3992ac63f4efe9d1726d187c2fa374595cddd5d524be91c13"
+   "sha256": "ef62ab143e542da9d31d3d63727ffa12e5e757081f41171201c1bf897a635e9f"
   },
   {
    "file": "public/art/second-skin.svg",
@@ -63,7 +63,7 @@
    },
    "purpose": "Second Skin (PPF): impact ripples dissipating across a membrane",
    "bytes": 13441,
-   "sha256": "607c79a26004880f21e7c244b0a1d4d7454e65614a366bcddca9b818f471608b"
+   "sha256": "c55f3a4c4242500752ebebee5db1f32412c84fab2c91bf84fe70f69b86980330"
   },
   {
    "file": "public/art/waterline.svg",
@@ -74,7 +74,7 @@
    },
    "purpose": "Waterline (marine): interference of light through moving water",
    "bytes": 177738,
-   "sha256": "c3c5c35b1205808a0dc2b236482d9f0b8cafb7c28dbd7f495c4700d44391a778"
+   "sha256": "f23998cb77b3a807739e0e9b07e1d14104cb8b1b48e23bfaaf6ed89e089e9e91"
   },
   {
    "file": "public/art/flight-line.svg",
@@ -84,7 +84,7 @@
    },
    "purpose": "Flight Line (aircraft): laminar streamlines around an airfoil section",
    "bytes": 48384,
-   "sha256": "bed5338d5babb45509b9677ba608923424ecb4c8aaaea03f12fe29c891381e36"
+   "sha256": "0fea15f7e711da7de1501884efc853f3fbb290f9b2169e4b379413f9bb47acb4"
   },
   {
    "file": "public/art/large-format.svg",
@@ -94,7 +94,7 @@
    },
    "purpose": "Large Format (fleet): modular scale study",
    "bytes": 23405,
-   "sha256": "5347fe5f6ce743ff79288ef90fcb273ef2910ae9e0d0bebb01eb4c452d0175a2"
+   "sha256": "264eebd22ab1eeaf3c91b3a399c0dbc004efd7a1000cd579f959f9eb86c1ca8d"
   },
   {
    "file": "public/art/contours.svg",
@@ -105,7 +105,7 @@
    },
    "purpose": "Service areas and footer: topographic contour study",
    "bytes": 153333,
-   "sha256": "21923ef3ee851fe612f8745e670bf1956e50396a8e08352323e96d7e250c7035"
+   "sha256": "e8963a166bbb763f5d66f5c098e83eca02955be22a93fdd5218b05f53fec8462"
   }
  ]
 }

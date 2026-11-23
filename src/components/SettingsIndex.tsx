@@ -46,10 +46,10 @@ export function SettingsIndex({ settings }: { settings: Setting[] }) {
                 aria-current={i === active ? 'true' : undefined}
                 className="group block py-7"
               >
-                <span className={`display block text-[clamp(2.6rem,4.6vw,4.5rem)] transition-colors duration-300 ${i === active ? 'text-bone' : 'text-bone/35 group-hover:text-bone/70'}`}>
+                <span className={`display block text-[clamp(2.6rem,4.6vw,4.5rem)] transition-colors duration-300 ${i === active ? 'text-bone' : 'text-bone/55 group-hover:text-bone/80'}`}>
                   {s.house}
                 </span>
-                <span className={`mt-2 block text-base transition-colors duration-300 ${i === active ? 'text-mute' : 'text-mute/50'}`}>{s.plain}</span>
+                <span className={`mt-2 block text-base transition-colors duration-300 ${i === active ? 'text-mute' : 'text-mute/80'}`}>{s.plain}</span>
               </Link>
             </li>
           ))}

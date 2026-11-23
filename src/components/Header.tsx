@@ -31,7 +31,7 @@ export function Header() {
       </a>
       <div className="wrap flex h-18 items-center justify-between gap-6 py-3">
         <Link href="/" className="shrink-0" aria-label={`${business.name}, home`} onClick={() => setOpen(false)}>
-          <img src={asset('/brand/logo.png')} alt={business.name} width={386} height={137} className="h-9 w-auto md:h-10" />
+          <img src={asset('/brand/logo.png')} alt={business.name} width={386} height={137} fetchPriority="high" decoding="sync" className="h-9 w-auto md:h-10" />
         </Link>
 
         <nav aria-label="Primary" className="hidden items-center gap-8 text-[0.8rem] font-semibold lg:flex">

@@ -2,12 +2,13 @@
 // Every piece is produced from a fixed seed so the output is reproducible and reviewable in git.
 // Parameters are recorded in assets/art-manifest.json. Nothing here depicts a real vehicle or client.
 import { mkdir, writeFile } from 'node:fs/promises';
+import sharp from 'sharp';
 import { createHash } from 'node:crypto';
 
-const BONE = '#ece6da';
+const BONE = '#eceef0';
 const SIGNAL = '#e43224';
 const CHAMPAGNE = '#c9b38a';
-const INK = '#0b0c0e';
+const INK = '#000000';
 
 function rng(seed) {
   let a = seed >>> 0;
@@ -239,6 +240,12 @@ const manifest = [];
 for (const p of pieces) {
   const svg = p.make();
   await writeFile(`public/art/${p.file}`, svg);
+  // Raster twin for backgrounds: complex SVGs are costly to paint on phones, a WebP is not.
+  // The SVG stays the reproducible master; the WebP is derived from it.
+  if (!p.file.startsWith('panel-')) {
+    await sharp(Buffer.from(svg), { density: 144 }).resize({ width: 1600, height: 900, fit: 'cover' }).flatten({ background: INK })
+      .webp({ quality: 72, effort: 6 }).toFile(`public/art/${p.file.replace('.svg', '.webp')}`);
+  }
   manifest.push({ file: `public/art/${p.file}`, generator: 'scripts/generate-art.mjs', params: p.params, purpose: p.purpose, bytes: Buffer.byteLength(svg), sha256: createHash('sha256').update(svg).digest('hex') });
 }
 await writeFile('assets/art-manifest.json', JSON.stringify({ note: 'Deterministic generative vector art. Illustrative only; it does not depict client work.', pieces: manifest }, null, 1));

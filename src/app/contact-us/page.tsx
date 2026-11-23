@@ -37,7 +37,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="wrap mt-20">
-        <Eyebrow>What happens next</Eyebrow>
+        <h2 className="display text-[length:var(--step-3)]">What happens next</h2>
         <div className="mt-8"><Journey /></div>
       </div>
     </section>

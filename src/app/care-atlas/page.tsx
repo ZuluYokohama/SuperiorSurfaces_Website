@@ -19,7 +19,7 @@ export default function Atlas() {
   return (
     <>
       <section className="relative overflow-hidden pt-32 pb-16 md:pt-40">
-        <div aria-hidden className="absolute inset-0 -z-10 bg-cover opacity-80" style={{ backgroundImage: `url(${asset('/art/contours.svg')})` }} />
+        <div aria-hidden className="absolute inset-0 -z-10 bg-cover opacity-80" style={{ backgroundImage: `url(${asset('/art/contours.webp')})` }} />
         <div className="wrap max-w-4xl">
           <Eyebrow>The Care Atlas</Eyebrow>
           <h1 className="display mt-5 text-[clamp(2.8rem,6vw,5.4rem)]">Local conditions. Global discipline.</h1>
@@ -37,7 +37,7 @@ export default function Atlas() {
           <div className="mt-10 grid gap-12 md:grid-cols-2 xl:grid-cols-3">
             {layers.map((l) => (
               <div key={l.id}>
-                <h2 className="display text-3xl"><span className="mr-3 text-sm font-sans font-bold text-signal">{l.scope}</span><br />{l.title}</h2>
+                <h2 className="display text-3xl"><span className="mr-3 text-sm font-sans font-medium text-ink/60">{l.scope}</span><br />{l.title}</h2>
                 <dl className="mt-6 space-y-5">
                   {nodes.filter((n) => n.layer === l.id).map((n) => (
                     <div key={n.id} className="border-t border-[var(--line)] pt-4">

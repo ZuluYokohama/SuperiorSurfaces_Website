@@ -53,7 +53,7 @@ export function ServiceCard({ service, tall }: { service: Service; tall?: boolea
 export function CtaBand({ title = 'Tell us what you’re caring for.', preset }: { title?: string; preset?: string }) {
   return (
     <section className="relative overflow-hidden border-y border-[var(--line)]">
-      <div aria-hidden className="absolute inset-0 bg-cover bg-center opacity-70" style={{ backgroundImage: `url(${asset('/art/gloss-field.svg')})` }} />
+      <div aria-hidden className="absolute inset-0 bg-cover bg-center opacity-70" style={{ backgroundImage: `url(${asset('/art/gloss-field.webp')})` }} />
       <div className="wrap relative flex flex-col items-start gap-8 py-20 md:flex-row md:items-end md:justify-between md:py-28">
         <div>
           <Eyebrow>Complimentary quote</Eyebrow>

@@ -7,7 +7,7 @@ import { asset } from '@/lib/asset';
 export function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-[var(--line)] bg-ink-2">
-      <div aria-hidden className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-60" style={{ backgroundImage: `url(${asset('/art/contours.svg')})` }} />
+      <div aria-hidden className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-60" style={{ backgroundImage: `url(${asset('/art/contours.webp')})` }} />
       <div className="wrap relative grid gap-12 py-16 md:grid-cols-12 md:py-20">
         <div className="md:col-span-4">
           <img src={asset('/brand/logo.png')} alt={business.name} width={386} height={137} className="h-11 w-auto" loading="lazy" />

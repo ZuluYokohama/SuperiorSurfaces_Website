@@ -49,7 +49,7 @@ export default async function SettingPage({ params }: Props) {
       </section>
 
       <section className="relative overflow-hidden border-y border-[var(--line)] bg-ink-2 py-20 md:py-28">
-        <img src={asset(`/art/${st.art}`)} alt="" aria-hidden className="absolute inset-0 h-full w-full object-cover opacity-50" loading="lazy" />
+        <img src={asset(`/art/${st.art.replace('.svg', '.webp')}`)} alt="" aria-hidden className="absolute inset-0 h-full w-full object-cover opacity-50" loading="lazy" />
         <div className="wrap relative">
           <Eyebrow>What matters here</Eyebrow>
           <ul className="mt-10 grid gap-px overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--line)] md:grid-cols-3">

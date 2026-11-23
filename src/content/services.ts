@@ -185,8 +185,8 @@ export const services: Service[] = [
       { house: 'Windscreen', name: 'Windshield', summary: 'Heat and glare reduction from the largest pane, plus UV protection for the dash.', includes: ['Clear or light ceramic film'] },
     ],
     materials: {
-      title: 'Three film grades',
-      body: 'Good: Geoshield Pro Classic dyed film (5–50%), colour-stable and won’t turn purple. Better: Geoshield C2 Carbon (2–50%), with strong heat rejection and a true carbon tone. Best: nano-ceramic film (Pro Nano Ceramic 5–50%, Apex Ceramic 5–70%, Carbon Plus Ceramic 5–75%), offering the highest heat rejection and clarity at any shade.',
+      title: 'Three film grades: dyed, carbon, nano-ceramic',
+      body: 'Dyed: Geoshield Pro Classic (5–50%), colour-stable and won’t turn purple. Carbon: Geoshield C2 Carbon (2–50%), with strong heat rejection and a true carbon tone. Nano-ceramic: Pro Nano Ceramic 5–50%, Apex Ceramic 5–70% and Carbon Plus Ceramic 5–75%, offering the highest heat rejection and clarity at any shade.',
       points: ['Up to 96% infrared heat rejection', '99% UVA protection', 'Zero signal interference', 'Lifetime warranty: no fading, bubbling, peeling or cracking'],
     },
   },

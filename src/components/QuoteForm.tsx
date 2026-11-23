@@ -90,7 +90,7 @@ export function QuoteForm() {
       <div className="mb-8 flex items-center gap-4 text-[0.8125rem] font-bold">
         <span className={step === 1 ? 'text-bone' : 'text-mute'}>01 · Essentials</span>
         <span aria-hidden className="h-px flex-1 bg-[var(--line-strong)]">
-          <span className="block h-px bg-signal transition-all duration-500" style={{ width: step === 1 ? '50%' : '100%' }} />
+          <span className="block h-px bg-bone transition-all duration-500" style={{ width: step === 1 ? '50%' : '100%' }} />
         </span>
         <span className={step === 2 ? 'text-bone' : 'text-mute'}>02 · Details (optional)</span>
       </div>

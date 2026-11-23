@@ -1,3 +1,4 @@
+import { preload } from 'react-dom';
 import images from '@/content/images.generated.json';
 import { asset } from '@/lib/asset';
 
@@ -31,6 +32,8 @@ export function Photo({ slug, sizes = '100vw', className = '', imgClassName = ''
   const set = (ext: string) => r.widths.map((w) => `${asset(`/img/${slug}-${w}.${ext}`)} ${w}w`).join(', ');
   const fallback = asset(`/img/${slug}-${r.widths.includes(960) ? 960 : r.widths[0]}.webp`);
   const position = `${Math.round(r.focal[0] * 100)}% ${Math.round(r.focal[1] * 100)}%`;
+  // Above-the-fold photographs are discovered in the document head, not after CSS and layout.
+  if (priority) preload(fallback, { as: 'image', imageSrcSet: set('avif'), imageSizes: sizes, fetchPriority: 'high', type: 'image/avif' } as Parameters<typeof preload>[1]);
   return (
     <picture className={`${fill ? 'absolute inset-0' : 'block'} ${className}`}>
       <source type="image/avif" srcSet={set('avif')} sizes={sizes} />

@@ -10,6 +10,7 @@ import { services, serviceBySlug } from '@/content/services';
 import { serviceStory } from '@/content/lexicon';
 import { business } from '@/content/business';
 import { faqLd, serviceLd } from '@/content/schema';
+import { asset } from '@/lib/asset';
 
 export const dynamicParams = false;
 
@@ -36,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: { absolute: s.seo.title },
     description: s.seo.description,
     alternates: { canonical: `/${s.slug}/` },
-    openGraph: { title: s.seo.title, description: s.seo.description, images: [{ url: `/img/${s.hero}-960.webp` }] },
+    openGraph: { title: s.seo.title, description: s.seo.description, images: [{ url: asset(`/img/${s.hero}-960.webp`) }] },
   };
 }
 
@@ -51,7 +52,7 @@ export default async function ServicePage({ params }: Props) {
     <>
       {/* Hero */}
       <section className="relative isolate overflow-hidden pt-28 md:pt-32">
-        <div aria-hidden className="absolute inset-0 -z-10 bg-cover bg-center opacity-40" style={{ backgroundImage: `url(/art/${signatureArt[s.id]})` }} />
+        <div aria-hidden className="absolute inset-0 -z-10 bg-cover bg-center opacity-40" style={{ backgroundImage: `url(${asset(`/art/${signatureArt[s.id]}`)})` }} />
         <div className="wrap grid items-end gap-10 pb-16 lg:grid-cols-12 lg:pb-24">
           <div className="reveal lg:col-span-6">
             <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: s.name, href: `/${s.slug}/` }]} />
@@ -145,7 +146,7 @@ export default async function ServicePage({ params }: Props) {
 
       {s.id === 's-ceramic' && (
         <section className="relative overflow-hidden py-24 md:py-32">
-          <img src="/art/beading.svg" alt="" aria-hidden className="absolute inset-0 -z-10 h-full w-full object-cover opacity-70" loading="lazy" />
+          <img src={asset('/art/beading.svg')} alt="" aria-hidden className="absolute inset-0 -z-10 h-full w-full object-cover opacity-70" loading="lazy" />
           <div className="wrap">
             <div className="max-w-xl rounded-2xl border border-[var(--line)] bg-ink/80 p-8 backdrop-blur-md md:p-10">
               <Eyebrow>Self-cleaning behaviour</Eyebrow>

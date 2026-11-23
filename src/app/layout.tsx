@@ -6,6 +6,7 @@ import { ActionBar } from '@/components/ActionBar';
 import { JsonLd } from '@/components/Blocks';
 import { business } from '@/content/business';
 import { organizationLd } from '@/content/schema';
+import { asset } from '@/lib/asset';
 
 export const metadata: Metadata = {
   metadataBase: new URL(business.url),
@@ -15,10 +16,11 @@ export const metadata: Metadata = {
   },
   description:
     'Paint correction, ceramic coating, paint protection film, window tint and mobile detailing for automobiles, aircraft, boats and coaches across Oklahoma City, performed at your home, hangar or marina.',
-  openGraph: { type: 'website', siteName: business.name, images: [{ url: '/brand/og.jpg', width: 1200, height: 630 }] },
+  openGraph: { type: 'website', siteName: business.name, images: [{ url: asset('/brand/og.jpg'), width: 1200, height: 630 }] },
   twitter: { card: 'summary_large_image' },
-  icons: { icon: '/brand/favicon-32.png', apple: '/brand/apple-touch-icon.png' },
+  icons: { icon: asset('/brand/favicon-32.png'), apple: asset('/brand/apple-touch-icon.png') },
   alternates: { canonical: '/' },
+  ...(process.env.NEXT_PUBLIC_NOINDEX === 'true' && { robots: { index: false, follow: false } }),
 };
 
 export const viewport: Viewport = { themeColor: '#0b0c0e', colorScheme: 'dark' };

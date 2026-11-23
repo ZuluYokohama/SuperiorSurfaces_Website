@@ -10,6 +10,7 @@ import { nodes } from '@/content/lexicon';
 import { settings } from '@/content/settings';
 import { practice } from '@/content/register';
 import { ASSETS } from '@/content/assets';
+import { asset } from '@/lib/asset';
 
 const disciplines = nodes.filter((n) => n.layer === 'discipline');
 
@@ -127,7 +128,7 @@ export default function Home() {
                 <Photo slug="reflection-black-suv" fill sizes="(min-width:1024px) 22vw, 45vw" />
               </figure>
               <figure className="relative aspect-[4/5] overflow-hidden rounded-xl bg-ink">
-                <img src="/art/beading.svg" alt="" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+                <img src={asset('/art/beading.svg')} alt="" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
                 <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink p-4 text-xs text-bone/80">Still Water: water beads and sheets away. <span className="text-mute">(Illustration)</span></figcaption>
               </figure>
             </div>
@@ -160,7 +161,7 @@ export default function Home() {
               Clear communication, meticulous attention and prompt responses at every stage, from introduction to handover. Locally owned, licensed and insured.
             </p>
             <div className="mt-8 flex items-center gap-5 rounded-xl border border-[var(--line)] bg-ink p-5">
-              <img src="/brand/undrdog.webp" alt="Undrdog Coatings" width={240} height={154} className="h-14 w-auto" loading="lazy" />
+              <img src={asset('/brand/undrdog.webp')} alt="Undrdog Coatings" width={240} height={154} className="h-14 w-auto" loading="lazy" />
               <p className="text-sm text-bone">Official certified installer, <span className="text-mute">Undrdog Coatings</span></p>
             </div>
           </div>

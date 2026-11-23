@@ -8,6 +8,7 @@ import { Photo } from '@/components/Photo';
 import { settingBySlug, settings } from '@/content/settings';
 import { serviceById } from '@/content/services';
 import { business } from '@/content/business';
+import { asset } from '@/lib/asset';
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -22,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: { absolute: `${st.seo.title} | OKC Onsite Detailing` },
     description: st.seo.description,
     alternates: { canonical: `/settings/${st.slug}/` },
-    openGraph: { images: [{ url: `/img/${st.hero}-960.webp` }] },
+    openGraph: { images: [{ url: asset(`/img/${st.hero}-960.webp`) }] },
   };
 }
 
@@ -48,7 +49,7 @@ export default async function SettingPage({ params }: Props) {
       </section>
 
       <section className="relative overflow-hidden border-y border-[var(--line)] bg-ink-2 py-20 md:py-28">
-        <img src={`/art/${st.art}`} alt="" aria-hidden className="absolute inset-0 h-full w-full object-cover opacity-50" loading="lazy" />
+        <img src={asset(`/art/${st.art}`)} alt="" aria-hidden className="absolute inset-0 h-full w-full object-cover opacity-50" loading="lazy" />
         <div className="wrap relative">
           <Eyebrow>What matters here</Eyebrow>
           <ul className="mt-10 grid gap-px overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--line)] md:grid-cols-3">

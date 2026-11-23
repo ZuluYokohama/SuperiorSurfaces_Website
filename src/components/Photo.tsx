@@ -1,4 +1,5 @@
 import images from '@/content/images.generated.json';
+import { asset } from '@/lib/asset';
 
 type ImageRecord = { alt: string; width: number; height: number; focal: [number, number]; widths: number[]; lqip: string };
 const registry = images as unknown as Record<string, ImageRecord>;
@@ -27,8 +28,8 @@ type Props = {
 
 export function Photo({ slug, sizes = '100vw', className = '', imgClassName = '', priority, alt, fill, treatment = 'documentary' }: Props) {
   const r = imageRecord(slug);
-  const set = (ext: string) => r.widths.map((w) => `/img/${slug}-${w}.${ext} ${w}w`).join(', ');
-  const fallback = `/img/${slug}-${r.widths.includes(960) ? 960 : r.widths[0]}.webp`;
+  const set = (ext: string) => r.widths.map((w) => `${asset(`/img/${slug}-${w}.${ext}`)} ${w}w`).join(', ');
+  const fallback = asset(`/img/${slug}-${r.widths.includes(960) ? 960 : r.widths[0]}.webp`);
   const position = `${Math.round(r.focal[0] * 100)}% ${Math.round(r.focal[1] * 100)}%`;
   return (
     <picture className={`${fill ? 'absolute inset-0' : 'block'} ${className}`}>

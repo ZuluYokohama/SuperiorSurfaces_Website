@@ -2,14 +2,15 @@ import Link from 'next/link';
 import { business } from '@/content/business';
 import { services } from '@/content/services';
 import { areas } from '@/content/areas';
+import { asset } from '@/lib/asset';
 
 export function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-[var(--line)] bg-ink-2">
-      <div aria-hidden className="pointer-events-none absolute inset-0 bg-[url(/art/contours.svg)] bg-cover bg-center opacity-60" />
+      <div aria-hidden className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-60" style={{ backgroundImage: `url(${asset('/art/contours.svg')})` }} />
       <div className="wrap relative grid gap-12 py-16 md:grid-cols-12 md:py-20">
         <div className="md:col-span-4">
-          <img src="/brand/logo.png" alt={business.name} width={386} height={137} className="h-11 w-auto" loading="lazy" />
+          <img src={asset('/brand/logo.png')} alt={business.name} width={386} height={137} className="h-11 w-auto" loading="lazy" />
           <p className="mt-6 max-w-xs text-sm leading-relaxed text-mute">
             Finish Stewardship: detailing, correction and protection for automobiles, aircraft, boats and coaches across Oklahoma City, performed where they live.
           </p>

@@ -7,6 +7,7 @@ import { services } from '@/content/services';
 import { settings } from '@/content/settings';
 import { business } from '@/content/business';
 import { practice } from '@/content/register';
+import { asset } from '@/lib/asset';
 
 export const metadata: Metadata = {
   title: 'The Care Atlas: Oklahoma Conditions to Detailing Disciplines',
@@ -18,7 +19,7 @@ export default function Atlas() {
   return (
     <>
       <section className="relative overflow-hidden pt-32 pb-16 md:pt-40">
-        <div aria-hidden className="absolute inset-0 -z-10 bg-[url(/art/contours.svg)] bg-cover opacity-80" />
+        <div aria-hidden className="absolute inset-0 -z-10 bg-cover opacity-80" style={{ backgroundImage: `url(${asset('/art/contours.svg')})` }} />
         <div className="wrap max-w-4xl">
           <Eyebrow>The Care Atlas</Eyebrow>
           <h1 className="display mt-5 text-[clamp(2.8rem,6vw,5.4rem)]">Local conditions. <em>Global</em> discipline.</h1>

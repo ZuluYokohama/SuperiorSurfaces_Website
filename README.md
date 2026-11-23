@@ -24,6 +24,12 @@ pnpm images         # assets/originals → public/img (+ src/content/images.gene
 pnpm art            # scripts/generate-art.mjs → public/art (+ assets/art-manifest.json)
 ```
 
+## GitHub Pages preview
+
+`.github/workflows/pages.yml` builds and deploys on every push to `main`, served at
+`https://zuluyokohama.github.io/SuperiorSurfaces_Website/`. One-time setup: in the repository, **Settings → Pages → Source: GitHub Actions**.
+The preview sets `NEXT_PUBLIC_BASE_PATH=/<repo>` (all asset paths go through `src/lib/asset.ts`) and `NEXT_PUBLIC_NOINDEX=true`, so it stays out of search results and never competes with the production domain.
+
 ## Where things live
 
 | Path | What |

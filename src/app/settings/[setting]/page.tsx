@@ -48,7 +48,7 @@ export default async function SettingPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="relative overflow-hidden border-y border-[var(--line)] bg-ink-2 py-20 md:py-28">
+      <section className="relative overflow-hidden border-y border-[var(--line)] bg-ink-2 section">
         <img src={asset(`/art/${st.art.replace('.svg', '.webp')}`)} alt="" aria-hidden className="absolute inset-0 h-full w-full object-cover opacity-50" loading="lazy" />
         <div className="wrap relative">
           <Eyebrow>What matters here</Eyebrow>
@@ -64,7 +64,7 @@ export default async function SettingPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="section">
         <div className="wrap">
           <Eyebrow>Recent work, as photographed</Eyebrow>
           <div className="mt-10 snap-row md:mx-0 md:grid md:grid-flow-row md:overflow-visible md:px-0 md:grid-flow-dense md:auto-rows-[17rem] md:grid-cols-3 md:gap-3">
@@ -77,7 +77,7 @@ export default async function SettingPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="border-t border-[var(--line)] py-20 md:py-28">
+      <section className="border-t border-[var(--line)] section">
         <div className="wrap">
           <Eyebrow>The services</Eyebrow>
           <div className="mt-10 snap-row md:mx-0 md:grid md:grid-flow-row md:overflow-visible md:px-0 md:grid-cols-2 md:gap-5 lg:grid-cols-3">
@@ -86,7 +86,7 @@ export default async function SettingPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="paper py-20 md:py-24">
+      <section className="paper section-tight">
         <div className="wrap">
           <Eyebrow>What happens next</Eyebrow>
           <div className="mt-8"><Journey tone="paper" /></div>

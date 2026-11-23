@@ -52,7 +52,7 @@ export default async function ServicePage({ params }: Props) {
     <>
       {/* Hero */}
       <section className="relative isolate overflow-hidden pt-[4.5rem] sm:pt-28 md:pt-32">
-        <div aria-hidden className="absolute inset-0 -z-10 bg-cover bg-center opacity-40" style={{ backgroundImage: `url(${asset(`/art/${signatureArt[s.id]}`)})` }} />
+        <img src={asset(`/art/${signatureArt[s.id]}`)} alt="" aria-hidden fetchPriority="low" decoding="async" className="absolute inset-0 -z-10 h-full w-full object-cover opacity-40" />
         <div className="wrap grid items-end gap-10 pb-16 lg:grid-cols-12 lg:pb-24">
           <div className="lg:col-span-6">
             <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: s.name, href: `/${s.slug}/` }]} />
@@ -74,7 +74,7 @@ export default async function ServicePage({ params }: Props) {
       </section>
 
       {/* Local → global map for this service */}
-      <section className="border-y border-[var(--line)] bg-ink-2 py-20 md:py-28">
+      <section className="border-y border-[var(--line)] bg-ink-2 section">
         <div className="wrap">
           <Eyebrow>Why it matters here</Eyebrow>
           <h2 className="display mt-5 max-w-3xl text-[length:var(--step-4)]">From Oklahoma conditions to the result you keep.</h2>
@@ -112,7 +112,7 @@ export default async function ServicePage({ params }: Props) {
       </section>
 
       {/* Method */}
-      <section className="paper py-20 md:py-28">
+      <section className="paper section">
         <div className="wrap grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <Eyebrow>The method</Eyebrow>
@@ -132,7 +132,7 @@ export default async function ServicePage({ params }: Props) {
       </section>
 
       {s.id === 's-correction' && (
-        <section className="py-20 md:py-28">
+        <section className="section">
           <div className="wrap grid items-center gap-12 lg:grid-cols-2">
             <div>
               <Eyebrow>Seeing the difference</Eyebrow>
@@ -145,11 +145,11 @@ export default async function ServicePage({ params }: Props) {
       )}
 
       {s.id === 's-ceramic' && (
-        <section className="relative overflow-hidden py-24 md:py-32">
+        <section className="relative overflow-hidden section">
           <img src={asset('/art/beading.webp')} alt="" aria-hidden className="absolute inset-0 -z-10 h-full w-full object-cover opacity-70" loading="lazy" />
           <div className="wrap">
             <div className="max-w-xl rounded-2xl border border-[var(--line)] bg-ink/80 p-8 backdrop-blur-md md:p-10">
-              <Eyebrow>Self-cleaning behaviour</Eyebrow>
+              <Eyebrow>Self-cleaning behavior</Eyebrow>
               <h2 className="display mt-5 text-[length:var(--step-4)]">Never wax your car again.</h2>
               <p className="mt-5 text-bone/75">A cured coating is hydrophobic: water gathers into tight beads and rolls off, carrying dirt with it. Washing becomes a rinse-and-dry, and the gloss stays deep between visits.</p>
               <p className="mt-4 text-xs text-mute">Background: generated illustration of hydrophobic beading.</p>
@@ -159,7 +159,7 @@ export default async function ServicePage({ params }: Props) {
       )}
 
       {/* Packages */}
-      <section className="py-20 md:py-28">
+      <section className="section">
         <div className="wrap">
           <Eyebrow>Packages &amp; investment</Eyebrow>
           <h2 className="display mt-5 text-[length:var(--step-4)]">Choose your level of care.</h2>
@@ -190,7 +190,7 @@ export default async function ServicePage({ params }: Props) {
       </section>
 
       {s.materials && (
-        <section className="border-y border-[var(--line)] bg-ink-2 py-20 md:py-24">
+        <section className="border-y border-[var(--line)] bg-ink-2 section-tight">
           <div className="wrap grid gap-10 lg:grid-cols-12">
             <div className="lg:col-span-5">
               <Eyebrow>Specification</Eyebrow>
@@ -215,7 +215,7 @@ export default async function ServicePage({ params }: Props) {
       )}
 
       {/* Gallery */}
-      <section className="py-20 md:py-28">
+      <section className="section">
         <div className="wrap">
           <Eyebrow>Recent work</Eyebrow>
           <div className="mt-10 snap-row md:mx-0 md:grid md:grid-flow-row md:overflow-visible md:px-0 md:auto-rows-[16rem] md:grid-cols-3 md:gap-3">
@@ -229,7 +229,7 @@ export default async function ServicePage({ params }: Props) {
       </section>
 
       {s.faq && (
-        <section className="paper py-20 md:py-28">
+        <section className="paper section">
           <div className="wrap grid gap-10 lg:grid-cols-12">
             <div className="lg:col-span-4">
               <Eyebrow>Questions</Eyebrow>
@@ -249,14 +249,14 @@ export default async function ServicePage({ params }: Props) {
         </section>
       )}
 
-      <section className="border-b border-[var(--line)] py-20 md:py-24">
+      <section className="border-b border-[var(--line)] section-tight">
         <div className="wrap">
           <Eyebrow>What happens next</Eyebrow>
           <div className="mt-8"><Journey /></div>
         </div>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="section">
         <div className="wrap">
           <Eyebrow>Often paired with</Eyebrow>
           <div className="mt-10 snap-row md:mx-0 md:grid md:grid-flow-row md:overflow-visible md:px-0 md:grid-cols-3 md:gap-5">

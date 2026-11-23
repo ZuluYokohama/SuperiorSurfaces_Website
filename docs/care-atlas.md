@@ -12,7 +12,7 @@ Triple-digit summers  →  Oxidation & UV fade  →  Protect  →  Ceramic coati
 - **Local**: what is specifically true of Oklahoma: red-dirt dust and wind, triple-digit summers, storm grit and turnpike miles, lake water (Hefner, Arcadia, Thunderbird, Eufaula, Grand Lake), winter brine, the ramp and hangar.
 - **Mechanism**: what that physically does to paint, gelcoat, glass and leather. This is the precise middle vocabulary that signals competence.
 - **Global discipline**: the four-stage grammar used by detailers worldwide: **Decontaminate → Correct → Protect → Preserve**.
-- **Expression**: the result in the owner’s language: optical clarity, depth of gloss, self-cleaning behaviour, factory finish intact, thermal comfort and privacy, a clean cabin, preserved value, time returned.
+- **Expression**: the result in the owner’s language: optical clarity, depth of gloss, self-cleaning behavior, factory finish intact, thermal comfort and privacy, a clean cabin, preserved value, time returned.
 
 ## Honesty rule
 

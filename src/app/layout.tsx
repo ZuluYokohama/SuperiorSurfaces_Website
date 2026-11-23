@@ -26,14 +26,15 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = { themeColor: '#0b0c0e', colorScheme: 'dark' };
 
-// Archivo, Latin subset, width 62–125% and weight 100–900. next/font self-hosts it,
+// Archivo, Latin subset, limited to the ranges the design uses (weight 400–700, width 100–118%):
+// 28 KB instead of 90 KB. next/font self-hosts it,
 // preloads it with the document and applies the deployment base path.
 const archivo = localFont({
   src: './fonts/archivo-latin-wdth.woff2',
   variable: '--font-archivo',
-  weight: '100 900',
+  weight: '400 700',
   display: 'swap',
-  declarations: [{ prop: 'font-stretch', value: '62% 125%' }],
+  declarations: [{ prop: 'font-stretch', value: '100% 118%' }],
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -31,7 +31,7 @@ export default function Atlas() {
       <section className="pb-24">
         <div className="wrap"><ConceptGraph initial="c-red-dirt" /></div>
       </section>
-      <section className="paper py-20 md:py-28">
+      <section className="paper section">
         <div className="wrap">
           <Eyebrow>The full lexicon</Eyebrow>
           <div className="mt-10 grid gap-12 md:grid-cols-2 xl:grid-cols-3">
@@ -51,7 +51,7 @@ export default function Atlas() {
           </div>
         </div>
       </section>
-      <section className="py-20 md:py-28">
+      <section className="section">
         <div className="wrap">
           <Eyebrow>The register</Eyebrow>
           <h2 className="display mt-5 max-w-3xl text-[length:var(--step-4)]">Our words, and what they mean.</h2>

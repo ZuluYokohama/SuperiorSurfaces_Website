@@ -9,9 +9,9 @@ export function CorrectionCompare() {
   return (
     <figure className="relative">
       <div className="relative aspect-square overflow-hidden rounded-2xl border border-[var(--line)]">
-        <img src={asset('/art/panel-corrected.svg')} alt="" className="absolute inset-0 h-full w-full object-cover" />
+        <img src={asset('/art/panel-corrected.svg')} alt="" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0" style={{ clipPath: `inset(0 ${100 - v}% 0 0)` }}>
-          <img src={asset('/art/panel-marred.svg')} alt="" className="absolute inset-0 h-full w-full object-cover" />
+          <img src={asset('/art/panel-marred.svg')} alt="" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
         </div>
         <div aria-hidden className="absolute inset-y-0 w-px bg-bone/70" style={{ left: `${v}%` }}>
           <span className="absolute top-1/2 left-1/2 grid h-10 w-10 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-bone/60 bg-ink/70 text-xs backdrop-blur">⟷</span>

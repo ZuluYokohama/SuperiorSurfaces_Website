@@ -43,7 +43,7 @@ export const business = {
     { step: 'Response', plain: 'A direct reply', detail: 'A real person from the team responds within one business day, by your preferred channel.' },
     { step: 'Survey & Proposal', plain: 'Inspection & written quote', detail: 'We assess condition, recommend only what the surface needs and confirm the price in writing before work begins.' },
     { step: 'The Service', plain: 'The work', detail: 'Performed at your home, office, hangar or marina, on the date and window we agreed.' },
-    { step: 'Handover & Keeping', plain: 'Handover & aftercare', detail: 'A walk-round of the finished work and clear care guidance, so the result keeps its finish between visits.' },
+    { step: 'Handover & Keeping', plain: 'Handover & aftercare', detail: 'A walkthrough of the finished work and clear care guidance, so the result keeps its finish between visits.' },
   ],
   guarantees: ['Free, no-obligation quotes', 'Satisfaction guaranteed', 'Licensed & insured', 'Fully mobile'],
   certifications: [{ name: 'Undrdog Coatings', role: 'Certified installer', logo: '/brand/undrdog.webp' }],

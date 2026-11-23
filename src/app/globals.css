@@ -36,6 +36,9 @@
   --step-3: clamp(1.75rem, 1.45rem + 1.4vw, 2.5rem);
   --step-4: clamp(2.2rem, 1.7rem + 2.4vw, 3.75rem);
   --step-5: clamp(2.8rem, 1.9rem + 4.4vw, 6rem);
+  /* Section rhythm: two spacings only, fluid from phone to desktop. */
+  --space-section: clamp(4.5rem, 3.4rem + 4.6vw, 8rem);
+  --space-tight: clamp(3.5rem, 2.9rem + 2.6vw, 5.5rem);
 }
 
 html {
@@ -81,11 +84,15 @@ body {
 
   /* A quiet, sentence-case label, used only where it tells you something. */
   .eyebrow {
-    display: inline-block;
+    display: block;
     font-size: 0.9375rem; font-weight: 500;
     color: var(--color-mute);
   }
   .paper .eyebrow { color: var(--color-mute-dark); }
+
+  .section { padding-block: var(--space-section); }
+  .section-tight { padding-block: var(--space-tight); }
+  p, li, dd { text-wrap: pretty; }
 
   .rule { border-color: var(--line); }
   .paper { background: var(--color-paper); color: var(--color-ink); --line: rgb(0 0 0 / 0.12); --line-strong: rgb(0 0 0 / 0.3); }

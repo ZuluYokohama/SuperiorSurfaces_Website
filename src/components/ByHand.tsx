@@ -11,7 +11,7 @@ const frames = [
 /** Visible human craft raises perceived value (Fuchs, Schreier & van Osselaer 2015). */
 export function ByHand() {
   return (
-    <section className="py-24 md:py-32">
+    <section className="section">
       <div className="wrap grid gap-12 lg:grid-cols-12">
         <div className="lg:col-span-4 lg:pt-6">
           <Eyebrow>By hand</Eyebrow>

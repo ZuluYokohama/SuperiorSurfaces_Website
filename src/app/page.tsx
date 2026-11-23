@@ -51,7 +51,7 @@ export default function Home() {
       </section>
 
       {/* Settings: the client's world, not a label for the client */}
-      <section aria-labelledby="settings-title" className="py-20 md:py-28 lg:py-36">
+      <section aria-labelledby="settings-title" className="section">
         <div className="wrap">
           <h2 id="settings-title" className="display max-w-3xl text-[length:var(--step-4)]">Wherever your machines live.</h2>
           <p className="lede mt-5">Choose the setting closest to yours. Each one shows the work we do there and what matters to the people who run it.</p>
@@ -65,7 +65,7 @@ export default function Home() {
       <ByHand />
 
       {/* Four disciplines */}
-      <section className="paper py-20 md:py-28 lg:py-32">
+      <section className="paper section">
         <div className="wrap grid gap-14 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <h2 className="display text-[length:var(--step-4)]">Purify. Refine. Seal. Keep.</h2>
@@ -90,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* Light tells the truth */}
-      <section className="border-b border-[var(--line)] bg-ink-2 py-24 md:py-32">
+      <section className="border-b border-[var(--line)] bg-ink-2 section">
         <div className="wrap grid items-center gap-14 lg:grid-cols-2">
           <CorrectionCompare />
           <div>
@@ -114,7 +114,7 @@ export default function Home() {
       </section>
 
       {/* Journey */}
-      <section className="py-24 md:py-28">
+      <section className="section">
         <div className="wrap">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
@@ -127,7 +127,7 @@ export default function Home() {
       </section>
 
       {/* Credentials */}
-      <section className="paper py-24 md:py-28">
+      <section className="paper section">
         <div className="wrap grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <h2 className="display text-[length:var(--step-4)]">Professionalism is paramount.</h2>

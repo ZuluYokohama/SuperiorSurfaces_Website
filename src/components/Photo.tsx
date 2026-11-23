@@ -21,7 +21,7 @@ type Props = {
   /** Fill the parent box (parent must be positioned) instead of using intrinsic ratio. */
   fill?: boolean;
   /**
-   * documentary (default): full colour, as photographed, for any proof of work.
+   * documentary (default): full color, as photographed, for any proof of work.
    * editorial: monochrome display treatment for atmosphere only (CSS filter; the file is untouched).
    */
   treatment?: 'documentary' | 'editorial';

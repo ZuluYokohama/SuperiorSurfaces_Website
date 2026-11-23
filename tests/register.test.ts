@@ -73,3 +73,14 @@ describe('Delegate brief', () => {
     expect(page).not.toContain('delegateItems.map');
   });
 });
+
+describe('Localization', () => {
+  it('uses American English for an Oklahoma audience', () => {
+    const files = ['src/content/services.ts', 'src/content/settings.ts', 'src/content/lexicon.ts', 'src/content/business.ts', 'src/content/areas.ts', 'src/content/delegates.ts', 'assets/photo-selection.json'];
+    for (const f of files) {
+      const text = readFileSync(f, 'utf8');
+      const hit = text.match(/\b(colours?|tyres?|fibres?|fibreglass|neighbour\w*|favour\w*|centre|defence|licence|enquir\w*|behaviour\w*|odour\w*|organis\w*|customis\w*|walk-round|aluminium|whilst)\b/i);
+      expect(hit?.[0], f).toBeUndefined();
+    }
+  });
+});

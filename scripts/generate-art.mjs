@@ -224,7 +224,7 @@ function largeFormat({ seed = 3801, w = 1600, h = 900 } = {}) {
 
 const pieces = [
   { file: 'gloss-field.svg', make: () => glossField(), params: { seed: 1517, lines: 64 }, purpose: 'Hero and section atmosphere: reflected highlight lines across a curved panel' },
-  { file: 'beading.svg', make: () => beading(), params: { seed: 405, attempts: 2600 }, purpose: 'Ceramic coating: hydrophobic water behaviour' },
+  { file: 'beading.svg', make: () => beading(), params: { seed: 405, attempts: 2600 }, purpose: 'Ceramic coating: hydrophobic water behavior' },
   { file: 'panel-marred.svg', make: () => panel({ marred: true }), params: { seed: 73131, arcs: 520, scratches: 18 }, purpose: 'Paint correction comparison: swirl marring under a point light' },
   { file: 'panel-corrected.svg', make: () => panel({ marred: false }), params: { seed: 73131 }, purpose: 'Paint correction comparison: the same light on corrected paint' },
   { file: 'cool-glass.svg', make: () => coolGlass(), params: { seed: 96 }, purpose: 'Cool Glass (window tint): infrared lines stopped at a pane' },

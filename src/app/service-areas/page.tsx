@@ -17,7 +17,7 @@ export default function Areas() {
         <div className="wrap max-w-4xl">
           <Eyebrow>Service areas</Eyebrow>
           <h1 className="display mt-5 text-[clamp(2.8rem,6vw,5.4rem)]">Wherever it lives.</h1>
-          <p className="lede mt-6">We’re fully mobile across Oklahoma City and its neighbouring communities, at the residence, the office, the hangar or the lake.</p>
+          <p className="lede mt-6">We’re fully mobile across Oklahoma City and its neighboring communities, at the residence, the office, the hangar or the lake.</p>
         </div>
       </section>
       <section className="pb-24">

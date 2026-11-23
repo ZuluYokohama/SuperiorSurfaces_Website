@@ -46,10 +46,10 @@ export const nodes: ConceptNode[] = [
   { id: 'm-bonded', layer: 'mechanism', label: 'Bonded contamination', gloss: 'Iron fallout, tar and mineral deposits that a wash alone cannot lift.' },
   { id: 'm-etching', layer: 'mechanism', label: 'Chemical etching', gloss: 'Acids and minerals that sink below the surface and set as permanent marks.' },
   { id: 'm-oxidation', layer: 'mechanism', label: 'Oxidation & UV fade', gloss: 'Chalking paint, clouded gelcoat, faded trim and drying leather.' },
-  { id: 'm-impact', layer: 'mechanism', label: 'Impact damage', gloss: 'Chips that break through clear coat to colour and primer.' },
+  { id: 'm-impact', layer: 'mechanism', label: 'Impact damage', gloss: 'Chips that break through clear coat to color and primer.' },
   { id: 'm-heat', layer: 'mechanism', label: 'Solar heat load', gloss: 'Infrared energy through glass that heats the cabin and ages its materials.' },
   { id: 'm-corrosion', layer: 'mechanism', label: 'Corrosion', gloss: 'Chlorides and moisture attacking metal, brake dust welding to wheels.' },
-  { id: 'm-soil', layer: 'mechanism', label: 'Embedded soil & odour', gloss: 'Fibres and pores holding dirt, bacteria and the smell that comes with them.' },
+  { id: 'm-soil', layer: 'mechanism', label: 'Embedded soil & odor', gloss: 'Fibers and pores holding dirt, bacteria and the smell that comes with them.' },
 
   // Global disciplines
   { id: 'd-decon', layer: 'discipline', label: 'Purify', plain: 'Decontaminate', gloss: 'Remove everything on and in the surface: foam pre-wash, contact wash, iron and clay treatment, extraction.' },
@@ -69,8 +69,8 @@ export const nodes: ConceptNode[] = [
 
   // Expressions
   { id: 'e-clarity', layer: 'expression', label: 'Optical clarity', gloss: 'Reflections that stay sharp to the edge of every panel.' },
-  { id: 'e-depth', layer: 'expression', label: 'Depth of gloss', gloss: 'Colour that reads deep and wet, not flat.' },
-  { id: 'e-self-clean', layer: 'expression', label: 'Self-cleaning behaviour', gloss: 'Water beads and sheets away, taking dirt with it.' },
+  { id: 'e-depth', layer: 'expression', label: 'Depth of gloss', gloss: 'Color that reads deep and wet, not flat.' },
+  { id: 'e-self-clean', layer: 'expression', label: 'Self-cleaning behavior', gloss: 'Water beads and sheets away, taking dirt with it.' },
   { id: 'e-integrity', layer: 'expression', label: 'Factory finish intact', gloss: 'Original paint kept unbroken by chips and scratches.' },
   { id: 'e-comfort', layer: 'expression', label: 'Thermal comfort & privacy', gloss: 'A cooler, calmer cabin with less glare.' },
   { id: 'e-hygiene', layer: 'expression', label: 'A clean cabin', gloss: 'Surfaces and fabrics that are clean, not just tidy.' },

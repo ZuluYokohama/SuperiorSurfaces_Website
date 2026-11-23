@@ -11,7 +11,7 @@ export type Setting = {
   matters: { title: string; detail: string }[];
   services: string[]; // service ids, in priority order
   hero: string; // editorial (monochrome) atmosphere image
-  gallery: string[]; // documentary (full-colour) work
+  gallery: string[]; // documentary (full-color) work
   art: string; // generated signature art (public/art)
   seo: { title: string; description: string };
   archetype: {
@@ -69,7 +69,7 @@ export const settings: Setting[] = [
     archetype: {
       objects: ['Bentley, Range Rover, Escalade', 'Family SUVs', 'Weekend cars'],
       reads: 'Principal or spouse; often a house manager or assistant',
-      recommends: 'Neighbours, friends, the house manager’s network',
+      recommends: 'Neighbors, friends, the house manager’s network',
       invests: 'Principal; household manager approves routine visits',
       signal: 'Patrician: quiet wealth, low need for display, values discretion',
       register: 'Understated and warm. Discretion and continuity, no superlatives.',
@@ -105,11 +105,11 @@ export const settings: Setting[] = [
     house: 'At the Lake',
     plain: 'Boat detailing for the lake season',
     asset: 'boat',
-    lede: 'Ready for the first warm weekend and every one after: gelcoat brought back to colour, upholstery restored and the trailer cleaned, before the guests arrive.',
+    lede: 'Ready for the first warm weekend and every one after: gelcoat brought back to color, upholstery restored and the trailer cleaned, before the guests arrive.',
     matters: [
       { title: 'Timed to the season', detail: 'Book before opening weekend, between trips, or before winter storage.' },
       { title: 'Ready to host', detail: 'Upholstery, storage and glass cleaned for a boat full of people.' },
-      { title: 'Colour that lasts the summer', detail: 'Hand wax and protection hold up against sun and lake water.' },
+      { title: 'Color that lasts the summer', detail: 'Hand wax and protection hold up against sun and lake water.' },
     ],
     services: ['s-marine', 's-ceramic'],
     hero: 'boat-bow-reflection',

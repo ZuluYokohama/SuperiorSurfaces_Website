@@ -53,7 +53,7 @@ export function ServiceCard({ service, tall }: { service: Service; tall?: boolea
 export function CtaBand({ title = 'Tell us what you’re caring for.', preset }: { title?: string; preset?: string }) {
   return (
     <section className="relative overflow-hidden border-y border-[var(--line)]">
-      <div aria-hidden className="absolute inset-0 bg-cover bg-center opacity-70" style={{ backgroundImage: `url(${asset('/art/gloss-field.webp')})` }} />
+      <img src={asset('/art/gloss-field.webp')} alt="" aria-hidden loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover opacity-70" />
       <div className="wrap relative flex flex-col items-start gap-8 py-20 md:flex-row md:items-end md:justify-between md:py-28">
         <div>
           <Eyebrow>Complimentary quote</Eyebrow>
@@ -76,9 +76,9 @@ export function JsonLd({ data }: { data: object }) {
 export function Breadcrumbs({ items }: { items: { name: string; href: string }[] }) {
   return (
     <nav aria-label="Breadcrumb" className="text-xs text-mute">
-      <ol className="flex flex-wrap gap-2">
+      <ol className="flex flex-wrap items-center gap-x-2">
         {items.map((it, i) => (
-          <li key={it.href} className="flex gap-2">
+          <li key={it.href} className="flex items-center gap-2">
             {i > 0 && <span aria-hidden>/</span>}
             {i === items.length - 1 ? <span aria-current="page" className="text-bone/80">{it.name}</span> : <Link className="link-u inline-block py-2.5 lg:py-0" href={it.href}>{it.name}</Link>}
           </li>

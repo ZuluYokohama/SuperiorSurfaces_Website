@@ -28,7 +28,7 @@ Across luxury, wealth-management and local-service research, the same pattern re
 
 ### 5. The ending is remembered
 **Evidence:** Kahneman et al. (1993) peak-end rule; a 2024 *Journal of Business Research* study of 5,000+ hotel stays: first, peak and last impressions significantly drive overall satisfaction (first impressions most for staff evaluation).
-**Implication:** Design the first reply and the handover deliberately: walk-round, care guidance, a timed check-in.
+**Implication:** Design the first reply and the handover deliberately: walkthrough, care guidance, a timed check-in.
 
 ### 6. Luxury cues: restraint, craft and exclusivity
 **Evidence:** NN/g luxury principles: exclusivity, quality narrative; luxury brands’ wariness of transactional feel. CXL: core luxury buyers are less price-sensitive than occasional ones; Fibre2Fashion: premium buyers expect *more* clarity, not less.

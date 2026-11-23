@@ -3,7 +3,7 @@
 **Method:** Secondary research (peer-reviewed marketing and consumer-psychology papers, plus practitioner sources), applied to OKC Onsite Detailing’s real portfolio. No primary interviews. | **Date:** 2026-11-23 | **Applied in:** v2.2
 
 ## Executive summary
-The people who buy this work fall into two groups. The most valuable clients (quiet old money, aircraft owners, collectors) respond to **understatement, precision and visible craft**. Loud claims, flashy branding and jargon work against them. The site now speaks to them through **settings** (where their machines live) rather than labels for who they are. It uses a **register** of short, evocative house names, always paired with the plain term. Photographs stay real and in full colour as proof of work. Black-and-white is used only for atmosphere, and generated art is kept strictly abstract.
+The people who buy this work fall into two groups. The most valuable clients (quiet old money, aircraft owners, collectors) respond to **understatement, precision and visible craft**. Loud claims, flashy branding and jargon work against them. The site now speaks to them through **settings** (where their machines live) rather than labels for who they are. It uses a **register** of short, evocative house names, always paired with the plain term. Photographs stay real and in full color as proof of work. Black-and-white is used only for atmosphere, and generated art is kept strictly abstract.
 
 ## Themes
 
@@ -69,7 +69,7 @@ Household managers, chief pilots, assistants and family offices handle vendor co
 | Setting | Objects | Reads the site | Recommends | Invests | Signal profile | Register |
 |---|---|---|---|---|---|---|
 | At the Hangar | Business jets, turboprops | Chief pilot, flight department, EA | Owners at the field, FBO staff | Owner / flight budget | Low status-need, risk-averse | Exact, procedural |
-| At the Estate | Bentley, Range Rover, family SUVs | Principal, spouse, house manager | Neighbours, the house manager's network | Principal | Patrician: discretion | Understated, warm |
+| At the Estate | Bentley, Range Rover, family SUVs | Principal, spouse, house manager | Neighbors, the house manager's network | Principal | Patrician: discretion | Understated, warm |
 | In the Collection | Lamborghini, McLaren, classic Continental | The owner, who researches deeply | Clubs, forums, dealers | Owner | Connoisseur insider; some parvenu | Technical, exact |
 | At the Lake | Wake boats, pontoons | Owner, younger affluent households | Friends on the water, marina, Instagram | Owner | Social, experiential | Bright, seasonal |
 | In the Fleet | Transit buses, coaches, combines | Fleet / operations manager | Peer operators, dealers | Owner / procurement | Rational, uptime-driven | Operational, plain |
@@ -78,7 +78,7 @@ Household managers, chief pilots, assistants and family offices handle vendor co
 - **Patrician / estate:** quiet monochrome atmosphere, discretion and one trusted team. Nothing shouts.
 - **Aviator:** schedule and access first, chemistry second, adjectives never.
 - **Collector:** specification sheets, step counts and unretouched proof.
-- **Lake host:** seasonal timing, readiness to host, colour.
+- **Lake host:** seasonal timing, readiness to host, color.
 - **Fleet principal:** consistency, scale and scheduling.
 - **Delegate:** one printable page that answers the questions they get asked.
 

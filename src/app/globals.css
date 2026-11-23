@@ -39,7 +39,11 @@
   /* Section rhythm: two spacings only, fluid from phone to desktop. */
   --space-section: clamp(4.5rem, 3.4rem + 4.6vw, 8rem);
   --space-tight: clamp(3.5rem, 2.9rem + 2.6vw, 5.5rem);
+  /* Two text tones, both solid (no faded alpha text): primary and secondary. */
+  --text-1: var(--color-bone);
+  --text-2: #a7aeb6; /* 8.9:1 on black, 7.6:1 on hangar */
 }
+.paper { --text-1: #000; --text-2: #4a5058; /* 6.5:1 on primer */ }
 
 html {
   background: var(--color-ink);
@@ -82,13 +86,26 @@ body {
   }
   .display em { font-style: normal; color: inherit; }
 
+  /*
+    Badge & Manual: the type system.
+    Badge  = names (house names, settings, page titles): Archivo wide and tight.
+    Manual = everything else: normal width, six sizes, three weights (400 / 500 / 600), two tones.
+  */
+  .t-h2 { font-family: var(--font-display); font-stretch: 112%; font-weight: 540; font-size: var(--step-4); line-height: 1.02; letter-spacing: -0.022em; text-wrap: balance; }
+  .t-name { font-family: var(--font-display); font-stretch: 118%; font-weight: 520; font-size: var(--step-2); line-height: 1.05; letter-spacing: -0.015em; }
+  .t-h3 { font-size: var(--step-1); font-weight: 600; line-height: 1.3; letter-spacing: -0.005em; }
+  .t-lede { font-size: var(--step-1); line-height: 1.5; max-width: 34em; color: var(--text-1); }
+  .t-body { font-size: var(--step-0); line-height: 1.6; max-width: 65ch; }
+  .t-small { font-size: 0.9375rem; line-height: 1.5; }
+  .tone-2 { color: var(--text-2); }
+  .measure { max-width: 65ch; }
+
   /* A quiet, sentence-case label, used only where it tells you something. */
   .eyebrow {
     display: block;
     font-size: 0.9375rem; font-weight: 500;
-    color: var(--color-mute);
+    color: var(--text-2);
   }
-  .paper .eyebrow { color: var(--color-mute-dark); }
 
   .section { padding-block: var(--space-section); }
   .section-tight { padding-block: var(--space-tight); }
@@ -108,8 +125,7 @@ body {
   .btn-ghost { border: 1px solid var(--line-strong); color: inherit; }
   .btn-ghost:hover { border-color: currentColor; }
 
-  .lede { font-size: var(--step-1); line-height: 1.6; color: rgb(236 238 240 / 0.8); max-width: 38rem; }
-  .paper .lede { color: rgb(0 0 0 / 0.72); }
+  .lede { font-size: var(--step-1); line-height: 1.5; color: var(--text-2); max-width: 34em; }
 
   .link-u { background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size 0.4s var(--ease-out-soft); }
   .link-u:hover { background-size: 100% 1px; }

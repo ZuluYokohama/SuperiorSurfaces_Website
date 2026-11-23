@@ -34,7 +34,7 @@ export default function ForManagers() {
           {items.map((it) => (
             <div key={it.title} className="bg-ink-2 p-6 print:bg-white print:p-3">
               <dt className="font-semibold">{it.title}</dt>
-              <dd className="mt-2 text-sm leading-relaxed text-bone/70 print:text-black/70">{it.detail}</dd>
+              <dd className="mt-2 t-small leading-relaxed tone-2 print:text-black/70">{it.detail}</dd>
             </div>
           ))}
         </dl>
@@ -43,23 +43,23 @@ export default function ForManagers() {
           <div>
             <p className="eyebrow">Contact</p>
             <p className="mt-3 text-xl font-semibold tabular-nums">{business.phone}</p>
-            <p className="text-sm">Call or text · <a className="link-u break-all" href={`mailto:${business.email}`}>{business.email}</a></p>
-            <dl className="mt-4 space-y-1 text-sm text-mute">
+            <p className="t-small">Call or text · <a className="link-u break-all" href={`mailto:${business.email}`}>{business.email}</a></p>
+            <dl className="mt-4 space-y-1 t-small text-mute">
               {business.hours.map((h) => <div key={h.days} className="flex justify-between gap-4"><dt>{h.days}</dt><dd>{h.time}</dd></div>)}
             </dl>
           </div>
           <div>
             <p className="eyebrow">Services</p>
-            <ul className="mt-3 space-y-1 text-sm">
+            <ul className="mt-3 space-y-1 t-small">
               {services.map((s) => <li key={s.slug}>{s.house} <span className="text-mute">· {s.name}</span></li>)}
             </ul>
           </div>
           <div>
             <p className="eyebrow">Where we work</p>
-            <ul className="mt-3 space-y-1 text-sm">
+            <ul className="mt-3 space-y-1 t-small">
               {settings.map((s) => <li key={s.slug}>{s.house} <span className="text-mute">· {s.plain}</span></li>)}
             </ul>
-            <p className="mt-3 text-sm text-mute">Oklahoma City, Edmond, Nichols Hills, Arcadia, Yukon and surrounding areas. Fully mobile.</p>
+            <p className="mt-3 t-small text-mute">Oklahoma City, Edmond, Nichols Hills, Arcadia, Yukon and surrounding areas. Fully mobile.</p>
           </div>
         </div>
 
@@ -67,7 +67,7 @@ export default function ForManagers() {
           <Link href="/contact-us/" className="btn btn-signal">Begin an introduction</Link>
           <a href={business.smsHref} className="btn btn-ghost">Text {business.phone}</a>
         </div>
-        <p className="mt-6 hidden text-xs print:block">{business.legalName} · {business.url}</p>
+        <p className="mt-6 hidden t-small print:block">{business.legalName} · {business.url}</p>
       </div>
     </section>
   );

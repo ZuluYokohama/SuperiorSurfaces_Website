@@ -84,3 +84,16 @@ describe('Localization', () => {
     }
   });
 });
+
+describe('Type system (Badge & Manual)', () => {
+  it('uses solid text tones, a 15px minimum and no bold outside the header, action bar and graph', async () => {
+    const { globSync } = await import('node:fs');
+    const files = globSync('src/**/*.tsx').filter((f: string) => !/Header|ActionBar|ConceptGraph/.test(f));
+    for (const f of files) {
+      const text = readFileSync(f, 'utf8');
+      expect(text.match(/\btext-(bone|ink)\/\d+\b/)?.[0], `${f}: faded text tone`).toBeUndefined();
+      expect(text.match(/\btext-xs\b|\btext-\[0\.(6|7)\d*rem\]/)?.[0], `${f}: text below 15px`).toBeUndefined();
+      expect(text.match(/\bfont-bold\b/)?.[0], `${f}: bold weight`).toBeUndefined();
+    }
+  });
+});

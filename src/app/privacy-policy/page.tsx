@@ -8,7 +8,7 @@ export const metadata: Metadata = { title: 'Privacy Policy', alternates: { canon
 export default function Privacy() {
   return (
     <section className="pt-32 pb-24 md:pt-40">
-      <article className="wrap max-w-3xl space-y-6 text-bone/80 [&_h2]:display [&_h2]:pt-6 [&_h2]:text-3xl [&_h2]:text-bone">
+      <article className="wrap max-w-3xl space-y-6 tone-2 [&_h2]:display [&_h2]:pt-6 [&_h2]:text-3xl [&_h2]:text-bone">
         <Eyebrow>Privacy</Eyebrow>
         <h1 className="display text-5xl text-bone">Privacy policy</h1>
         <p>{business.legalName} (“we”) operates this website. This policy explains what information we receive through it and how we use it.</p>

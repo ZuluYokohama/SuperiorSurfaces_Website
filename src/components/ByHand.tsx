@@ -1,5 +1,4 @@
 import { Photo } from './Photo';
-import { Eyebrow } from './Blocks';
 
 const frames = [
   { slug: 'jet-wing-technician', caption: 'Across the upper wing, by hand' },
@@ -14,9 +13,8 @@ export function ByHand() {
     <section className="section">
       <div className="wrap grid gap-12 lg:grid-cols-12">
         <div className="lg:col-span-4 lg:pt-6">
-          <Eyebrow>By hand</Eyebrow>
-          <h2 className="display mt-5 text-[length:var(--step-4)]">Nothing here is done by a tunnel.</h2>
-          <p className="lede mt-6">
+          <h2 className="t-h2">Done by hand, never by a tunnel</h2>
+          <p className="t-lede tone-2 mt-6">
             Every surface is worked by a person who can see it, feel it and stop when it’s right. These are our technicians, photographed at work, without retouching.
           </p>
         </div>
@@ -24,7 +22,7 @@ export function ByHand() {
           {frames.map((fr, i) => (
             <figure key={fr.slug} className={`relative overflow-hidden rounded-xl ${i === 0 ? 'row-span-2 aspect-[3/4] sm:aspect-auto' : 'aspect-[4/3]'}`}>
               <Photo slug={fr.slug} fill sizes="(min-width:1024px) 30vw, 50vw" />
-              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/90 to-transparent p-4 text-xs text-bone/85">{fr.caption}</figcaption>
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/90 to-transparent p-4 t-small text-[var(--color-bone)]">{fr.caption}</figcaption>
             </figure>
           ))}
         </div>

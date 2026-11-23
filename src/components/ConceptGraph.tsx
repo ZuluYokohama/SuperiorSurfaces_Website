@@ -37,7 +37,7 @@ export function ConceptGraph({ initial = 'c-sun' }: { initial?: string }) {
         type="button"
         onClick={() => setActive(n.id)}
         aria-pressed={isActive}
-        className={`rounded-full border px-3.5 py-2 text-left text-sm transition ${ isActive ? 'border-signal bg-signal text-white' : on ? 'border-champagne/70 text-bone' : 'border-[var(--line)] text-mute' }`}
+        className={`t-small min-h-11 rounded-full border px-3.5 py-2 text-left transition ${ isActive ? 'border-signal bg-signal text-white' : on ? 'border-champagne/70 text-bone' : 'border-[var(--line)] text-mute' }`}
       >
         {n.label}
       </button>
@@ -114,7 +114,7 @@ export function ConceptGraph({ initial = 'c-sun' }: { initial?: string }) {
       <div className="space-y-6 md:hidden">
         {layers.map((l) => (
           <div key={l.id}>
-            <p className="eyebrow mb-3">{l.scope} · {l.title}</p>
+            <p className="t-small tone-2 mb-3">{l.title}</p>
             <div className="flex flex-wrap gap-2">{nodes.filter((n) => n.layer === l.id).map(chip)}</div>
           </div>
         ))}
@@ -124,8 +124,8 @@ export function ConceptGraph({ initial = 'c-sun' }: { initial?: string }) {
         <p className="eyebrow">{layers.find((l) => l.id === current.layer)?.title}</p>
         <p className="display mt-4 text-3xl">{current.label}</p>
         {current.plain && <p className="mt-1 text-[0.8125rem] font-bold text-mute">{current.plain}</p>}
-        <p className="mt-3 text-sm leading-relaxed text-bone/75">{current.gloss}</p>
-        <p className="mt-5 text-xs text-mute">
+        <p className="t-body tone-2 mt-3">{current.gloss}</p>
+        <p className="t-small tone-2 mt-5">
           Connected to {lit.nodes.size - 1} concepts across {new Set([...lit.nodes].map((id) => id[0])).size} layers.
         </p>
         {current.href && (

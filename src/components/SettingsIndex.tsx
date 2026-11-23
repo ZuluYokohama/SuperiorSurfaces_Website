@@ -26,13 +26,13 @@ export function SettingsIndex({ settings }: { settings: Setting[] }) {
               <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-ink/40 to-transparent" />
               <div className="p-5 md:p-6">
                 <h3 className="display text-[length:var(--step-3)]">{s.house}</h3>
-                <p className="mt-2 text-sm text-bone/75">{s.plain}</p>
+                <p className="mt-2 t-small tone-2">{s.plain}</p>
               </div>
             </Link>
           </li>
         ))}
       </ul>
-      <p className="mt-3 text-sm text-mute md:hidden">Swipe to see all five settings.</p>
+      <p className="mt-3 t-small text-mute md:hidden">Swipe to see all five settings.</p>
 
       {/* Desktop */}
       <div className="hidden gap-12 lg:grid lg:grid-cols-12">
@@ -46,10 +46,10 @@ export function SettingsIndex({ settings }: { settings: Setting[] }) {
                 aria-current={i === active ? 'true' : undefined}
                 className="group block py-7"
               >
-                <span className={`display block text-[clamp(2.6rem,4.6vw,4.5rem)] transition-colors duration-300 ${i === active ? 'text-bone' : 'text-bone/55 group-hover:text-bone/80'}`}>
+                <span className={`display block text-[clamp(2.6rem,4.6vw,4.5rem)] transition-colors duration-300 ${i === active ? 'text-[var(--text-1)]' : 'text-[var(--text-2)] group-hover:text-[var(--text-1)]'}`}>
                   {s.house}
                 </span>
-                <span className={`mt-2 block text-base transition-colors duration-300 ${i === active ? 'text-mute' : 'text-mute/80'}`}>{s.plain}</span>
+                <span className={`mt-2 block text-base transition-colors duration-300 text-[var(--text-2)]`}>{s.plain}</span>
               </Link>
             </li>
           ))}
@@ -63,7 +63,7 @@ export function SettingsIndex({ settings }: { settings: Setting[] }) {
                 </div>
               ))}
             </div>
-            <p className="mt-5 max-w-md text-bone/80" aria-live="polite">{st.lede}</p>
+            <p className="mt-5 max-w-md tone-2" aria-live="polite">{st.lede}</p>
           </div>
         </div>
       </div>

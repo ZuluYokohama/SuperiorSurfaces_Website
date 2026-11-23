@@ -20,7 +20,7 @@ export function HouseName({
   return (
     <As className={className}>
       <span className={`display block ${houseClassName}`}>{house}</span>
-      <span className="mt-4 block font-sans text-[length:var(--step-1)] font-normal leading-snug text-mute">{plain}</span>
+      <span className="t-lede tone-2 mt-4 block font-sans font-normal">{plain}</span>
     </As>
   );
 }

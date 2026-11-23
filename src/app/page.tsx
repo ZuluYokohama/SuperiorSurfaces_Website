@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Photo } from '@/components/Photo';
-import { CtaBand, Eyebrow } from '@/components/Blocks';
+import { CtaBand } from '@/components/Blocks';
+import { SectionHead } from '@/components/SectionHead';
 import { Sheen } from '@/components/Sheen';
 import { SettingsIndex } from '@/components/SettingsIndex';
 import { CorrectionCompare } from '@/components/CorrectionCompare';
@@ -28,21 +29,19 @@ export default function Home() {
           <div className="max-w-[44rem]">
             <h1>
               <span className="display block text-[length:var(--step-5)]">The standard of care for Oklahoma’s finest machines.</span>
-              <span className="mt-5 block text-[length:var(--step-1)] text-bone/80">Aircraft, marine and automotive detailing in Oklahoma City.</span>
+              <span className="t-lede mt-5 block font-normal">Aircraft, marine and automotive detailing in Oklahoma City, at your hangar, estate or lake.</span>
             </h1>
-            <p className="mt-5 max-w-xl text-bone/70">
-              At your hangar, estate or lake. Twelve years in the craft, more than 1,500 vehicles, licensed and insured.
-            </p>
+            <p className="t-small tone-2 mt-4">Twelve years in the craft. More than 1,500 vehicles. Licensed and insured.</p>
             <div className="mt-8">
-              <p className="text-[0.9375rem] font-medium text-bone">What are you caring for?</p>
+              <p className="t-small font-medium">What are you caring for?</p>
               <ul className="-mx-5 mt-3 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] md:mx-0 md:flex-wrap md:overflow-visible md:px-0">
                 {ASSETS.map((a) => (
                   <li key={a.id} className="shrink-0">
-                    <Link href={`/contact-us/?asset=${a.id}`} className="inline-flex min-h-11 items-center rounded-full border border-bone/30 bg-ink/40 px-4 text-[0.9375rem] backdrop-blur-sm transition hover:border-signal hover:bg-signal hover:text-white">{a.label}</Link>
+                    <Link href={`/contact-us/?asset=${a.id}`} className="inline-flex min-h-11 items-center rounded-full border border-bone/30 bg-ink/40 px-4 t-small backdrop-blur-sm transition hover:border-signal hover:bg-signal hover:text-white">{a.label}</Link>
                   </li>
                 ))}
               </ul>
-              <p className="mt-5 hidden text-[0.9375rem] text-bone/70 lg:block">
+              <p className="t-small tone-2 mt-5 hidden lg:block">
                 Or speak to the team directly: <a className="link-u font-semibold text-bone" href={business.phoneHref}>call</a> or <a className="link-u font-semibold text-bone" href={business.smsHref}>text {business.phone}</a>.
               </p>
             </div>
@@ -53,11 +52,10 @@ export default function Home() {
       {/* Settings: the client's world, not a label for the client */}
       <section aria-labelledby="settings-title" className="section">
         <div className="wrap">
-          <h2 id="settings-title" className="display max-w-3xl text-[length:var(--step-4)]">Wherever your machines live.</h2>
-          <p className="lede mt-5">Choose the setting closest to yours. Each one shows the work we do there and what matters to the people who run it.</p>
+          <SectionHead id="settings-title" title="Wherever your machines live" intro="Choose the setting closest to yours. Each shows the work we do there and what matters to the people who run it." />
           <div className="mt-10 lg:mt-16"><SettingsIndex settings={settings} /></div>
-          <p className="mt-10 text-[0.9375rem] text-mute">
-            Arranging this for someone else? <Link href="/for-managers/" className="link-u font-semibold text-bone">Read the brief for household and flight offices</Link>.
+          <p className="t-small tone-2 mt-10">
+            Arranging this for someone else? <Link href="/for-managers/" className="link-u font-semibold text-[var(--text-1)]">Read the brief for household and flight offices</Link>.
           </p>
         </div>
       </section>
@@ -66,23 +64,20 @@ export default function Home() {
 
       {/* Four disciplines */}
       <section className="paper section">
-        <div className="wrap grid gap-14 lg:grid-cols-12">
-          <div className="lg:col-span-5">
-            <h2 className="display text-[length:var(--step-4)]">Purify. Refine. Seal. Keep.</h2>
-            <p className="lede mt-6">
-              Four disciplines, always in this order, whatever the surface: a Bentley’s burl-wood console, a wake boat’s metal-flake or a jet’s leading edge.
-            </p>
-            <Link href="/care-atlas/" className="link-u mt-8 inline-block font-semibold">Read the Care Atlas</Link>
-          </div>
-          <ol className="grid gap-px overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--line)] sm:grid-cols-2 lg:col-span-7">
+        <div className="wrap">
+          <SectionHead
+            title="Purify, refine, seal, keep"
+            intro={<>Four disciplines, always in this order, whatever the surface: a Bentley’s burl-wood console, a wake boat’s metal-flake or a jet’s leading edge. <Link href="/care-atlas/" className="link-u font-semibold text-[var(--text-1)]">Read the Care Atlas</Link>.</>}
+          />
+          <ol className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
             {disciplines.map((d, i) => (
-              <li key={d.id} className="bg-paper p-6 md:p-8">
-                <span className="display text-5xl text-ink/45">0{i + 1}</span>
-                <h3 className="mt-6">
-                  <span className="display block text-3xl">{d.label}</span>
-                  <span className="mt-1 block text-[0.9375rem] font-medium text-ink/70">{d.plain}</span>
+              <li key={d.id} className="border-t border-[var(--line-strong)] pt-5">
+                <p className="t-small tone-2 tabular-nums">Step {i + 1}</p>
+                <h3 className="mt-2">
+                  <span className="t-name block">{d.label}</span>
+                  <span className="t-small tone-2 mt-1 block">{d.plain}</span>
                 </h3>
-                <p className="mt-3 text-[0.95rem] leading-relaxed text-ink/70">{d.gloss}</p>
+                <p className="t-body mt-3">{d.gloss}</p>
               </li>
             ))}
           </ol>
@@ -94,9 +89,8 @@ export default function Home() {
         <div className="wrap grid items-center gap-14 lg:grid-cols-2">
           <CorrectionCompare />
           <div>
-            <h2 className="display text-[length:var(--step-4)]">Light tells the truth.</h2>
-            <p className="mt-3 text-mute">Refinement, our paint correction.</p>
-            <p className="lede mt-6">
+            <h2 className="t-h2">Light tells the truth</h2>
+            <p className="t-lede tone-2 mt-6">
               Swirls are microscopic valleys in the clear coat. Under the sun they scatter one bright reflection into a hazy halo. Refinement levels that surface by machine, removing as little as possible, until a light source reads as a single, crisp point again.
             </p>
             <div className="mt-8 grid grid-cols-2 gap-4">
@@ -105,10 +99,10 @@ export default function Home() {
               </figure>
               <figure className="relative aspect-[4/5] overflow-hidden rounded-xl bg-ink">
                 <img src={asset('/art/beading.webp')} alt="" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
-                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink p-4 text-xs text-bone/80">Still Water: water beads and sheets away. <span className="text-mute">(Illustration)</span></figcaption>
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink p-4 t-small text-[var(--color-bone)]">Still Water: water beads and sheets away. Illustration.</figcaption>
               </figure>
             </div>
-            <Link href="/paint-correction-oklahoma-city-ok/" className="btn btn-ghost mt-8">Refinement</Link>
+            <Link href="/paint-correction-oklahoma-city-ok/" className="btn btn-ghost mt-8">See Refinement, our paint correction</Link>
           </div>
         </div>
       </section>
@@ -116,12 +110,7 @@ export default function Home() {
       {/* Journey */}
       <section className="section">
         <div className="wrap">
-          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
-            <div>
-              <h2 className="display max-w-2xl text-[length:var(--step-4)]">Certainty, from introduction to handover.</h2>
-            </div>
-            <p className="max-w-md text-bone/70">No guesswork about who you’re dealing with, what it costs or when it’s done. The price is confirmed in writing before any work begins.</p>
-          </div>
+          <SectionHead title="What happens next" intro="No guesswork about who you’re dealing with, what it costs or when it’s done. The price is confirmed in writing before any work begins." />
           <div className="mt-12"><Journey /></div>
         </div>
       </section>
@@ -130,13 +119,13 @@ export default function Home() {
       <section className="paper section">
         <div className="wrap grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
-            <h2 className="display text-[length:var(--step-4)]">Professionalism is paramount.</h2>
-            <p className="mt-6 text-ink/70">
+            <h2 className="t-h2">Credentials</h2>
+            <p className="t-body tone-2 mt-6">
               Clear communication, meticulous attention and prompt responses at every stage, from introduction to handover. Locally owned, licensed and insured.
             </p>
             <div className="mt-8 flex items-center gap-5 rounded-xl border border-[var(--line)] bg-ink p-5">
               <img src={asset('/brand/undrdog.webp')} alt="Undrdog Coatings" width={240} height={154} className="h-14 w-auto" loading="lazy" />
-              <p className="text-sm text-bone">Official certified installer, <span className="text-mute">Undrdog Coatings</span></p>
+              <p className="t-small text-[var(--color-bone)]">Certified installer, Undrdog Coatings</p>
             </div>
           </div>
           <div className="lg:col-span-8">

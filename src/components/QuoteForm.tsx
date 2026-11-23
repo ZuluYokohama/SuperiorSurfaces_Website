@@ -74,20 +74,20 @@ export function QuoteForm() {
 
   const field = 'mt-2 w-full rounded-lg border border-[var(--line-strong)] bg-transparent px-4 py-3 text-base outline-none transition focus:border-champagne';
   const label = 'block text-[0.9375rem] font-medium text-mute';
-  const chip = 'inline-flex min-h-11 items-center rounded-full border border-[var(--line-strong)] px-4 py-2 text-sm transition peer-checked:border-signal peer-checked:bg-signal peer-checked:text-white peer-focus-visible:outline-2 peer-focus-visible:outline-champagne';
+  const chip = 'inline-flex min-h-11 items-center rounded-full border border-[var(--line-strong)] px-4 py-2 t-small transition peer-checked:border-signal peer-checked:bg-signal peer-checked:text-white peer-focus-visible:outline-2 peer-focus-visible:outline-champagne';
 
   if (state === 'sent') {
     return (
       <div className="rounded-2xl border border-[var(--line)] p-8" role="status">
         <p className="display text-4xl">Thank you. It’s with us.</p>
-        <p className="mt-4 text-bone/75">A member of the team will reply within one business day by your preferred channel. If it’s urgent, call or text {business.phone}.</p>
+        <p className="mt-4 tone-2">A member of the team will reply within one business day by your preferred channel. If it’s urgent, call or text {business.phone}.</p>
       </div>
     );
   }
 
   return (
     <form ref={formRef} key={`${preset.service}-${preset.asset}`} onSubmit={submit}>
-      <div className="mb-8 flex items-center gap-4 text-[0.8125rem] font-bold">
+      <div className="mb-8 flex items-center gap-4 t-small font-semibold">
         <span className={step === 1 ? 'text-bone' : 'text-mute'}>01 · Essentials</span>
         <span aria-hidden className="h-px flex-1 bg-[var(--line-strong)]">
           <span className="block h-px bg-bone transition-all duration-500" style={{ width: step === 1 ? '50%' : '100%' }} />
@@ -180,7 +180,7 @@ export function QuoteForm() {
         </div>
       </div>
 
-      <p className="mt-6 text-xs text-mute" aria-live="polite">
+      <p className="mt-6 t-small text-mute" aria-live="polite">
         {state === 'mailto' && 'Your email app should now be open with the request filled in. Just press send. If nothing opened, call or text us directly.'}
         {state === 'error' && `Something went wrong sending the form. Please call or text ${business.phone}.`}
         {(state === 'idle' || state === 'sending') && (step === 1 ? 'Four quick answers. Details are optional.' : endpoint ? 'We reply within one business day.' : 'Sending opens your email app with everything filled in, ready to send.')}

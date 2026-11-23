@@ -16,7 +16,7 @@ export function ProofBar({ className = '' }: { className?: string }) {
           <dt className="sr-only">{p.label}</dt>
           <dd>
             <span className="display block text-3xl text-champagne md:text-4xl">{p.value}</span>
-            <span className="mt-1 block text-[0.8125rem] font-bold text-mute">{p.label}</span>
+            <span className="mt-1 block t-small font-semibold text-mute">{p.label}</span>
           </dd>
         </div>
       ))}
@@ -37,28 +37,24 @@ export function ServiceCard({ service, tall }: { service: Service; tall?: boolea
         <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
       </div>
       <div className="absolute inset-x-0 bottom-0 p-6">
-        <p className="text-[0.8125rem] font-bold text-champagne">{service.kicker}</p>
-        <h3 className="mt-2">
-          <span className="display block text-3xl">{service.house}</span>
-          <span className="mt-1 block text-xs font-semibold text-bone/60">{service.name}</span>
+        <h3>
+          <span className="t-name block">{service.house}</span>
+          <span className="t-small mt-1 block text-[var(--color-bone)]">{service.name}</span>
         </h3>
-        <p className="mt-2 flex items-center justify-between text-sm text-bone/70">
-          <span>{fromPrice(service)}</span>
-        </p>
+        <p className="t-small mt-2 text-champagne">{fromPrice(service)}</p>
       </div>
     </Link>
   );
 }
 
-export function CtaBand({ title = 'Tell us what you’re caring for.', preset }: { title?: string; preset?: string }) {
+export function CtaBand({ title = 'Tell us what you’re caring for', preset }: { title?: string; preset?: string }) {
   return (
     <section className="relative overflow-hidden border-y border-[var(--line)]">
       <img src={asset('/art/gloss-field.webp')} alt="" aria-hidden loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover opacity-70" />
-      <div className="wrap relative flex flex-col items-start gap-8 py-20 md:flex-row md:items-end md:justify-between md:py-28">
+      <div className="wrap relative flex flex-col items-start gap-8 section md:flex-row md:items-end md:justify-between">
         <div>
-          <Eyebrow>Complimentary quote</Eyebrow>
-          <h2 className="display mt-5 max-w-2xl text-[length:var(--step-4)]">{title}</h2>
-          <p className="mt-4 text-bone/70">Quotes within one business day. Mon–Fri 8–6, Sat 8–3.</p>
+          <h2 className="t-h2 max-w-2xl">{title}</h2>
+          <p className="t-body tone-2 mt-4">Free quotes, answered within one business day. Monday to Friday 8–6, Saturday 8–3.</p>
         </div>
         <div className="flex flex-wrap gap-3">
           <Link href={preset ? `/contact-us/?service=${preset}` : '/contact-us/'} className="btn btn-signal">Request a quote</Link>
@@ -75,12 +71,12 @@ export function JsonLd({ data }: { data: object }) {
 
 export function Breadcrumbs({ items }: { items: { name: string; href: string }[] }) {
   return (
-    <nav aria-label="Breadcrumb" className="text-xs text-mute">
+    <nav aria-label="Breadcrumb" className="t-small tone-2">
       <ol className="flex flex-wrap items-center gap-x-2">
         {items.map((it, i) => (
           <li key={it.href} className="flex items-center gap-2">
             {i > 0 && <span aria-hidden>/</span>}
-            {i === items.length - 1 ? <span aria-current="page" className="text-bone/80">{it.name}</span> : <Link className="link-u inline-block py-2.5 lg:py-0" href={it.href}>{it.name}</Link>}
+            {i === items.length - 1 ? <span aria-current="page" className="text-[var(--text-1)]">{it.name}</span> : <Link className="link-u inline-block py-2.5 lg:py-0" href={it.href}>{it.name}</Link>}
           </li>
         ))}
       </ol>

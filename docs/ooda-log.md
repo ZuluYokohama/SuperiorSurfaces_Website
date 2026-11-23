@@ -52,6 +52,24 @@ Brand rules after the cycles: red accents 2–4 per page (logo and actions only)
 - **Act:** American spelling throughout (content, alt text, docs) with a regression test; `text-wrap: pretty` for body text; a two-value section rhythm (`--space-section`, `--space-tight`, fluid); the two long sentences split; footer label/link and breadcrumb alignment fixed.
 - **Result:** 0 British spellings, 0 single-word last lines in headings and ledes, sections on two shared spacings, no overflow on any of 20 pages; Lighthouse unchanged or better (mobile 92–96 performance, 100 accessibility, best practices and SEO; desktop 100 across the board).
 
+## Cycle 7 — text layout (Badge & Manual) and one more LCP test
+**Observe** (rendered pages, phone and desktop):
+| Measure | Before | After |
+|---|---|---|
+| Distinct font sizes per page | 10–15 | 6–8 |
+| Font weights | 400, 500, 520, 600, 700 | 400, 500, 520–540 (display), 600 |
+| Text nodes under 15 px | 32–133 per page | 0 (home, services, settings) |
+| Faded (semi-transparent) text nodes | 17–42 per page | 0 |
+| Labels stacked above headings | up to 7 per page | 0 |
+
+**Orient:** the subject has two voices — the *badge* on the car and the *owner’s manual* in the glovebox. Names get the badge (Archivo wide); everything else is the manual: normal width, six sizes, three weights, two solid tones, ≤ 65-character lines.
+
+**Act:** type tokens (`t-h2`, `t-name`, `t-h3`, `t-lede`, `t-body`, `t-small`, `tone-2`) with tones defined per surface (`--text-1`, `--text-2`, recalculated on Primer); a single `SectionHead` (heading + short intro, side by side on desktop); headings that carry the information instead of a label plus a slogan (“Packages and prices”, “How the work is done”, “Questions owners ask”); the service “why it matters” box-in-a-box became a three-column comparison; numbered steps only for real sequences (method, disciplines, journey); hero reduced from three text tiers to two; no full stops on headings; a regression test guards tones, minimum size and weights.
+
+**LCP experiment:** `font-display: optional` (hypothesis: the headline’s LCP is the font swap). Result: no change (home 3.4 s). Reverted to `swap` so the brand font always shows. Confirms cycle 5: what remains is Next.js framework script evaluation in the lab model; Speed Index stays 0.9 s.
+
+**Result:** mobile 92–99 performance and 100 accessibility / best practices / SEO on all seven pages measured; desktop 100 across all four categories.
+
 ## Next cycle (not yet done)
 - Lab mobile LCP is 2.7–3.4 s (Speed Index 0.9 s). The remaining lever is less framework JavaScript, e.g. rendering more of each page without client components.
 - Field data: once live on the real domain, watch Core Web Vitals in Search Console and quote starts per page, and A/B test house-name-first vs plain-first headings.

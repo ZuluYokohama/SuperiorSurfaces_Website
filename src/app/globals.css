@@ -1,27 +1,42 @@
 @import 'tailwindcss';
-@import '@fontsource-variable/manrope';
-@import '@fontsource-variable/bodoni-moda';
-@import '@fontsource-variable/bodoni-moda/wght-italic.css';
+@import '@fontsource-variable/archivo/wdth.css';
 
+/*
+  Surface & Light: the palette is taken from the materials of the trade.
+  Lacquer  #000000  the paint is the canvas: true black, so photographs hold their depth
+  Hangar   #14171B  panels and raised surfaces
+  Primer   #E4E7EA  light sections (the undercoat, not a cream)
+  Chrome   #ECEEF0  text on dark
+  Fog      #9AA1A9  secondary text
+  Signal   #E43224  the logo red: primary action only
+  Champagne #C9B38A figures and prices only
+*/
 @theme {
-  --color-ink: #0b0c0e;
-  --color-ink-2: #131518;
-  --color-ink-3: #1c1f23;
-  --color-bone: #ece6da;
-  --color-paper: #f4f0e8;
-  --color-mute: #a39e94;
-  --color-mute-dark: #5f5a52;
+  --color-ink: #000000;
+  --color-ink-2: #14171b;
+  --color-ink-3: #1e2227;
+  --color-bone: #eceef0;
+  --color-paper: #e4e7ea;
+  --color-mute: #9aa1a9;
+  --color-mute-dark: #535a62;
   --color-signal: #e43224;
   --color-champagne: #c9b38a;
-  --font-sans: 'Manrope Variable', ui-sans-serif, system-ui, sans-serif;
-  --font-display: 'Bodoni Moda Variable', 'Didot', Georgia, serif;
+  --font-sans: 'Archivo Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Archivo Variable', ui-sans-serif, system-ui, sans-serif;
   --ease-out-soft: cubic-bezier(0.2, 0.7, 0.1, 1);
 }
 
 :root {
   color-scheme: dark;
-  --line: rgb(236 230 218 / 0.12);
-  --line-strong: rgb(236 230 218 / 0.24);
+  --line: rgb(236 238 240 / 0.12);
+  --line-strong: rgb(236 238 240 / 0.26);
+  /* Type scale: a major third (1.25), fluid between phone and desktop. */
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  --step-1: clamp(1.15rem, 1.08rem + 0.35vw, 1.3rem);
+  --step-2: clamp(1.4rem, 1.25rem + 0.7vw, 1.65rem);
+  --step-3: clamp(1.75rem, 1.45rem + 1.4vw, 2.5rem);
+  --step-4: clamp(2.2rem, 1.7rem + 2.4vw, 3.75rem);
+  --step-5: clamp(2.8rem, 1.9rem + 4.4vw, 6rem);
 }
 
 html {
@@ -30,6 +45,7 @@ html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -38,58 +54,73 @@ html {
 
 body {
   font-family: var(--font-sans);
-  font-feature-settings: 'ss01', 'cv11';
+  font-size: var(--step-0);
+  font-stretch: 100%;
   line-height: 1.6;
+  font-variant-numeric: lining-nums;
 }
 
 ::selection { background: var(--color-signal); color: #fff; }
 
-:focus-visible { outline: 2px solid var(--color-champagne); outline-offset: 3px; border-radius: 2px; }
+:focus-visible { outline: 2px solid var(--color-champagne); outline-offset: 3px; border-radius: 4px; }
 
 @layer components {
-  .wrap { width: min(100% - 2rem, 78rem); margin-inline: auto; }
-  @media (min-width: 768px) { .wrap { width: min(100% - 4rem, 78rem); } }
+  .wrap { width: min(100% - 2.5rem, 80rem); margin-inline: auto; }
+  @media (min-width: 768px) { .wrap { width: min(100% - 5rem, 80rem); } }
+  @media (min-width: 1280px) { .wrap { width: min(100% - 8rem, 84rem); } }
 
+  /* Display: Archivo stretched wide and set tight, like badge and tail lettering. */
   .display {
     font-family: var(--font-display);
-    font-weight: 420;
-    letter-spacing: -0.015em;
-    line-height: 1.02;
-    font-optical-sizing: auto;
+    font-stretch: 118%;
+    font-weight: 520;
+    letter-spacing: -0.025em;
+    line-height: 0.98;
+    text-wrap: balance;
   }
-  .display em { font-style: italic; font-weight: 400; color: var(--color-champagne); }
-  .paper .display em { color: #8a6f3e; }
+  .display em { font-style: normal; color: inherit; }
 
+  /* A quiet, sentence-case label, used only where it tells you something. */
   .eyebrow {
-    display: inline-flex; align-items: center; gap: 0.75rem;
-    font-size: 0.72rem; font-weight: 650; letter-spacing: 0.22em; text-transform: uppercase;
+    display: inline-block;
+    font-size: 0.9375rem; font-weight: 500;
     color: var(--color-mute);
   }
-  .eyebrow::before { content: ''; width: 1.75rem; height: 1px; background: var(--color-signal); }
   .paper .eyebrow { color: var(--color-mute-dark); }
 
   .rule { border-color: var(--line); }
-  .paper { background: var(--color-paper); color: var(--color-ink); --line: rgb(11 12 14 / 0.12); --line-strong: rgb(11 12 14 / 0.3); }
+  .paper { background: var(--color-paper); color: var(--color-ink); --line: rgb(0 0 0 / 0.12); --line-strong: rgb(0 0 0 / 0.3); }
 
   .btn {
     display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem;
-    min-height: 3rem; padding: 0 1.5rem; border-radius: 999px;
-    font-size: 0.82rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
-    transition: background-color 0.3s var(--ease-out-soft), color 0.3s var(--ease-out-soft), border-color 0.3s;
+    min-height: 3rem; padding: 0 1.4rem; border-radius: 0.75rem;
+    font-size: 0.975rem; font-weight: 600;
+    transition: background-color 0.25s var(--ease-out-soft), color 0.25s var(--ease-out-soft), border-color 0.25s;
   }
   .btn-signal { background: var(--color-signal); color: #fff; }
   .btn-signal:hover { background: #c7281b; }
   .btn-ghost { border: 1px solid var(--line-strong); color: inherit; }
   .btn-ghost:hover { border-color: currentColor; }
 
-  .lede { font-size: clamp(1.05rem, 1.4vw, 1.25rem); line-height: 1.65; color: rgb(236 230 218 / 0.78); max-width: 40rem; }
-  .paper .lede { color: rgb(11 12 14 / 0.72); }
+  .lede { font-size: var(--step-1); line-height: 1.6; color: rgb(236 238 240 / 0.8); max-width: 38rem; }
+  .paper .lede { color: rgb(0 0 0 / 0.72); }
 
   .link-u { background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size 0.4s var(--ease-out-soft); }
   .link-u:hover { background-size: 100% 1px; }
 
+  /* Touch rows: swipeable, snapping lists for phones; they become grids at larger sizes. */
+  .snap-row {
+    display: grid; grid-auto-flow: column; grid-auto-columns: 84%;
+    gap: 0.75rem; overflow-x: auto; overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory; scroll-padding-inline: 1.25rem;
+    padding-inline: 1.25rem; margin-inline: -1.25rem;
+    scrollbar-width: none;
+  }
+  .snap-row::-webkit-scrollbar { display: none; }
+  .snap-row > * { scroll-snap-align: start; }
+
   .reveal { animation: rise 0.9s var(--ease-out-soft) both; }
-  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 }
 
 @media print {

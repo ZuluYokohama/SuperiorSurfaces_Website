@@ -34,7 +34,7 @@ export default async function AreaPage({ params }: Props) {
         <div className="wrap max-w-3xl">
           <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Service areas', href: '/service-areas/' }, { name: a.name, href: `/service-areas/${a.slug}/` }]} />
           <Eyebrow className="mt-8">{a.name}, Oklahoma</Eyebrow>
-          <h1 className="display mt-5 text-[clamp(2.6rem,5.6vw,5rem)]">Detailing &amp; protection in <em>{a.name}</em>.</h1>
+          <h1 className="display mt-5 text-[clamp(2.6rem,5.6vw,5rem)]">Detailing &amp; protection in {a.name}.</h1>
           <p className="lede mt-6">{a.note}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/contact-us/" className="btn btn-signal">Request a quote</Link>

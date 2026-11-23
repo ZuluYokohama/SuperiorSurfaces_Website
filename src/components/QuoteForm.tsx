@@ -73,8 +73,8 @@ export function QuoteForm() {
   }
 
   const field = 'mt-2 w-full rounded-lg border border-[var(--line-strong)] bg-transparent px-4 py-3 text-base outline-none transition focus:border-champagne';
-  const label = 'block text-[0.72rem] font-bold uppercase tracking-[0.16em] text-mute';
-  const chip = 'inline-block rounded-full border border-[var(--line-strong)] px-4 py-2 text-sm transition peer-checked:border-signal peer-checked:bg-signal peer-checked:text-white peer-focus-visible:outline-2 peer-focus-visible:outline-champagne';
+  const label = 'block text-[0.9375rem] font-medium text-mute';
+  const chip = 'inline-flex min-h-11 items-center rounded-full border border-[var(--line-strong)] px-4 py-2 text-sm transition peer-checked:border-signal peer-checked:bg-signal peer-checked:text-white peer-focus-visible:outline-2 peer-focus-visible:outline-champagne';
 
   if (state === 'sent') {
     return (
@@ -87,7 +87,7 @@ export function QuoteForm() {
 
   return (
     <form ref={formRef} key={`${preset.service}-${preset.asset}`} onSubmit={submit}>
-      <div className="mb-8 flex items-center gap-4 text-[0.72rem] font-bold uppercase tracking-[0.16em]">
+      <div className="mb-8 flex items-center gap-4 text-[0.8125rem] font-bold">
         <span className={step === 1 ? 'text-bone' : 'text-mute'}>01 · Essentials</span>
         <span aria-hidden className="h-px flex-1 bg-[var(--line-strong)]">
           <span className="block h-px bg-signal transition-all duration-500" style={{ width: step === 1 ? '50%' : '100%' }} />
@@ -109,7 +109,7 @@ export function QuoteForm() {
           </div>
         </fieldset>
         <fieldset className="sm:col-span-2">
-          <legend className={label}>Interested in <span className="normal-case tracking-normal">(optional, we’ll advise)</span></legend>
+          <legend className={label}>Interested in <span className="">(optional, we’ll advise)</span></legend>
           <div className="mt-3 flex flex-wrap gap-2">
             {services.map((s) => (
               <label key={s.slug} className="cursor-pointer">

@@ -16,8 +16,8 @@ export function CorrectionCompare() {
         <div aria-hidden className="absolute inset-y-0 w-px bg-bone/70" style={{ left: `${v}%` }}>
           <span className="absolute top-1/2 left-1/2 grid h-10 w-10 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-bone/60 bg-ink/70 text-xs backdrop-blur">⟷</span>
         </div>
-        <span className="absolute bottom-4 left-4 rounded-full bg-ink/70 px-3 py-1 text-[0.68rem] font-bold uppercase tracking-[0.18em] backdrop-blur">Marred</span>
-        <span className="absolute right-4 bottom-4 rounded-full bg-ink/70 px-3 py-1 text-[0.68rem] font-bold uppercase tracking-[0.18em] backdrop-blur">Corrected</span>
+        <span className="absolute bottom-4 left-4 rounded-full bg-ink/70 px-3 py-1 text-[0.8125rem] font-bold backdrop-blur">Marred</span>
+        <span className="absolute right-4 bottom-4 rounded-full bg-ink/70 px-3 py-1 text-[0.8125rem] font-bold backdrop-blur">Corrected</span>
         <input
           type="range"
           min={0}

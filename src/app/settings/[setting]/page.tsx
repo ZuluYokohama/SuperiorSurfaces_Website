@@ -39,7 +39,7 @@ export default async function SettingPage({ params }: Props) {
         <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-t from-ink via-transparent to-transparent" />
         <div className="wrap max-w-4xl">
           <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: st.house, href: `/settings/${st.slug}/` }]} />
-          <HouseName as="h1" house={st.house} plain={st.plain} className="mt-8" houseClassName="text-[clamp(3.2rem,8vw,7rem)]" />
+          <HouseName as="h1" house={st.house} plain={st.plain} className="mt-8" houseClassName="text-[length:var(--step-5)]" />
           <p className="lede mt-6">{st.lede}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href={`/contact-us/?asset=${st.asset}`} className="btn btn-signal">Begin an introduction</Link>
@@ -67,9 +67,9 @@ export default async function SettingPage({ params }: Props) {
       <section className="py-20 md:py-28">
         <div className="wrap">
           <Eyebrow>Recent work, as photographed</Eyebrow>
-          <div className="mt-10 grid grid-flow-dense auto-rows-[12rem] grid-cols-2 gap-3 md:auto-rows-[17rem] md:grid-cols-3">
+          <div className="mt-10 snap-row md:mx-0 md:grid md:grid-flow-row md:overflow-visible md:px-0 md:grid-flow-dense md:auto-rows-[17rem] md:grid-cols-3 md:gap-3">
             {st.gallery.map((slug, i) => (
-              <figure key={slug} className={`relative overflow-hidden rounded-xl ${i === 0 ? 'row-span-2' : ''}`}>
+              <figure key={slug} className={`relative aspect-[4/5] overflow-hidden rounded-xl md:aspect-auto ${i === 0 ? 'md:row-span-2' : ''}`}>
                 <Photo slug={slug} fill sizes="(min-width:768px) 33vw, 50vw" />
               </figure>
             ))}
@@ -80,7 +80,7 @@ export default async function SettingPage({ params }: Props) {
       <section className="border-t border-[var(--line)] py-20 md:py-28">
         <div className="wrap">
           <Eyebrow>The services</Eyebrow>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 snap-row md:mx-0 md:grid md:grid-flow-row md:overflow-visible md:px-0 md:grid-cols-2 md:gap-5 lg:grid-cols-3">
             {svc.map((s) => <ServiceCard key={s.slug} service={s} />)}
           </div>
         </div>
@@ -91,7 +91,7 @@ export default async function SettingPage({ params }: Props) {
           <Eyebrow>What happens next</Eyebrow>
           <div className="mt-8"><Journey tone="paper" /></div>
           <p className="mt-8 text-sm text-ink/70">
-            Arranging this on someone’s behalf? <Link className="underline" href="/for-managers/">For Household &amp; Flight Offices →</Link>
+            Arranging this on someone’s behalf? <Link className="underline" href="/for-managers/">For Household &amp; Flight Offices</Link>
           </p>
         </div>
       </section>

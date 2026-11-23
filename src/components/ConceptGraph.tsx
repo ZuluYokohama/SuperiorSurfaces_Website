@@ -37,9 +37,7 @@ export function ConceptGraph({ initial = 'c-sun' }: { initial?: string }) {
         type="button"
         onClick={() => setActive(n.id)}
         aria-pressed={isActive}
-        className={`rounded-full border px-3.5 py-2 text-left text-sm transition ${
-          isActive ? 'border-signal bg-signal text-white' : on ? 'border-champagne/70 text-bone' : 'border-[var(--line)] text-mute/60'
-        }`}
+        className={`rounded-full border px-3.5 py-2 text-left text-sm transition ${ isActive ? 'border-signal bg-signal text-white' : on ? 'border-champagne/70 text-bone' : 'border-[var(--line)] text-mute/60' }`}
       >
         {n.label}
       </button>
@@ -53,7 +51,7 @@ export function ConceptGraph({ initial = 'c-sun' }: { initial?: string }) {
         <svg viewBox={`-4 0 1208 ${HEIGHT}`} className="w-full min-w-[56rem]" role="group" aria-label="Care Atlas concept graph">
           {layers.map((l, i) => (
             <g key={l.id} transform={`translate(${COL_X[i]} 0)`}>
-              <text y="18" className="fill-signal text-[11px] font-bold uppercase tracking-[0.2em]">{l.scope}</text>
+              <text y="18" className="fill-signal text-[11px] font-bold">{l.scope}</text>
               <text y="42" className="fill-bone font-display text-[19px]">{l.title}</text>
             </g>
           ))}
@@ -125,7 +123,7 @@ export function ConceptGraph({ initial = 'c-sun' }: { initial?: string }) {
       <aside aria-live="polite" className="self-start rounded-2xl border border-[var(--line)] bg-ink-2 p-6 lg:sticky lg:top-28">
         <p className="eyebrow">{layers.find((l) => l.id === current.layer)?.title}</p>
         <h3 className="display mt-4 text-3xl">{current.label}</h3>
-        {current.plain && <p className="mt-1 text-[0.72rem] font-bold uppercase tracking-[0.16em] text-mute">{current.plain}</p>}
+        {current.plain && <p className="mt-1 text-[0.8125rem] font-bold text-mute">{current.plain}</p>}
         <p className="mt-3 text-sm leading-relaxed text-bone/75">{current.gloss}</p>
         <p className="mt-5 text-xs text-mute">
           Connected to {lit.nodes.size - 1} concepts across {new Set([...lit.nodes].map((id) => id[0])).size} layers.

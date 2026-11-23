@@ -16,7 +16,7 @@ export function ProofBar({ className = '' }: { className?: string }) {
           <dt className="sr-only">{p.label}</dt>
           <dd>
             <span className="display block text-3xl text-champagne md:text-4xl">{p.value}</span>
-            <span className="mt-1 block text-[0.7rem] font-bold uppercase tracking-[0.18em] text-mute">{p.label}</span>
+            <span className="mt-1 block text-[0.8125rem] font-bold text-mute">{p.label}</span>
           </dd>
         </div>
       ))}
@@ -37,14 +37,13 @@ export function ServiceCard({ service, tall }: { service: Service; tall?: boolea
         <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
       </div>
       <div className="absolute inset-x-0 bottom-0 p-6">
-        <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-champagne">{service.kicker}</p>
+        <p className="text-[0.8125rem] font-bold text-champagne">{service.kicker}</p>
         <h3 className="mt-2">
           <span className="display block text-3xl">{service.house}</span>
-          <span className="mt-1 block text-xs font-semibold uppercase tracking-[0.14em] text-bone/60">{service.name}</span>
+          <span className="mt-1 block text-xs font-semibold text-bone/60">{service.name}</span>
         </h3>
         <p className="mt-2 flex items-center justify-between text-sm text-bone/70">
           <span>{fromPrice(service)}</span>
-          <span aria-hidden className="transition group-hover:translate-x-1">→</span>
         </p>
       </div>
     </Link>
@@ -58,7 +57,7 @@ export function CtaBand({ title = 'Tell us what you’re caring for.', preset }:
       <div className="wrap relative flex flex-col items-start gap-8 py-20 md:flex-row md:items-end md:justify-between md:py-28">
         <div>
           <Eyebrow>Complimentary quote</Eyebrow>
-          <h2 className="display mt-5 max-w-2xl text-4xl md:text-6xl">{title}</h2>
+          <h2 className="display mt-5 max-w-2xl text-[length:var(--step-4)]">{title}</h2>
           <p className="mt-4 text-bone/70">Quotes within one business day. Mon–Fri 8–6, Sat 8–3.</p>
         </div>
         <div className="flex flex-wrap gap-3">
@@ -81,7 +80,7 @@ export function Breadcrumbs({ items }: { items: { name: string; href: string }[]
         {items.map((it, i) => (
           <li key={it.href} className="flex gap-2">
             {i > 0 && <span aria-hidden>/</span>}
-            {i === items.length - 1 ? <span aria-current="page" className="text-bone/80">{it.name}</span> : <Link className="link-u" href={it.href}>{it.name}</Link>}
+            {i === items.length - 1 ? <span aria-current="page" className="text-bone/80">{it.name}</span> : <Link className="link-u inline-block py-2.5 lg:py-0" href={it.href}>{it.name}</Link>}
           </li>
         ))}
       </ol>

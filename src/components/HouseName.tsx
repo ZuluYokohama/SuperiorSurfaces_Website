@@ -9,7 +9,7 @@ export function HouseName({
   plain,
   as: As = 'h2',
   className = '',
-  houseClassName = 'text-4xl md:text-6xl',
+  houseClassName = 'text-[length:var(--step-4)]',
 }: {
   house: string;
   plain: string;
@@ -20,7 +20,7 @@ export function HouseName({
   return (
     <As className={className}>
       <span className={`display block ${houseClassName}`}>{house}</span>
-      <span className="mt-3 block font-sans text-[0.8rem] font-bold uppercase leading-snug tracking-[0.16em] text-mute">{plain}</span>
+      <span className="mt-4 block font-sans text-[length:var(--step-1)] font-normal leading-snug text-mute">{plain}</span>
     </As>
   );
 }

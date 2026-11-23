@@ -15,7 +15,7 @@ export function ByHand() {
       <div className="wrap grid gap-12 lg:grid-cols-12">
         <div className="lg:col-span-4 lg:pt-6">
           <Eyebrow>By hand</Eyebrow>
-          <h2 className="display mt-5 text-4xl md:text-6xl">Nothing here is done by a <em>tunnel</em>.</h2>
+          <h2 className="display mt-5 text-[length:var(--step-4)]">Nothing here is done by a tunnel.</h2>
           <p className="lede mt-6">
             Every surface is worked by a person who can see it, feel it and stop when it’s right. These are our technicians, photographed at work, without retouching.
           </p>
